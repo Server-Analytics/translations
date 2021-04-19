@@ -12,7 +12,7 @@ module.exports = {
         error_no_stats_content: "Before displaying and generating projections, I need to **fetch** enough data...\n> Estimated time remaining:",
         error_no_stats_image: "https://i.imgur.com/qtkhzMX.png", // Images will be translated later.
         cooldown_long_title: "You're in cooldown...",
-        cooldown_long_content: "Activate the serverPremium** to allow all server members to use this command unlimited !\n\n*The use of artificial intelligence consumes a lot of resources, support our project by activating the premium !",
+        cooldown_long_content: "**Enabling the ServerPremium** will allow all members to use this command without any limit !\n\n*The use of artificial intelligence consumes a lot of resources, support our project by enabling the premium !",
         cooldown_long_timer_name: "Time Remaining",
         cooldown_long_timer_content: "You can use the command again in",
         cooldown_long_shop_name: "Shop",
