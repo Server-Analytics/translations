@@ -9,10 +9,10 @@ module.exports = {
 
     general: {
         error_no_stats_title: "Not enough data...",
-        error_no_stats_content: "Avant de pouvoir afficher et générer des projections, j'ai besoin de **récupérer** suffisamment de données...\n> Temps restant estimé:",
+        error_no_stats_content: "Before displaying and generating projections, I need to **fetch** enough data...\n> Estimated time remaining:",
         error_no_stats_image: "https://i.imgur.com/qtkhzMX.png", // Images will be translated later.
-        cooldown_long_title: "Vous êtes en cooldown...",
-        cooldown_long_content: "Activez le serverPremium** pour permettre à tous les membres du serveur de faire cette commande en illimité !\n\n*L'utilisation d'intelligences artificielles consomme beaucoup de ressources, supportez notre projet en activant le premium !",
+        cooldown_long_title: "You're in cooldown...",
+        cooldown_long_content: "Activate the serverPremium** to allow all server members to make this command unlimited !\n\n*The use of artificial intelligence consumes a lot of resources, support our project by activating the premium !",
         cooldown_long_timer_name: "Temps Restant",
         cooldown_long_timer_content: "Vous pourrez réutiliser la commande dans",
         cooldown_long_shop_name: "Boutique",
