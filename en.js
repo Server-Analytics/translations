@@ -13,10 +13,10 @@ module.exports = {
         error_no_stats_image: "https://i.imgur.com/qtkhzMX.png", // Images will be translated later.
         cooldown_long_title: "You're in cooldown...",
         cooldown_long_content: "Activate the serverPremium** to allow all server members to use this command unlimited !\n\n*The use of artificial intelligence consumes a lot of resources, support our project by activating the premium !",
-        cooldown_long_timer_name: "Temps Restant",
-        cooldown_long_timer_content: "Vous pourrez réutiliser la commande dans",
-        cooldown_long_shop_name: "Boutique",
-        cooldown_long_shop_content: "[` Notre boutique `](https://discordanalytics.fr/client/user?action=shop) *instructions en dessous!*\n[` Serveur Discord `](${clientConnection.config.support.invite}) *giveaways et bonus!*",
+        cooldown_long_timer_name: "Time Remaining",
+        cooldown_long_timer_content: "You can use the command again in",
+        cooldown_long_shop_name: "Shop",
+        cooldown_long_shop_content: "[` Our shop `](https://discordanalytics.fr/client/user?action=shop) *instructions below!*\n[` Serveur Discord `](${clientConnection.config.support.invite}) *giveaways and bonuses!*",
         cooldown_long_image: "https://i.imgur.com/pJFcBi8.png",
 
         months_list: {
