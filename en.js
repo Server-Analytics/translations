@@ -8,7 +8,7 @@ module.exports = {
     },
 
     general: {
-        error_no_stats_title: "Trop peu de données...",
+        error_no_stats_title: "Not enough data...",
         error_no_stats_content: "Avant de pouvoir afficher et générer des projections, j'ai besoin de **récupérer** suffisamment de données...\n> Temps restant estimé:",
         error_no_stats_image: "https://i.imgur.com/qtkhzMX.png", // Images will be translated later.
         cooldown_long_title: "Vous êtes en cooldown...",
