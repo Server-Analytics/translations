@@ -81,5 +81,17 @@ module.exports = {
         forecast_help_cmd_members_maths: "Projections sur l'évolution des membres de votre serveur",
         forecast_help_cmd_members_ai: "**Intelligence Artificielle**\n> *Analyse prédictive par A.I. de l'évolution des membres de votre serveur*\n> ⚠ Lent et très peu précis: non recommandé",
         forecast_help_footer_name: "🧪 • Commande expérimentale"
+    },
+
+    graph: {
+        graph_error_no_datas: ""
+    },
+
+    set: {
+        set_lang_list_title: "Modifier la langue du bot",
+        set_lang_list_description: "Modifiez la langue du bot en tapant `${prfx}set lang [langue]`, par exemple `${prfx}set lang en` pour définir la langue du serveur en Anglais.",
+        set_lang_error_wrong_countrycode: "La langue entrée n'existe pas ou n'est pas encore disponnible ! Entrées possibles:",
+        set_lang_update_embed_title: "Langue du bot modifiée !",
+        set_lang_update_embed_content: "Les commandes seront désormais affichées en"
     }
 }
