@@ -84,14 +84,14 @@ module.exports = {
     },
 
     set: {
-        set_updated_config: "Configuration modifiée",
+        set_updated_config: "Modified configuration",
         set_lang_list_title: "Change the bot language",
         set_lang_list_description: "Change the bot language by typing `${prfx}set lang [language]`, for example `${prfx}set lang en` to set the server language to English.",
         set_lang_error_wrong_countrycode: "The input language doesn't exist or isn't yet available ! Possible inputs:",
         set_lang_update_embed_title: "Bot language edited !",
         set_lang_update_embed_content: "Commands will now be displayed in",
-        set_compare_disabled: "**D'accord!** Il est désormais **impossible** de comparer vos statistiques sur d'autres serveurs. *Retapez la commande pour réactiver la fonctionnalité.*",
-        set_compare_enabled: "**D'accord!** Il est à nouveau **possible** de comparer les statistiques de votre serveur. *Retapez la commande pour désactiver la fonctionnalité.*",
+        set_compare_disabled: "**All rignt!** It's now **impossible** to compare your statistics on other servers. *Retype the command to re-enable the feature.*",
+        set_compare_enabled: "**D'accord!** It's once again **possible** to compare your server statistics. *Retype the command to disable the feature.*",
         set_help_embed_title: "Configuration de ${botName}",
         set_help_embed_allowCompare: "Autoriser/Refuser d'autres serveurs à comparer vos statistiques",
         set_help_embed_hoverColor: "Changer la couleur du fond au survol du serveur sur notre site web",
