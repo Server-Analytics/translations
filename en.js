@@ -84,11 +84,11 @@ module.exports = {
     },
 
     set: {
-        set_lang_list_title: "Modifier la langue du bot",
-        set_lang_list_description: "Modifiez la langue du bot en tapant `${prfx}set lang [langue]`, par exemple `${prfx}set lang en` pour définir la langue du serveur en Anglais.",
-        set_lang_error_wrong_countrycode: "La langue entrée n'existe pas ou n'est pas encore disponnible ! Entrées possibles:",
-        set_lang_update_embed_title: "Langue du bot modifiée !",
-        set_lang_update_embed_content: "Les commandes seront désormais affichées en"
+        set_lang_list_title: "Change the bot language",
+        set_lang_list_description: "Change the bot language by typing `${prfx}set lang [language]`, for example `${prfx}set lang en` to set the server language to English.",
+        set_lang_error_wrong_countrycode: "The input language doesn't exist or isn't yet available ! Possible inputs:",
+        set_lang_update_embed_title: "Bot language edited !",
+        set_lang_update_embed_content: "Commands will now be displayed in"
     }
 
 }
