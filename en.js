@@ -92,10 +92,10 @@ module.exports = {
         set_lang_update_embed_content: "Commands will now be displayed in",
         set_compare_disabled: "**All rignt!** It's now **impossible** to compare your statistics on other servers. *Retype the command to re-enable the feature.*",
         set_compare_enabled: "**D'accord!** It's once again **possible** to compare your server statistics. *Retype the command to disable the feature.*",
-        set_help_embed_title: "Configuration de ${botName}",
-        set_help_embed_allowCompare: "Autoriser/Refuser d'autres serveurs à comparer vos statistiques",
-        set_help_embed_hoverColor: "Changer la couleur du fond au survol du serveur sur notre site web",
-        set_help_embed_lang: "Modifier la langue de Server Analytics. (Switch to english)"
+        set_help_embed_title: "Configuration of ${botName}",
+        set_help_embed_allowCompare: "Allow/deny other servers to compare your statistics",
+        set_help_embed_hoverColor: "Change the background colour when hovering over the server on our website",
+        set_help_embed_lang: "Change the language of Server Analytics. (Passer en français)"
     },
 
     stats: {
