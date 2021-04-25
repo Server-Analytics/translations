@@ -164,10 +164,10 @@ module.exports = {
     },
 
     invite: {
-        invite_message_title: "Ajoutez ${botName}",
-        invite_message_add_bot: "Ajouter le bot",
+        invite_message_title: "Add ${botName}",
+        invite_message_add_bot: "Add the bot",
         invite_message_dashboard: "Dashboard",
-        invite_message_discord_server: "Serveur Support"
+        invite_message_discord_server: "Support Guild"
     },
 
     graph: {
