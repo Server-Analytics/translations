@@ -96,22 +96,22 @@ module.exports = {
     },
 
     set: {
-        set_updated_config: "Configuration modifiée",
+        set_updated_config: "Modified configuration",
         set_lang_list_title: "Change the bot language",
         set_lang_list_description: "Change the bot language by typing `${prfx}set lang [language]`, for example `${prfx}set lang en` to set the server language to English.",
         set_lang_error_wrong_countrycode: "The input language doesn't exist or isn't yet available ! Possible inputs:",
         set_lang_update_embed_title: "Bot language edited !",
         set_lang_update_embed_content: "Commands will now be displayed in",
-        set_compare_disabled: "**D'accord!** Il est désormais **impossible** de comparer vos statistiques sur d'autres serveurs. *Retapez la commande pour réactiver la fonctionnalité.*",
-        set_compare_enabled: "**D'accord!** Il est à nouveau **possible** de comparer les statistiques de votre serveur. *Retapez la commande pour désactiver la fonctionnalité.*",
-        set_help_embed_title: "Configuration de ${botName}",
-        set_help_embed_allowCompare: "Autoriser/Refuser d'autres serveurs à comparer vos statistiques",
-        set_help_embed_hoverColor: "Changer la couleur du fond au survol du serveur sur notre site web",
-        set_help_embed_lang: "Modifier la langue de Server Analytics. (Switch to english)"
+        set_compare_disabled: "**All rignt!** It's now **impossible** to compare your statistics on other servers. *Retype the command to re-enable the feature.*",
+        set_compare_enabled: "**All right!** It's once again **possible** to compare your server statistics. *Retype the command to disable the feature.*",
+        set_help_embed_title: "Configuration of ${botName}",
+        set_help_embed_allowCompare: "Allow/deny other servers to compare your statistics",
+        set_help_embed_hoverColor: "Change the background colour when hovering over the server on our website",
+        set_help_embed_lang: "Change the language of Server Analytics. (Passer en français)"
     },
 
     stats: {
-        stats_error_compare_not_exist: "L'ID entré n'est pas celui d'un serveur valide où Server Analytics n'est pas dessus...\n> **Comment trouver l'ID ?** https://i.imgur.com/IsSzZ2O.png",
+        stats_error_compare_not_exist: "The ID entered isn't for a valid server or Server Analytics isn't on it...\n> **How to find the ID ?** https://i.imgur.com/IsSzZ2O.png",
         stats_error_compare_disabled: "Vous essayez de comparer vos statistiques avec un serveur qui n'autorise pas cette fonctionnalité...\n> 💡 **»** *Vous pouvez vous aussi refuser d'être comparé en tapant `${prfx}set allowCompare`.*",
         stats_error_compare_not_member: "Pour des raisons de confidentialité, tu dois être membre du serveur que tu souhaites comparer pour procéder à une comparaison.",
         stats_error_restricted_premium: "Ce tableau statistique est réservé aux serveurs détenant le Server Premium. Pour plus d'infos, tapez ` s.premium `",
