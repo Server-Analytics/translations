@@ -18,6 +18,10 @@ module.exports = {
         cooldown_long_shop_name: "Shop",
         cooldown_long_shop_content: "[` Our shop `](https://discordanalytics.fr/client/user?action=shop) *instructions below!*\n[` Join our Server `](${clientConnection.config.support.invite}) *giveaways and bonuses!*",
         cooldown_long_image: "https://i.imgur.com/pJFcBi8.png",
+        cooldown_short_displayed_text: "Cooldown!** Tu dois attendre ${cooldownDelay} secondes entre chaque commande !",
+        command_maintenance_text: "🚧** • Maintenance »** Server Analytics est en maintenance pour encore ` ${mtnc.duration} `",
+        command_maintenance_lagprv_text: "🔥** • Réseau Surchargé »** Server Analytics est actuellement trop utilisé, réessayez dans environ  ` ${mtnc.duration} `",
+        command_maintenance_details: "Détails:",
 
         months_list: {
             "1": "January",
@@ -32,6 +36,14 @@ module.exports = {
             "10": "October",
             "11": "November",
             "12": "December",
+        },
+
+        time_names: {
+            // 0: long singular, 1: long plurial, 2: short
+            days: [" day", " days", "d"],
+            hours: [" hour", " hours", "h"],
+            minutes: [" minute", " minutes", " min"],
+            seconds: [" second", " seconds", "s"]
         }
     },
 
@@ -78,7 +90,7 @@ module.exports = {
         graph_name_maths_process: "Predictive analysis by using mathematical process",
         forecast_help_title: "Statistic forecast of",
         forecast_help_description: "**Project yourself into the future** using our Artificial Intelligence and statistical analysis.",
-        forecast_help_cmd_members_maths: "Member growth forecast",
+        forecast_help_cmd_members_maths: "Member growth forecast on this server",
         forecast_help_cmd_members_ai: "**Artificial Intelligence**\n> *Predictive analysis by IA of member growth on this server.*\n> ⚠ Slow and not precise: not recommended",
         forecast_help_footer_name: "🧪 • Experimental Command"
     },
@@ -216,4 +228,56 @@ module.exports = {
             }
         }
     },
+
+    top: {
+        top_error_invalid_timerange: "Vous devez spécifier une durée valide, pour le moment les entrées possibles sont: `24h` `7j` et `28j`.",
+        top_error_invalid_user_id: "L'`ID` entré n'est pas valide :(\n> **Comment trouver l'ID ?** https://i.imgur.com/IsSzZ2O.png",
+        top_error_user_id_not_found: "Impossible de trouver l'utilisateur recherché, réessayez avec un `ID` valide !",
+        top_general_message_unitName: "messages",
+        top_general_your_rank: "Votre Position:",
+        top_category_global_title: "Classements Globaux",
+        top_category_messages_name: "Messages envoyés",
+        top_category_voice_name: "Temps en vocal",
+        top_category_ranks_name: "Positions et progressions",
+        top_category_ranks_prtg_top: "Top `${x}%` du serveur", // Top xx.xx% du serveur
+        top_category_ranks_messages_until: "messages pour passer", // Messages left until position #x-1
+        top_category_ranks_voice_until: "pour passer", // <Time left> until position #x-1
+        top_category_ranks_messages_until_alt: "messages avant", // Messages left until position #1
+        top_category_ranks_voice_until_alt: "avant", // <Time left> until position #1
+        top_category_ranks_user_first: "Vous êtes **1er** du serveur !",
+        top_embed_author: "Classements sur", // Leaderboeards for <server name>
+        top_embed_description_title: "Classement Global des utilisateurs du serveur.",
+        top_embed_description_instructions: "Classements sur **28j**, **7j** et **24h**: ` ${prfx}top [ 28j | 7j | 24h ]`\n> <:po:807783688975941633> Classements d'un utilisateur: `${prfx}top [ID]`",
+        top_embed_description_timerange: "Classement du serveur", // Server leaderboard <these last x days>
+        top_embed_description_reset: "Réinitialisé", // Réinitialisé <tous les jours à xx:xx>
+        top_embed_description_instructions_user_top: "Classements d'un utilisateur: `${prfx}top [ID]`",
+        top_user_top_not_available: "<:j_:807632343207772190> **C'est pas encore disponible!** Concurrences, performances et bien plus arriveront bientôt ! Pour être informé en avance de toutes les nouveautés, rejoins notre Serveur Discord » https://discord.gg/g62eVMr",
+
+        timeranges_names: {
+            1: [
+                "ces 24 dernières heures",
+                "sur 24h",
+                "aujourd'hui",
+                "tous les jours à 00:00",
+            ],
+            7: [
+                "ces 7 derniers jours",
+                "sur 7j",
+                "cette semaine",
+                "tous les samedis à 00:00",
+            ],
+            28: [
+                "ces 28 derniers jours",
+                "sur 28j",
+                "ce mois-ci",
+                "tous les 1er du mois à 00:00",
+            ],
+        }
+    },
+
+    newme: {
+        me_card_header_createdAt: "Inscrit le",
+        me_card_header_joinedAt: "Arrivé le"
+    }
+
 }
