@@ -53,7 +53,7 @@ module.exports = {
     help: {
         help_embed_title: "Aide de Server Analytics",
         help_embed_field1_name: "Statistiques du serveur",
-        help_embed_field1_content: "`${prfx}stats` - Statistiques détaillées sur le serveur\n> `${prfx}top` - Classements des membres du serveur\n> `${prfx}graph` - Générer un graphique\n> `${prfx}forecast` - Projections\n> `${prfx}trends` - Tendances d'activité du serveur",
+        help_embed_field1_content: "`${prfx}stats` - Statistiques détaillées sur le serveur\n> `${prfx}top` - Classements des membres du serveur\n> `${prfx}graph` - Générer un graphique\n> `${prfx}forecast` - Projections <:n1:855936753923260417><:n1:855936752967221249>\n> `${prfx}trends` - Tendances d'activité du serveur <:n1:855936753923260417><:n1:855936752967221249>",
         help_embed_field2_name: "Statistiques personnelles",
         help_embed_field2_content: "`${prfx}me` - Voir toutes vos stats sur ce serveur\n> `${prfx}u [@membre]` - Voir toutes les stats d'un membre du serveur",
         help_embed_field3_name: "Autres commandes",
@@ -67,8 +67,8 @@ module.exports = {
 
     enable: {
         enable_error_access: "Whoops!** L'accès à la commande est restreint aux administrateurs et gérants de Server Analytics.",
-        enable_error_not_exist: "La clé d'activation spécifiée n'existe pas ou à déjà été récupéré...",
-        enable_error_expired: "La clé d'activation spécifiée à expiré et n'est donc plus valide...",
+        enable_error_not_exist: "La clé d'activation spécifiée n'existe pas ou a déjà été récupérée...",
+        enable_error_expired: "La clé d'activation spécifiée a expirée et n'est donc plus valide...",
         enable_error_already_claimed: "Ce serveur à déjà activé cette commande ! Utilisez la clé d'activation dans un autre serveur.",
         enable_error_command_not_exist: "On dirait bien que la commande n'existe plus ou est désormais publique ! Pas de chance...",
         enable_list_error_no_key: "Aucune clé d'activation à été activée sur ce serveur...",
@@ -158,9 +158,9 @@ module.exports = {
         stats_board_members_category1_subcategory1_unitName: "membres",
         stats_board_members_category1_subcategory2: "📋 • En moyenne:",
         stats_board_members_category1_subcategory2_displayedText: "*Nouveaux membres:*\n> `+ {%a%}` membres/**mois**\n> `+ {%b%}` membres/**jour**\n> `+ {%d%}` membres/**heure**",
-        stats_board_members_category2_subcategory1: "<:le:807632343497703454> • Arrivés:",
+        stats_board_members_category2_subcategory1: "<:ji:856170053836734525> • Arrivés:",
         stats_board_members_category2_subcategory1_unitName: "arrivées",
-        stats_board_members_category2_subcategory2: "<:j_:807632343207772190> • Départs:",
+        stats_board_members_category2_subcategory2: "<:li:856170054101106768> • Départs:",
         stats_board_members_category2_subcategory2_unitName: "départs",
         stats_board_members_category3_subcategory1: "📈 • Arrivées:",
         stats_board_members_category3_subcategory2: "📉 • Départs:",
@@ -250,11 +250,11 @@ module.exports = {
         top_category_ranks_user_first: "Vous êtes **1er** du serveur !",
         top_embed_author: "Classements sur", // Leaderboeards for <server name>
         top_embed_description_title: "Classement Global des utilisateurs du serveur.",
-        top_embed_description_instructions: "Classements sur **28j**, **7j** et **24h**: ` ${prfx}top [ 28j | 7j | 24h ]`\n> <:po:807783688975941633> Classements d'un utilisateur: `${prfx}top [ID]`",
+        top_embed_description_instructions: "Classements sur **28j**, **7j** et **24h**: ` ${prfx}top [ 28j | 7j | 24h ]`\n> <:ps:856186498377187348> Classements d'un utilisateur: `${prfx}top [ID]`",
         top_embed_description_timerange: "Classement du serveur", // Server leaderboard <these last x days>
         top_embed_description_reset: "Réinitialisé", // Réinitialisé <tous les jours à xx:xx>
         top_embed_description_instructions_user_top: "Classements d'un utilisateur: `${prfx}top [ID]`",
-        top_user_top_not_available: "<:j_:807632343207772190> **C'est pas encore disponible!** Concurrences, performances et bien plus arriveront bientôt ! Pour être informé en avance de toutes les nouveautés, rejoins notre Serveur Discord » https://discord.gg/g62eVMr",
+        top_user_top_not_available: "<:ji:856170053836734525> **C'est pas encore disponible!** Concurrences, performances et bien plus arriveront bientôt ! Pour être informé en avance de toutes les nouveautés, rejoins notre Serveur Discord » https://discord.gg/g62eVMr",
 
         timeranges_names: {
             1: [
@@ -280,7 +280,15 @@ module.exports = {
 
     newme: {
         me_card_header_createdAt: "Inscrit le",
-        me_card_header_joinedAt: "Arrivé le"
+        me_card_header_joinedAt: "Arrivé le",
+        me_card_unit_messages: "Messages",
+        me_card_unit_in_vc: "En vocal",
+        me_card_top_global_unit: "Classement",
+        me_card_daily_top_rank_global_unit: "Aujourd'hui",
+        me_stat_box_messages_sent: "Messages envoyés",
+        me_stat_box_voice_time: "Temps en vocal",
+        me_stat_box_mentions: "Mentions",
+        me_stat_box_mentionned: "Mentionné",
     }
 
 }

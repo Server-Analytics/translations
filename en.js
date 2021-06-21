@@ -18,10 +18,10 @@ module.exports = {
         cooldown_long_shop_name: "Shop",
         cooldown_long_shop_content: "[` Our shop `](https://discordanalytics.fr/client/user?action=shop) *instructions below!*\n[` Join our Server `](${clientConnection.config.support.invite}) *giveaways and bonuses!*",
         cooldown_long_image: "https://i.imgur.com/pJFcBi8.png",
-        cooldown_short_displayed_text: "Cooldown!** Tu dois attendre ${cooldownDelay} secondes entre chaque commande !",
-        command_maintenance_text: "🚧** • Maintenance »** Server Analytics est en maintenance pour encore ` ${mtnc.duration} `",
-        command_maintenance_lagprv_text: "🔥** • Réseau Surchargé »** Server Analytics est actuellement trop utilisé, réessayez dans environ  ` ${mtnc.duration} `",
-        command_maintenance_details: "Détails:",
+        cooldown_short_displayed_text: "Cooldown!** You must wait ${cooldownDelay} seconds between each command !",
+        command_maintenance_text: "🚧** • Maintenance »** Server Analytics is in maintenance for another ` ${mtnc.duration} `",
+        command_maintenance_lagprv_text: "🔥** • Overloaded Network »** Server Analytics is currently overused, try again in about  ` ${mtnc.duration} `",
+        command_maintenance_details: "Details:",
 
         months_list: {
             "1": "January",
@@ -112,9 +112,9 @@ module.exports = {
 
     stats: {
         stats_error_compare_not_exist: "The ID entered isn't for a valid server or Server Analytics isn't on it...\n> **How to find the ID ?** https://i.imgur.com/IsSzZ2O.png",
-        stats_error_compare_disabled: "Vous essayez de comparer vos statistiques avec un serveur qui n'autorise pas cette fonctionnalité...\n> 💡 **»** *Vous pouvez vous aussi refuser d'être comparé en tapant `${prfx}set allowCompare`.*",
-        stats_error_compare_not_member: "Pour des raisons de confidentialité, tu dois être membre du serveur que tu souhaites comparer pour procéder à une comparaison.",
-        stats_error_restricted_premium: "Ce tableau statistique est réservé aux serveurs détenant le Server Premium. Pour plus d'infos, tapez ` s.premium `",
+        stats_error_compare_disabled: "You're trying to compare your statistics with a server that doesn't allow this feature...\n> 💡 **»** *You can also refuse to be compared by typing `${prfx}set allowCompare`.*",
+        stats_error_compare_not_member: "For confidentiality reasons, you must be a member of the server you wish to compare to make a comparison.",
+        stats_error_restricted_premium: "This statistical table is only available to servers with Server Premium. For more info, type ` s.premium `",
         stats_error_restricted_dev: "L'accès à ce tableau statistique a été restreint. Celui-ci est peut-être en maintenance ou en cours de création.. Revenez plus tard !",
         stats_error_no_datas: "Je manque de statistiques ! Laisse-moi juste quelques minutes pour que je commence à relever les statistiques du serveur...",
         stats_error_empty_board: "Le format du tableau statistique est incorrect: Aucune statistique à afficher...",
@@ -133,11 +133,11 @@ module.exports = {
         stats_help_embed_footer: "Commande expérimentale",
 
         // Standard stat board "messages" 
-        stats_board_messages_category1: "Messages Envoyés",
-        stats_board_messages_category2: "Mentions et Activité",
-        stats_board_messages_category3: "Supprimés et moyennes",
-        stats_board_messages_category1_subcategory1: "✉ • Messages Envoyés:",
-        stats_board_messages_category1_displayedText: "\n> **Vous »**", // You sent » (x messages)
+        stats_board_messages_category1: "Sent Messages",
+        stats_board_messages_category2: "Mentions and Activity",
+        stats_board_messages_category3: "Deleted and average",
+        stats_board_messages_category1_subcategory1: "✉ • Sent Messages:",
+        stats_board_messages_category1_displayedText: "\n> **You »**", // You sent » (x messages)
         stats_board_messages_category1_subcategory2: "📊 • Graphique:",
         stats_board_messages_category2_subcategory1: "📌 • Mentions:",
         stats_board_messages_category2_subcategory2: "👥 • Membres Actifs:",
@@ -155,9 +155,9 @@ module.exports = {
         stats_board_members_category1_subcategory1_unitName: "membres",
         stats_board_members_category1_subcategory2: "📋 • En moyenne:",
         stats_board_members_category1_subcategory2_displayedText: "*Nouveaux membres:*\n> `+ {%a%}` membres/**mois**\n> `+ {%b%}` membres/**jour**\n> `+ {%d%}` membres/**heure**",
-        stats_board_members_category2_subcategory1: "<:le:807632343497703454> • Arrivés:",
+        stats_board_members_category2_subcategory1: "<:ji:856170053836734525> • Arrivés:",
         stats_board_members_category2_subcategory1_unitName: "arrivées",
-        stats_board_members_category2_subcategory2: "<:j_:807632343207772190> • Départs:",
+        stats_board_members_category2_subcategory2: "<:li:856170054101106768> • Départs:",
         stats_board_members_category2_subcategory2_unitName: "départs",
         stats_board_members_category3_subcategory1: "📈 • Arrivées:",
         stats_board_members_category3_subcategory2: "📉 • Départs:",
@@ -247,11 +247,11 @@ module.exports = {
         top_category_ranks_user_first: "Vous êtes **1er** du serveur !",
         top_embed_author: "Classements sur", // Leaderboeards for <server name>
         top_embed_description_title: "Classement Global des utilisateurs du serveur.",
-        top_embed_description_instructions: "Classements sur **28j**, **7j** et **24h**: ` ${prfx}top [ 28j | 7j | 24h ]`\n> <:po:807783688975941633> Classements d'un utilisateur: `${prfx}top [ID]`",
+        top_embed_description_instructions: "Classements sur **28j**, **7j** et **24h**: ` ${prfx}top [ 28j | 7j | 24h ]`\n> <:ps:856186498377187348> Classements d'un utilisateur: `${prfx}top [ID]`",
         top_embed_description_timerange: "Classement du serveur", // Server leaderboard <these last x days>
         top_embed_description_reset: "Réinitialisé", // Réinitialisé <tous les jours à xx:xx>
         top_embed_description_instructions_user_top: "Classements d'un utilisateur: `${prfx}top [ID]`",
-        top_user_top_not_available: "<:j_:807632343207772190> **C'est pas encore disponible!** Concurrences, performances et bien plus arriveront bientôt ! Pour être informé en avance de toutes les nouveautés, rejoins notre Serveur Discord » https://discord.gg/g62eVMr",
+        top_user_top_not_available: "<:ji:856170053836734525> **C'est pas encore disponible!** Concurrences, performances et bien plus arriveront bientôt ! Pour être informé en avance de toutes les nouveautés, rejoins notre Serveur Discord » https://discord.gg/g62eVMr",
 
         timeranges_names: {
             1: [
@@ -277,7 +277,17 @@ module.exports = {
 
     newme: {
         me_card_header_createdAt: "Inscrit le",
-        me_card_header_joinedAt: "Arrivé le"
+        me_card_header_joinedAt: "Arrivé le",
+        me_card_header_joinedAt: "Arrivé le",
+        me_card_unit_messages: "Messages",
+        me_card_unit_in_vc: "En vocal",
+        me_card_top_global_unit: "Classement",
+        me_card_daily_top_rank_global_unit: "Aujourd'hui",
+        me_stat_box_messages_sent: "Messages envoyés",
+        me_stat_box_voice_time: "Temps en vocal",
+        me_stat_box_mentions: "Mentions",
+        me_stat_box_mentionned: "Mentionné",
+
     }
 
 }
