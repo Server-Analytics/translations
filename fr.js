@@ -289,6 +289,27 @@ module.exports = {
         me_stat_box_voice_time: "Temps en vocal",
         me_stat_box_mentions: "Mentions",
         me_stat_box_mentionned: "Mentionné",
+        me_stats_box_leaderboards: "Classements",
+        me_stats_box_ranks: "Ranks d'activité",
+        me_stats_box_message_graph: "Graphique",
+
+        me_stats_box_ranksNames: {
+            "X": "Aucune donnée",
+            "F": "Très peu actif",
+            "F+": "Très peu actif",
+            "D-": "Peu actif",
+            "D": "Peu actif",
+            "D+": "Peu actif",
+            "C-": "Passivement Actif",
+            "C": "Passivement Actif",
+            "C+": "Passivement Actif",
+            "B-": "Plutôt Actif",
+            "B": "Plutôt Actif",
+            "B+": "Actif",
+            "A-": "Très Actif",
+            "A": "Très Actif",
+            "A+": "Forte Activité",
+        }
     }
 
 }
