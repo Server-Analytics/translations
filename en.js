@@ -138,90 +138,90 @@ module.exports = {
         stats_board_messages_category3: "Deleted and average",
         stats_board_messages_category1_subcategory1: "✉ • Sent Messages:",
         stats_board_messages_category1_displayedText: "\n> **You »**", // You sent » (x messages)
-        stats_board_messages_category1_subcategory2: "📊 • Graphique:",
-        stats_board_messages_category2_subcategory1: "📌 • Mentions:",
-        stats_board_messages_category2_subcategory2: "👥 • Membres Actifs:",
-        stats_board_messages_category3_subcategory1: "🗑 • Supprimés:",
-        stats_board_messages_category3_subcategory1_unitName: "supprimés",
-        stats_board_messages_category3_subcategory2: "📋 • En moyenne:",
-        stats_board_messages_category3_subcategory2_displayedText: "> `{%a%}` messages/**mois**\n> `{%b%}` messages/**jour**\n> `{%d%}` messages/**heure**\n> `{%c%}` messages/**membre**",
+        stats_board_messages_category1_subcategory2: "📊 • Graph:",
+        stats_board_messages_category2_subcategory1: "📌 • Pings:",
+        stats_board_messages_category2_subcategory2: "👥 • Active Members:",
+        stats_board_messages_category3_subcategory1: "🗑 • Deleted:",
+        stats_board_messages_category3_subcategory1_unitName: "Delted",
+        stats_board_messages_category3_subcategory2: "📋 • On average:",
+        stats_board_messages_category3_subcategory2_displayedText: "> `{%a%}` messages/**month**\n> `{%b%}` messages/**day**\n> `{%d%}` messages/**hour**\n> `{%c%}` messages/**member**",
 
         // Standard stat board "members"
-        stats_board_members_category1: "Nombre de Membres",
+        stats_board_members_category1: "Member Count",
         stats_board_members_category2: "Départs et arrivées",
-        stats_board_members_category3: "Graphiques",
-        stats_board_members_category1_subcategory1: "👥 • Evolution:",
-        stats_board_members_category1_subcategory1_displayedText: "> Membres",
-        stats_board_members_category1_subcategory1_unitName: "membres",
-        stats_board_members_category1_subcategory2: "📋 • En moyenne:",
-        stats_board_members_category1_subcategory2_displayedText: "*Nouveaux membres:*\n> `+ {%a%}` membres/**mois**\n> `+ {%b%}` membres/**jour**\n> `+ {%d%}` membres/**heure**",
-        stats_board_members_category2_subcategory1: "<:ji:856170053836734525> • Arrivés:",
-        stats_board_members_category2_subcategory1_unitName: "arrivées",
-        stats_board_members_category2_subcategory2: "<:li:856170054101106768> • Départs:",
-        stats_board_members_category2_subcategory2_unitName: "départs",
-        stats_board_members_category3_subcategory1: "📈 • Arrivées:",
-        stats_board_members_category3_subcategory2: "📉 • Départs:",
+        stats_board_members_category3: "Graphs",
+        stats_board_members_category1_subcategory1: "👥 • Growth:",
+        stats_board_members_category1_subcategory1_displayedText: "> Members",
+        stats_board_members_category1_subcategory1_unitName: "members",
+        stats_board_members_category1_subcategory2: "📋 • On average:",
+        stats_board_members_category1_subcategory2_displayedText: "*New members:*\n> `+ {%a%}` membres/**month**\n> `+ {%b%}` membres/**day**\n> `+ {%d%}` membres/**hour**",
+        stats_board_members_category2_subcategory1: "<:ji:856170053836734525> • Joined:",
+        stats_board_members_category2_subcategory1_unitName: "joins",
+        stats_board_members_category2_subcategory2: "<:li:856170054101106768> • Left:",
+        stats_board_members_category2_subcategory2_unitName: "left",
+        stats_board_members_category3_subcategory1: "📈 • Joins:",
+        stats_board_members_category3_subcategory2: "📉 • Leaves:",
 
         // Standard stat board "voice"
-        stats_board_voice_category1: "Statistiques Vocales",
-        stats_board_voice_category2: "Vos Statistiques Vocales",
-        stats_board_voice_category3: "Sessions Vocales",
-        stats_board_voice_category1_subcategory1: "🔊 • Temps en vocal:",
-        stats_board_voice_category1_subcategory1_displayText: "\n> **Vous »** ",
-        stats_board_voice_category1_subcategory2: "📊 • Graphique:",
-        stats_board_voice_category2_subcategory1: "👥 • Temps passé en vocal:",
-        stats_board_voice_category2_subcategory2: "📊 • Graphique:",
-        stats_board_voice_category3_subcategory1: "📚 • Vos derniers vocaux:",
+        stats_board_voice_category1: "Voice stats",
+        stats_board_voice_category2: "Your Voice Statistics",
+        stats_board_voice_category3: "VC Sessions",
+        stats_board_voice_category1_subcategory1: "🔊 • Time spent in VC:",
+        stats_board_voice_category1_subcategory1_displayText: "\n> **You »** ",
+        stats_board_voice_category1_subcategory2: "📊 • Graph:",
+        stats_board_voice_category2_subcategory1: "👥 • Time spent in VC:",
+        stats_board_voice_category2_subcategory2: "📊 • Graph:",
+        stats_board_voice_category3_subcategory1: "📚 • Your last VC sessions:",
 
     },
 
     invite: {
-        invite_message_title: "Ajoutez ${botName}",
-        invite_message_add_bot: "Ajouter le bot",
+        invite_message_title: "Invite ${botName}",
+        invite_message_add_bot: "Invite the bot",
         invite_message_dashboard: "Dashboard",
-        invite_message_discord_server: "Serveur Support"
+        invite_message_discord_server: "Support Server"
     },
 
     graph: {
-        graph_error_no_datas: "Je n'ai pas assez de statistiques pour créer un graphique... Reviens plus tard :(",
-        graph_error_low_timerange: "Il n'est pas encore possible d'afficher des graphiques sur une période inférieure à **6 jours**",
-        graph_error_high_timerange: "Il n'est pas encore possible d'afficher des graphiques sur une période suppérieure à **9999 jours**",
-        graph_error_premium_timerange: "Seuls les serveurs avec un abonnement premium peuvent afficher des graphiques sur plus de **31 jours**!",
-        graph_help_embed_title: "Générer un graphique",
-        graph_help_embed_content: "Affichez un graphique sur **${x}** jours:",
-        graph_help_embed_available_graphs: "Graphiques disponibles",
+        graph_error_no_datas: "I haven't collected enough statistics to generate a graph... Come back later :(",
+        graph_error_low_timerange: "It is not yet possible to display charts for a period less than **6 days**",
+        graph_error_high_timerange: "It is not yet possible to display charts for a period longer than **9999 days**",
+        graph_error_premium_timerange: "Only servers with an active premium subscription can display stats for periods longer **31 days**!",
+        graph_help_embed_title: "Generate a graph",
+        graph_help_embed_content: "Display a **${x}-days** chart:",
+        graph_help_embed_available_graphs: "Available graphs",
 
         // Do not edit "type", "columnName", "format" and "normalizeFactor" proprieties!
         graph_list: {
             messages: {
                 type: "guild",
-                graphName: "Graphique sur les Messages Envoyés",
-                graphDescription: "Graphique sur les messages envoyés sur ce serveur.",
+                graphName: "Graph on sent messages",
+                graphDescription: "Graph showing sent messages on this server.",
                 columnName: "messages"
             },
             members: {
                 type: "guild",
-                graphName: "Graphique sur l'évolution du nombre de Membres",
-                graphDescription: "Graphique sur l'évolution du nombre de membres dans ce serveur.",
+                graphName: "Graph on member growth",
+                graphDescription: "Graph showing the member growth of this server.",
                 columnName: "membres",
                 processMethod: "set"
             },
             mentions: {
                 type: "guild",
-                graphName: "Graphique sur le Nombre de Mentions",
-                graphDescription: "Graphique sur le nombre de mentions envoyées dans ce serveur.",
+                graphName: "Graph on pings",
+                graphDescription: "Graph showing the total amount of pings on this server.",
                 columnName: "mentions"
             },
             myMessages: {
                 type: "user",
-                graphName: "Graphique du Nombre de Messages",
-                graphDescription: "Graphique sur le nombre de messages que vous avez envoyé sur ce serveur.",
+                graphName: "Graph on your messages sent",
+                graphDescription: "Graph showing the number of messages you sent in this server.",
                 columnName: "messages"
             },
             voiceTime: {
                 type: "guild",
-                graphName: "Graphique sur le temps passé en vocal",
-                graphDescription: "Graphique sur le temps passé en vocal sur ce serveur.",
+                graphName: "Graph on time spent in VC",
+                graphDescription: "Graph showing time spent in Voice Channels on this server.",
                 columnName: "voice_time",
                 format: "time",
                 normalizeFactor: 1000
@@ -234,59 +234,80 @@ module.exports = {
         top_error_invalid_user_id: "L'`ID` entré n'est pas valide :(\n> **Comment trouver l'ID ?** https://i.imgur.com/IsSzZ2O.png",
         top_error_user_id_not_found: "Impossible de trouver l'utilisateur recherché, réessayez avec un `ID` valide !",
         top_general_message_unitName: "messages",
-        top_general_your_rank: "Votre Position:",
-        top_category_global_title: "Classements Globaux",
-        top_category_messages_name: "Messages envoyés",
-        top_category_voice_name: "Temps en vocal",
+        top_general_your_rank: "Your rank:",
+        top_category_global_title: "Global Leaderboards",
+        top_category_messages_name: "Messages Sent",
+        top_category_voice_name: "Time spent in voice",
         top_category_ranks_name: "Positions et progressions",
-        top_category_ranks_prtg_top: "Top `${x}%` du serveur", // Top xx.xx% du serveur
-        top_category_ranks_messages_until: "messages pour passer", // Messages left until position #x-1
-        top_category_ranks_voice_until: "pour passer", // <Time left> until position #x-1
-        top_category_ranks_messages_until_alt: "messages avant", // Messages left until position #1
-        top_category_ranks_voice_until_alt: "avant", // <Time left> until position #1
-        top_category_ranks_user_first: "Vous êtes **1er** du serveur !",
-        top_embed_author: "Classements sur", // Leaderboeards for <server name>
-        top_embed_description_title: "Classement Global des utilisateurs du serveur.",
-        top_embed_description_instructions: "Classements sur **28j**, **7j** et **24h**: ` ${prfx}top [ 28j | 7j | 24h ]`\n> <:ps:856186498377187348> Classements d'un utilisateur: `${prfx}top [ID]`",
+        top_category_ranks_prtg_top: "Top `${x}%`", // Top xx.xx% du serveur
+        top_category_ranks_messages_until: "messages left until", // Messages left until position #x-1
+        top_category_ranks_voice_until: "until", // <Time left> until position #x-1
+        top_category_ranks_messages_until_alt: "messages left until", // Messages left until position #1
+        top_category_ranks_voice_until_alt: "until", // <Time left> until position #1
+        top_category_ranks_user_first: "You are **1st** in this server !",
+        top_embed_author: "Rankings for", // Leaderboeards for <server name>
+        top_embed_description_title: "Global leaderboards for all server members.",
+        top_embed_description_instructions: "Display **28d**, **7d** et **24h** leaderboards: ` ${prfx}top [ 28d | 7d | 24h ]`\n> <:ps:856186498377187348> Ranks of a member: `${prfx}top [ID]`",
         top_embed_description_timerange: "Classement du serveur", // Server leaderboard <these last x days>
-        top_embed_description_reset: "Réinitialisé", // Réinitialisé <tous les jours à xx:xx>
+        top_embed_description_reset: "Reset", // Réinitialisé <tous les jours à xx:xx>
         top_embed_description_instructions_user_top: "Classements d'un utilisateur: `${prfx}top [ID]`",
         top_user_top_not_available: "<:ji:856170053836734525> **C'est pas encore disponible!** Concurrences, performances et bien plus arriveront bientôt ! Pour être informé en avance de toutes les nouveautés, rejoins notre Serveur Discord » https://discord.gg/g62eVMr",
 
         timeranges_names: {
             1: [
-                "ces 24 dernières heures",
-                "sur 24h",
-                "aujourd'hui",
-                "tous les jours à 00:00",
+                "these last 24 hours",
+                "on 24h",
+                "today",
+                "every day at 00:00 (UTC)",
             ],
             7: [
-                "ces 7 derniers jours",
-                "sur 7j",
-                "cette semaine",
-                "tous les samedis à 00:00",
+                "these last 7 days",
+                "on 7d",
+                "this week",
+                "tous les samedis à 00:00 (UTC)",
             ],
             28: [
-                "ces 28 derniers jours",
-                "sur 28j",
-                "ce mois-ci",
-                "tous les 1er du mois à 00:00",
+                "these last 28 days",
+                "on 28d",
+                "this month",
+                "tous les 1er du mois à 00:00 (UTC)",
             ],
         }
     },
 
     newme: {
-        me_card_header_createdAt: "Inscrit le",
+        me_card_header_createdAt: "Signed up",
+        me_card_header_joinedAt: "Joined on",
         me_card_header_joinedAt: "Arrivé le",
-        me_card_header_joinedAt: "Arrivé le",
-        me_card_unit_messages: "Messages",
-        me_card_unit_in_vc: "En vocal",
-        me_card_top_global_unit: "Classement",
-        me_card_daily_top_rank_global_unit: "Aujourd'hui",
-        me_stat_box_messages_sent: "Messages envoyés",
-        me_stat_box_voice_time: "Temps en vocal",
+        me_card_unit_messages: "Messages Sent",
+        me_card_unit_in_vc: "In Voice Chat",
+        me_card_top_global_unit: "Rank",
+        me_card_daily_top_rank_global_unit: "Today",
+        me_stat_box_messages_sent: "Messages Sent",
+        me_stat_box_voice_time: "Time spent in VC",
         me_stat_box_mentions: "Mentions",
-        me_stat_box_mentionned: "Mentionné",
+        me_stat_box_mentionned: "Mentionned",
+        me_stats_box_leaderboards: "Leaderboards",
+        me_stats_box_ranks: "Activity Ranks",
+        me_stats_box_message_graph: "Graph",
+
+        me_stats_box_ranksNames: {
+            "X": "No data",
+            "F": "Verry little activity",
+            "F+": "Verry little activity",
+            "D-": "Not very active",
+            "D": "Not very active",
+            "D+": "Not very active",
+            "C-": "Passively Active",
+            "C": "Passively Active",
+            "C+": "Passively Active",
+            "B-": "Rather Active",
+            "B": "Rather Active",
+            "B+": "Active",
+            "A-": "Very active",
+            "A": "Very active",
+            "A+": "Strong activity",
+        }
 
     }
 
