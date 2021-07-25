@@ -8,6 +8,9 @@ module.exports = {
     },
 
     general: {
+        error_no_stats_short_title: "Thanks for adding Server Analytics !",
+        error_no_stats_short_content: "But in order to display statistics, I need to **configure** myself and start **saving** this server's data...\n> Time left:",
+        error_no_stats_short_image: "https://i.imgur.com/qtkhzMX.png", // Images will be translated later.
         error_no_stats_title: "Not enough data...",
         error_no_stats_content: "Before displaying and generating projections, I need to **fetch** enough data...\n> Estimated time remaining:",
         error_no_stats_image: "https://i.imgur.com/qtkhzMX.png", // Images will be translated later.
@@ -278,7 +281,6 @@ module.exports = {
     newme: {
         me_card_header_createdAt: "Signed up",
         me_card_header_joinedAt: "Joined on",
-        me_card_header_joinedAt: "Arrivé le",
         me_card_unit_messages: "Messages Sent",
         me_card_unit_in_vc: "In Voice Chat",
         me_card_top_global_unit: "Rank",
@@ -308,7 +310,5 @@ module.exports = {
             "A": "Very active",
             "A+": "Strong activity",
         }
-
     }
-
 }
