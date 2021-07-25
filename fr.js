@@ -311,5 +311,4 @@ module.exports = {
             "A+": "Forte Activité",
         }
     }
-
 }
