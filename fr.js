@@ -53,7 +53,7 @@ module.exports = {
     help: {
         help_embed_title: "Aide de Server Analytics",
         help_embed_field1_name: "Statistiques du serveur",
-        help_embed_field1_content: "`${prfx}stats` - Statistiques détaillées sur le serveur\n> `${prfx}top` - Classements des membres du serveur\n> `${prfx}graph` - Générer un graphique\n> `${prfx}forecast` - Projections <:n1:855936753923260417><:n1:855936752967221249>\n> `${prfx}trends` - Tendances d'activité du serveur <:n1:855936753923260417><:n1:855936752967221249>",
+        help_embed_field1_content: "`${prfx}stats` - Statistiques détaillées sur le serveur\n> `${prfx}top` - Classements des membres du serveur\n> `${prfx}graph` - Générer un graphique\n> `${prfx}forecast` - Projections\n> `${prfx}trends` - Tendances d'activité du serveur",
         help_embed_field2_name: "Statistiques personnelles",
         help_embed_field2_content: "`${prfx}me` - Voir toutes vos stats sur ce serveur\n> `${prfx}u [@membre]` - Voir toutes les stats d'un membre du serveur",
         help_embed_field3_name: "Autres commandes",
@@ -278,7 +278,7 @@ module.exports = {
         }
     },
 
-    newme: {
+    me: {
         me_card_header_createdAt: "Inscrit le",
         me_card_header_joinedAt: "Arrivé le",
         me_card_unit_messages: "Messages",
