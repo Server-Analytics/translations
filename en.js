@@ -4,10 +4,11 @@ module.exports = {
         public: true,
         language_code: "en",
         language_name: "English",
-        language_flag: "🇬🇧"
+        language_flag: "🇬🇧",
     },
 
     general: {
+
         error_no_stats_short_title: "Thanks for adding Server Analytics !",
         error_no_stats_short_content: "But in order to display statistics, I need to **configure** myself and start **saving** this server's data...\n> Time left:",
         error_no_stats_short_image: "https://i.imgur.com/qtkhzMX.png", // Images will be translated later.
@@ -53,7 +54,7 @@ module.exports = {
     help: {
         help_embed_title: "Server Analytics help page",
         help_embed_field1_name: "Server statistics",
-        help_embed_field1_content: "`${prfx}stats` - Server detailed statistics\n> `${prfx}top` - Server members leaderboards\n> `${prfx}graph` - Generate charts\n> `${prfx}forecast` - Forecasts\n> `${prfx}trends` - Server activity trends",
+        help_embed_field1_content: "`${prfx}stats` - Server detailed statistics\n> `${prfx}top` - Server members leaderboards\n> `${prfx}graph` - Generate charts\n> `${prfx}forecast` - Forecasts\n> `${prfx}trends` - Server activity trends\n> `${prfx}objectives` - Objectifs et records du serveur",
         help_embed_field2_name: "Personal statistics",
         help_embed_field2_content: "`${prfx}me` - Display your statistics on this server\n> `${prfx}u [@member]` - Display the statistics of a member",
         help_embed_field3_name: "Other commands",
@@ -95,7 +96,7 @@ module.exports = {
         forecast_help_description: "**Project yourself into the future** using our Artificial Intelligence and statistical analysis.",
         forecast_help_cmd_members_maths: "Member growth forecast on this server",
         forecast_help_cmd_members_ai: "**Artificial Intelligence**\n> *Predictive analysis by IA of member growth on this server.*\n> ⚠ Slow and not precise: not recommended",
-        forecast_help_footer_name: "🧪 • Experimental Command"
+        forecast_help_footer_name: "🧪 • Experimental Command",
     },
 
     set: {
@@ -135,7 +136,15 @@ module.exports = {
         stats_help_embed_field_your_boards_empty: "**Whoops !** Il n'est pas encore possible de créer ses propres tableaux statistiques.. Reviens plus tard !",
         stats_help_embed_footer: "Commande expérimentale",
 
-        // Standard stat board "messages" 
+        // THIS SECTION DOES NOT NEED TRANSLATIONS
+        stats_boards_slash_names: [
+            "messages",
+            "members",
+            "voice"
+        ],
+        // END OF THE "NO NEED TRANSLATIONS" SECTION
+
+        // Standard stat board "messages"
         stats_board_messages_category1: "Sent Messages",
         stats_board_messages_category2: "Mentions and Activity",
         stats_board_messages_category3: "Deleted and average",
@@ -278,7 +287,7 @@ module.exports = {
         }
     },
 
-    newme: {
+    me: {
         me_card_header_createdAt: "Signed up",
         me_card_header_joinedAt: "Joined on",
         me_card_unit_messages: "Messages Sent",

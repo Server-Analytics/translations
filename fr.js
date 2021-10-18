@@ -4,7 +4,8 @@ module.exports = {
         public: true,
         language_code: "fr",
         language_name: "Français",
-        language_flag: "🇫🇷"
+        language_flag: "🇫🇷",
+        default: true
     },
 
     general: {
@@ -23,7 +24,8 @@ module.exports = {
         cooldown_long_image: "https://i.imgur.com/pJFcBi8.png",
         cooldown_short_displayed_text: "Cooldown!** Tu dois attendre ${cooldownDelay} secondes entre chaque commande !",
         command_maintenance_text: "🚧** • Maintenance »** Server Analytics est en maintenance pour encore ` ${mtnc.duration} `",
-        command_maintenance_lagprv_text: "🔥** • Réseau Surchargé »** Server Analytics est actuellement trop utilisé, réessayez dans environ  ` ${mtnc.duration} `",
+        command_maintenance_lagprv_text: "🔥** • Réseau Surchargé »** Server Analytics est actuellement trop utilisé, réessayez dans environ ` ${mtnc.duration} `",
+        command_maintenance_text_3: "🏳️** • Traitement des données »** Server Analytics est actuellement en processus **quotidien** de traitement des données, pour éviter une surcharge du réseau et veiller à la continuité de nos services, reviens dans ` ${mtnc.duration} `",
         command_maintenance_details: "Détails:",
 
         months_list: {
@@ -53,7 +55,7 @@ module.exports = {
     help: {
         help_embed_title: "Aide de Server Analytics",
         help_embed_field1_name: "Statistiques du serveur",
-        help_embed_field1_content: "`${prfx}stats` - Statistiques détaillées sur le serveur\n> `${prfx}top` - Classements des membres du serveur\n> `${prfx}graph` - Générer un graphique\n> `${prfx}forecast` - Projections\n> `${prfx}trends` - Tendances d'activité du serveur",
+        help_embed_field1_content: "`${prfx}stats` - Statistiques détaillées sur le serveur\n> `${prfx}top` - Classements des membres du serveur\n> `${prfx}graph` - Générer un graphique\n> `${prfx}forecast` - Projections\n> `${prfx}trends` - Tendances d'activité du serveur\n> `${prfx}objectives` - Objectifs et records du serveur",
         help_embed_field2_name: "Statistiques personnelles",
         help_embed_field2_content: "`${prfx}me` - Voir toutes vos stats sur ce serveur\n> `${prfx}u [@membre]` - Voir toutes les stats d'un membre du serveur",
         help_embed_field3_name: "Autres commandes",
@@ -110,7 +112,28 @@ module.exports = {
         set_help_embed_title: "Configuration de ${botName}",
         set_help_embed_allowCompare: "Autoriser/Refuser d'autres serveurs à comparer vos statistiques",
         set_help_embed_hoverColor: "Changer la couleur du fond au survol du serveur sur notre site web",
-        set_help_embed_lang: "Modifier la langue de Server Analytics. (Switch to english)"
+        set_help_embed_lang: "Modifier la langue de Server Analytics. (Switch to english)",
+        set_help_embed_reset: "Réinitialiser vos statistiques ou celles du serveur.",
+
+        // Reset stats
+        set_reset_embeds_title: "Réinitialisation des statistiques",
+        set_reset_select_type_descr: "Avant de commencer, vous devez choisir quelle catégorie de statistiques vous souhaitez supprimer:\n\n> • **Statistiques personnelles:** n'affectera que vos stats, les autres utilisateurs n'auront aucune perte.\n> • **Statistiques du serveur:** affectera les statistiques du serveur et de tous ses membres (dont vous!).",
+        set_reset_select_buttons: ["Stats personnelles", "Stats du serveur"],
+        set_reset_select_stats_descr: "**Attention !** Cette action est __irréversible__, en conséquent, assurez-vous de bien savoir ce que vous faites !\n\nCependant, si vous êtes persuadés à **110%** de l'action que vous entreprenez, choissisez les **différentes** statistiques à **réinitialiser** dans le menu-déroulant.",
+        set_reset_select_stats_placeholder: "Statistiques à réinitialiser..",
+        set_reset_recap_desc: "**Récapitulatif:** Vous vous appretez à **supprimer** les données ci-dessous inscrites. **NOTEZ** que les entrées ne sont pas mises à jour, mais complètement **supprimées**; donc irrécupérables!",
+        set_reset_recap_confirm: "CONFIRMER",
+        set_reset_success_message: "**C'est fait..** Les statistiques entrées devraient être supprimées sous peu.",
+
+        // Reset dropdown options
+        set_reset_dropdown_options: {
+            members_stats: ["Statistiques des membres", "Statistiques de TOUS les membres du serveur.", ["", "TOUS les membres auront leurs stats à 0!"]],
+            global_stats: ["Statistiques globales", "Nombre total de messages, temps total en voc etc..", ["Vous perdrez votre place dans les classements!", "TOUT sera réinitialisé; premium, clés d'activations etc.."]],
+            temporal_stats: ["Statistiques temporelles", "Graphiques, statistiques sur N jours."],
+            voice_sessions: ["Sessions vocales", "Historique des sessions vocales"],
+            temp_leaderboards: ["Classements temporaires", "Classements sur 24h, 7j et 28j."],
+            objectives: ["Objectifs", "Objectifs et records du serveur."],
+        }
     },
 
     stats: {
@@ -193,6 +216,7 @@ module.exports = {
         graph_help_embed_title: "Générer un graphique",
         graph_help_embed_content: "Affichez un graphique sur **${x}** jours:",
         graph_help_embed_available_graphs: "Graphiques disponibles",
+        graph_help_embed_interaction_placeholder: "Choisir un graphique à afficher..",
 
         // Do not edit "type", "columnName", "format" and "normalizeFactor" proprieties!
         graph_list: {
@@ -261,19 +285,16 @@ module.exports = {
                 "ces 24 dernières heures",
                 "sur 24h",
                 "aujourd'hui",
-                "tous les jours à 00:00",
             ],
             7: [
                 "ces 7 derniers jours",
                 "sur 7j",
                 "cette semaine",
-                "tous les samedis à 00:00",
             ],
             28: [
                 "ces 28 derniers jours",
                 "sur 28j",
                 "ce mois-ci",
-                "tous les 1er du mois à 00:00",
             ],
         }
     },
@@ -310,5 +331,158 @@ module.exports = {
             "A": "Très Actif",
             "A+": "Forte Activité",
         }
+    },
+
+    counter: {
+
+        // Errors
+        counter_error_bot_permission: "**Permissions insuffisantes!** Le bot ne détiens pas les permissions nécessaires pour **gérer les compteurs**. Requiert `MANAGE_CHANNELS`.",
+        counter_error_user_permission: "**Whoops!** Cette commande est réservée aux staffs du serveur.. (requiert `MANAGE_GUILD`).",
+
+        // 'Create your first counter' embed
+        counter_help_empty_title: "Créer un compteur statistique",
+        counter_help_empty_description: "Ce serveur n'a pas encore configuré de **compteurs**. *Cliquez sur le bouton du dessous pour en créer un.*",
+        counter_help_empty_button: "Créer un compteur",
+        counter_help_empty_image: "https://i.imgur.com/iAYFGLq.png",
+        counter_create_cancel_message: "**Annulé!** La création du compteur à été annulée.",
+
+        // Main embed (counter list)
+        counter_list_embed_title: "Compteurs Statistiques",
+        counter_list_embed_description: "Pour créer, éditer ou supprimer un counter, utilisez les boutons du dessous.",
+        counter_list_embed_field_title: "[{counter} / {max}] Liste des compteurs:",
+        counter_list_buttons_delete: "Supprimer",
+        counter_list_buttons_edit: "Modifier",
+
+        // Max counter limit has been reached
+        counter_max_reached_embed_title: "Limite de compteurs atteinte..",
+        counter_max_reached_embed_description: "**Vous avez atteint la limite de compteurs..**\n> • Pour en créer un, supprimez un compteur existant.\n> • Faites devenir votre serveur **premium** pour bénéficier de plus de compteurs et autres avantages !\n> • Rejoignez notre **serveur** et participez à nos giveaways.\n\n<:l_:855936761436176404> **[Cliquez ici pour devenir premium](https://discordanalytics.fr/client/premium.php)**",
+        counter_max_reached_embed_image: "https://i.imgur.com/0WzeRWE.png",
+        counter_max_reached_embed_button_premium: "Devenir Premium",
+        counter_max_reached_embed_button_discord: "Serveur Discord",
+
+        // Counter deleted
+        counter_delete_channel_reason: "Suppression du compteur par {user}",
+        counter_delete_message: "**C'est fait!** Le/les compteurs sélectionnés ont été supprimés.",
+
+        // Counter edit embed
+        counter_edit_embed_title: "Modifier un compteur",
+        counter_edit_embed_title_delete: "Supprimer un compteur",
+        counter_edit_embed_description: "**Modifiez** un compteur en le séléctionnant dans le **menu-déroulant** du dessous.",
+        counter_edit_embed_description_delete: "**Supprimez** un ou plusieurs compteurs en les sélectionnant dans le **menu-déroulant** du dessous.",
+        counter_edit_embed_placeholder: "Séléctionnez un compteur",
+        counter_edit_embed_select_prefix: "Compteur #",
+        counter_edit_embed_select_topic: "Topic de #",
+        counter_edit_embed_select_cancel: "Annuler",
+        counter_edit_embed_select_cancel_descr: "Sélectionez pour annuler",
+        counter_edit_embed_cancel_message: "**Sélection annulée!** Vous pouvez à nouveau utiliser la commande.",
+
+        // Step 1 - Select counter type
+        counter_create_step1_title: "Type de compteur",
+        counter_create_step1_description: "Choisissez le type de compteur que vous souhaitez créer.",
+        counter_create_step1_image: "https://i.imgur.com/qYAOyg4.png",
+        counter_create_step1_interaction_placeholder: "Choisir un type de compteur..",
+        counter_create_step1_select_title_category: "Choisir une catégorie",
+        counter_create_step1_select_title_topic: "Choisir un salon",
+        counter_create_step1_select_description_category: "**Entrez** l'identifiant de la catégorie à modifier. *Ecrivez **stop** pour annuler.*",
+        counter_create_step1_select_description_topic: "**Mentionnez** le salon sur lequel modifier le topic. *Ecrivez **stop** pour annuler.*",
+        counter_create_step1_select_image_category: "https://i.imgur.com/UhWpcGT.png",
+        counter_create_step1_select_image_topic: "https://i.imgur.com/CVKaZAS.png",
+
+        // Step 1 - Errors
+        counter_create_step1_select_error_notexists_category: "**Erreur!** L'id entré n'appartient à aucune catégorie.. *Assurez-vous de l'avoir correctement copié.*",
+        counter_create_step1_select_error_notexists_topic: "**Erreur!** Le salon mentionné n'existe pas ou n'est pas accessible par le bot.. *Assurez-vous de l'avoir correctement mentionné.*",
+        counter_create_step1_select_error_notcategory_category: "**Erreur!** L'ID entré n'est pas celui d'une catégorie, mais celui d'un salon vocal/textuel. *Assurez-vous de l'avoir correctement copié.*",
+        counter_create_step1_select_error_nottext_topic: "**Erreur!** Le salon mentionné n'est pas textuel. *Assurez-vous de l'avoir correctement mentionné.*",
+        counter_command_already_running: "Chaque chose en son temps!** Un autre utilisateur configure déjà un compteur dans ce salon. Demandez-lui d'écrire `stop` ou de terminer son compteur.",
+
+        // Step 1 - Options/Values
+        counter_create_step1_options: {
+            "voice": ["Salon vocal", "<:vc:891320179533950986>"],
+            "category": ["Catégorie", "<:ctg:891320722302062603>"],
+            "topic": ["Topic de salon", "<:txt:891320180066635787>"]
+        },
+
+        // Step 2 - Counter content/name
+        counter_create_step2_title: "Contenu du compteur",
+        counter_create_step2_description: "Le contenu est le texte affiché dans le compteur. **Longueur max pour `{type}`: {max} caractères.** *Ecrivez **stop** pour annuler.*",
+        counter_create_step2_image: "https://i.imgur.com/LHHs5dn.png",
+        counter_create_step2_notag_error: "**Erreur!** La réponse envoyée ne contenait aucun tag statistique. **Renvoyez une réponse valable!** *Ecrivez **stop** pour annuler.*",
+        counter_create_step2_notag_image: "https://i.imgur.com/3673sfF.png",
+        counter_create_step2_toolong_error: "**Erreur!** Le compteur est trop long, veuillez réessayer en utilisant au maximum **{max}** lettres. *Ecrivez **stop** pour annuler.*",
+
+        // Step 3 - Counter creation finalisation
+        counter_create_voice_channel_reason: "Nouveau compteur statistique (demandé par {user})",
+        counter_create_text_channel_reason: "Ajout d'un compteur au salon (demandé par {user})",
+
+        // Step 4 - Counter creation success
+        counter_create_success_title: "Nouveau compteur créé avec succès",
+        counter_create_success_description: "**Compteur créé !** Le compteur `{name}` affichera désormais des statistiques.",
+        counter_create_success_image: "https://i.imgur.com/s3UEC3c.png",
+
+        // Step 4 (if counter has been edited) - Counter edit success
+        counter_edit_success_title: "Compteur modifié avec succès",
+        counter_edit_success_description: "**Compteur modifié !** Le compteur `{name}` à correctement été modifié.",
+        counter_edit_success_image: "https://i.imgur.com/6fnlEAp.png",
+
+    },
+
+    objectives: {
+
+        // Main embed
+        objectives_main_embed_title: "Objectifs et records",
+        objectives_main_embed_description: "Visualisez les **objectifs** et **records** du serveur.\n<:pl:856170070141304832> **Une fois atteints,** les objectifs se mettent à jour **automatiquement**.\n:clock10: *Fuseau Horaire: `{timezone}`*",
+
+        // Main embed, objectives field
+        objectives_field_objective_title: "Objectifs",
+        objectives_field_objective_prefix: "Objectif:",
+
+        // Objectives field components
+        objectives_field_objective_progression: "Progression:",
+        objectives_field_objective_last_reached: "**{objective(n-1)}** {unit} atteint le {timestamp[-1]}", // Unit = statistical unit (e.g. messages, members, etc.)
+        objectives_field_objective_never_reached: "L'objectif n'a encore jamais été atteint !",
+
+        // Objective list
+        objectives_field_objective_list: {
+            members: {
+                name: "membres",
+                emoji: "👥",
+            },
+            messages: {
+                name: "messages",
+                emoji: "💬",
+            },
+        },
+
+        // Main embed, objectives field
+        objectives_field_records_title: "Records",
+        objectives_field_records_prefix: "Record de {statUnit}", // statUnit = record statistical unit
+
+        // Records field components
+        objectives_field_objective_recval: "Record de `{recval}` {statUnit} {timerange}", // recval = record value (e.g. 100 000), timerange = e.g. in 24h, simultaneously, etc.
+        objectives_field_objective_timestamp: "Record atteint le {timestamp}", // Timestamp displayed as "16 October 2021" (depending on user locale)
+        objectives_field_objective_timestamp_beaten: "**Nouveau record !** Record battu aujourd'hui.",
+        objectives_field_objective_timestamp_never_beaten: "Aucun record n'a encore été établi.",
+
+        // Records list
+        objectives_field_records_list: {
+            members: {
+                name: "membres",
+                displayed_name: "nouveaux membres",
+                emoji: "👥",
+                timerange: "en 24h"
+            },
+            messages: {
+                name: "messages",
+                displayed_name: "messages",
+                emoji: "💬",
+                timerange: "en 24h"
+            },
+            voice: {
+                name: "membres en voc",
+                displayed_name: "membres en voc",
+                emoji: "🔊",
+                timerange: "simultanément"
+            },
+        },
     }
 }
