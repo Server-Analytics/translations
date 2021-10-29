@@ -10,10 +10,10 @@ module.exports = {
 
     general: {
         error_no_stats_short_title: "Vielen Dank für das Hinzufügen von Server Analytics!",
-        error_no_stats_short_content: "Avant de pouvoir vous afficher des statistiques, j'ai besoin de me **configurer** et d'**enregistrer** les données du serveur...\n> Temps restant:",
+        error_no_stats_short_content: "Bevor ich dir Statistiken zeigen kann, muss ich ** konfigurieren ** und ** speichern ** Serverdaten ... \n> Verbleibende Zeit:",
         error_no_stats_short_image: "https://i.imgur.com/qtkhzMX.png", // Images will be translated later.
-        error_no_stats_title: "Trop peu de données...",
-        error_no_stats_content: "Avant de pouvoir afficher et générer des projections, j'ai besoin de **récupérer** suffisamment de données...\n> Temps restant estimé:",
+        error_no_stats_title: "Nicht genug Daten...",
+        error_no_stats_content: "Bevor ich Projektionen anzeigen und generieren kann, muss ich ** genügend Daten abrufen ** ... \n> Geschätzte verbleibende Zeit:",
         error_no_stats_image: "https://i.imgur.com/qtkhzMX.png", // Images will be translated later.
         cooldown_long_title: "Vous êtes en cooldown...",
         cooldown_long_content: "Activez le serverPremium** pour permettre à tous les membres du serveur de faire cette commande en illimité !\n\n*L'utilisation d'intelligences artificielles consomme beaucoup de ressources, supportez notre projet en activant le premium !",
