@@ -4,7 +4,7 @@ module.exports = {
         public: true,
         language_code: "de",
         language_name: "Allemand",
-        language_flag: ":flag_de:",
+        language_flag: "🇩🇪",
         default: true
     },
 
