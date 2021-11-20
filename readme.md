@@ -1,19 +1,17 @@
 # Traduire Server Analytics
-------
-### Vous souhaitez traduire le bot dans votre propre langue ? Vous êtes au bon endroit !
-Nous avons besoin de contributeurs, tout comme vous pour permettre au bot d'être utilisé par des communautés du monde entier, alors avant de commencer, n'hésitez pas à suivre ce petit guide rapide !
+### 🧪 Vous souhaitez traduire le bot dans votre propre langue ? Vous êtes au bon endroit !
+**Nous avons besoin de contributeurs,** pour permettre au bot d'être utilisé par des communautés du monde entier, alors avant de commencer, n'hésitez pas à suivre ce petit guide rapide, qui va aborder tout ce que vous devez savoir sur les **traductions** au sein de Server Analytics.
 
-### Plan :
+### 📜 Plan :
 - Conventions et standards de traduction
 - Comment publier ses modifications ?
 - Utiliser le générateur de language
 
-## Conventions et standards de traduction
----
+## 🎨 Conventions et standards de traduction
 ### Conserver le format d'origine
 Un point très important, et essentiel au niveau de l'utilisation du bot, est la conservation du formatage du texte, mais également l'implémentation de variables.
 
-Ainsi; voici quelques exemples :
+**Ainsi; voici quelques exemples :**
 - `Texte **en gras**` => `**Bold** text`
 - `**Combinaison de __formatage__**` => `**__Formating__ combinaison**`
 - `**Messages envoyés :** {messages}` => `**Messages sent:** {messages}`
@@ -38,7 +36,7 @@ lang = {
 ```
 
 
-## Comment publier ses modifications ?
+## 📊 Comment publier ses modifications ?
 Si vous n'avez jamais utilisé github, ça peut paraitre assez complexe, et dans l'absolu.. ça l'est. Mais ce tuto assez court devrait vous donner les bases nécessaires pour publier votre première contribution au bot !
 
 > **Remarque:** Vous souhaitez créer un language qui ne figure pas ici ? Celui-ci va devoir être **généré** à l'aide de notre **générateur** de langue. Naviguez jusqu'à la section du dessous, dédiée à l'installation du générateur, ou demandez sur notre serveur Discord dans le salon **traduction** !
@@ -58,7 +56,7 @@ Après avoir cliqué, vous arriverez sur une page; sur celle-ci, vous devez simp
 
 Et enfin, une fois votre **PR** (pull request) créee, il ne vous reste plus qu'à attendre l'approbation d'un administrateur, et vos modifications intègreront le bot ! Un grand merci par avance à tous les contributeurs.
 
-## Comment utiliser le générateur de langue ?
+## 📟 Comment utiliser le générateur de langue ?
 ---
 ### Présentation
 Nous avons également placé à votre disposition, un générateur de langue qui peut-être retrouvé dans le dossier `fileGenerator`, celui-ci permet de mettre à jour les fichiers de langues qui ne comprennent pas tous les nouveaux textes ajoutés et retirés. 
