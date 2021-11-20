@@ -291,28 +291,28 @@ module.exports = {
         graph_help_embed_interaction_placeholder: "Choisir un graphique à afficher.."
     },
     top: {
-        top_error_invalid_timerange: "Vous devez spécifier une durée valide, pour le moment les entrées possibles sont: `24h` `7j` et `28j`.",
-        top_error_invalid_user_id: "L'`ID` entré n'est pas valide :(\n> **Comment trouver l'ID ?** https://i.imgur.com/IsSzZ2O.png",
-        top_error_user_id_not_found: "Impossible de trouver l'utilisateur recherché, réessayez avec un `ID` valide !",
+        top_error_invalid_timerange: "You must specify a valid duration, for the moment the possible entries are: `24h`` 7d` and `28d`.",
+        top_error_invalid_user_id: "The `ID` entered is not valid: (\ n> ** How do I find the ID? ** https://i.imgur.com/IsSzZ2O.png",
+        top_error_user_id_not_found: "Could not find the user you are looking for, try again with a valid `ID`!",
         top_general_message_unitName: "messages",
         top_general_your_rank: "Your rank:",
         top_category_global_title: "Global Leaderboards",
         top_category_messages_name: "Messages Sent",
         top_category_voice_name: "Time spent in voice",
-        top_category_ranks_name: "Positions et progressions",
-        top_category_ranks_prtg_top: "Top `${x}%`",
-        top_category_ranks_messages_until: "messages left until",
-        top_category_ranks_voice_until: "until",
-        top_category_ranks_messages_until_alt: "messages left until",
-        top_category_ranks_voice_until_alt: "until",
+        top_category_ranks_name: "Positions and progressions",
+        top_category_ranks_prtg_top: "Top `${x}%`", // Top xx.xx% du serveur
+        top_category_ranks_messages_until: "messages left until", // Messages left until position #x-1
+        top_category_ranks_voice_until: "until", // <Time left> until position #x-1
+        top_category_ranks_messages_until_alt: "messages left until", // Messages left until position #1
+        top_category_ranks_voice_until_alt: "until", // <Time left> until position #1
         top_category_ranks_user_first: "You are **1st** in this server !",
         top_embed_author: "Rankings for",
         top_embed_description_title: "Global leaderboards for all server members.",
         top_embed_description_instructions: "Display **28d**, **7d** et **24h** leaderboards: ` ${prfx}top [ 28d | 7d | 24h ]`\n> <:ps:856186498377187348> Ranks of a member: `${prfx}top [ID]`",
-        top_embed_description_timerange: "Classement du serveur",
-        top_embed_description_reset: "Reset",
-        top_embed_description_instructions_user_top: "Classements d'un utilisateur: `${prfx}top [ID]`",
-        top_user_top_not_available: "<:ji:856170053836734525> **C'est pas encore disponible!** Concurrences, performances et bien plus arriveront bientôt ! Pour être informé en avance de toutes les nouveautés, rejoins notre Serveur Discord » https://discord.gg/g62eVMr",
+        top_embed_description_timerange: "Server Ranking", // Server leaderboard <these last x days>
+        top_embed_description_reset: "Reset", // Reset <daily to xx: xx>
+        top_embed_description_instructions_user_top: "User ranking: `${prfx}top [ID]`",
+        top_user_top_not_available: "<:ji:856170053836734525> **It's not yet available! ** Competitions, performances and more are coming soon! To be informed in advance of all the news, join our Discord Server » https://discord.gg/g62eVMr",
         timeranges_names: {
             "1": [
                 "these last 24 hours",
@@ -324,14 +324,14 @@ module.exports = {
                 "these last 7 days",
                 "on 7d",
                 "this week",
-                "tous les samedis à 00:00 (UTC)"
+                "every saturday at 00:00 (UTC)",
             ],
             "28": [
                 "these last 28 days",
                 "on 28d",
                 "this month",
-                "tous les 1er du mois à 00:00 (UTC)"
-            ]
+                "every 1st of the month at 00:00 (UTC)",
+            ],
         }
     },
     me: {
