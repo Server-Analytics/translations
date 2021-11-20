@@ -97,7 +97,8 @@ module.exports = {
         forecast_help_description: "**Projetez-vous dans le futur** grâce à notre intelligence artificielle et à l'analyse de vos statistiques.",
         forecast_help_cmd_members_maths: "Projections sur l'évolution des membres de votre serveur",
         forecast_help_cmd_members_ai: "**Intelligence Artificielle**\n> *Analyse prédictive par A.I. de l'évolution des membres de votre serveur*\n> ⚠ Lent et très peu précis: non recommandé",
-        forecast_help_footer_name: "🧪 • Commande expérimentale"
+        forecast_help_footer_name: "🧪 • Commande expérimentale",
+        forecast_message_completed: "**» C'est fait !** Prédiction générée en **${time}** s.",
     },
 
     set: {
@@ -127,7 +128,7 @@ module.exports = {
 
         // Reset dropdown options
         set_reset_dropdown_options: {
-            members_stats: ["Statistiques des membres", "Statistiques de TOUS les membres du serveur.", ["", "TOUS les membres auront leurs stats à 0!"]],
+            members_stats: ["Statistiques des membres", "Statistiques de TOUS les membres du serveur.", ["/", "TOUS les membres auront leurs stats à 0!"]],
             global_stats: ["Statistiques globales", "Nombre total de messages, temps total en voc etc..", ["Vous perdrez votre place dans les classements!", "TOUT sera réinitialisé; premium, clés d'activations etc.."]],
             temporal_stats: ["Statistiques temporelles", "Graphiques, statistiques sur N jours."],
             voice_sessions: ["Sessions vocales", "Historique des sessions vocales"],
