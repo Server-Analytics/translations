@@ -5,7 +5,7 @@ module.exports = {
         language_code: "de",
         language_name: "Allemand",
         language_flag: "🇩🇪",
-        default: true
+        default: false
     },
 
     general: {
