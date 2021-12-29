@@ -69,7 +69,7 @@ module.exports = {
                 "s"
             ]
         },
-        command_maintenance_text_3: "🏳️** • Data processing »** Server Analytics is currently in the data processing **daily** process, to avoid a network overload and ensure the continuity of our services, come back in ` ${mtnc.duration} `"
+        command_maintenance_text_3: "🏳️** • Data processing »** Server Analytics is currently processing all the statistics that have been recorded **today**, to avoid a network overload and ensure the continuity of our services, come back in ` ${mtnc.duration} `"
     },
     help: {
         help_embed_title: "Server Analytics help page",
@@ -216,7 +216,7 @@ module.exports = {
         stats_board_messages_category3_subcategory2: "📋 • On average:",
         stats_board_messages_category3_subcategory2_displayedText: "> `{%a%}` messages/**month**\n> `{%b%}` messages/**day**\n> `{%d%}` messages/**hour**\n> `{%c%}` messages/**member**",
         stats_board_members_category1: "Member Count",
-        stats_board_members_category2: "Departures and arrivals",
+        stats_board_members_category2: "Leaves and joins",
         stats_board_members_category3: "Graphs",
         stats_board_members_category1_subcategory1: "👥 • Growth:",
         stats_board_members_category1_subcategory1_displayedText: "> Members",
@@ -393,13 +393,13 @@ module.exports = {
         counter_edit_embed_placeholder: "Select a counter",
         counter_edit_embed_select_prefix: "Compteur #",
         counter_edit_embed_select_topic: "Topic de #",
-        counter_edit_embed_select_cancel: "Undo",
-        counter_edit_embed_select_cancel_descr: "Select to undo",
+        counter_edit_embed_select_cancel: "Cancel",
+        counter_edit_embed_select_cancel_descr: "Select to cancel",
         counter_edit_embed_cancel_message: "**Sélection annulée!** Vous pouvez à nouveau utiliser la commande.",
         counter_create_step1_title: "Counter type",
         counter_create_step1_description: "Choisissez le type de compteur que vous souhaitez créer.",
         counter_create_step1_image: "https://i.imgur.com/qYAOyg4.png",
-        counter_create_step1_interaction_placeholder: "Choose counter type..",
+        counter_create_step1_interaction_placeholder: "Select counter type..",
         counter_create_step1_select_title_category: "Choose a category",
         counter_create_step1_select_title_topic: "Choose a channel",
         counter_create_step1_select_description_category: "**Entrez** l'identifiant de la catégorie à modifier. *Ecrivez **stop** pour annuler.*",
