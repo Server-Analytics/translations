@@ -413,31 +413,31 @@ module.exports = {
         counter_command_already_running: "Chaque chose en son temps!** Un autre utilisateur configure déjà un compteur dans ce salon. Demandez-lui d'écrire `stop` ou de terminer son compteur.",
         counter_create_step1_options: {
             voice: [
-                "Salon vocal",
+                "Channel vocal",
                 "<:vc:891320179533950986>"
             ],
             category: [
-                "Catégorie",
+                "Category",
                 "<:ctg:891320722302062603>"
             ],
             topic: [
-                "Topic de salon",
+                "Topic a channel",
                 "<:txt:891320180066635787>"
             ]
         },
-        counter_create_step2_title: "Contenu du compteur",
+        counter_create_step2_title: "Content a counter",
         counter_create_step2_description: "Le contenu est le texte affiché dans le compteur. **Longueur max pour `{type}`: {max} caractères.** *Ecrivez **stop** pour annuler.*",
         counter_create_step2_image: "https://i.imgur.com/LHHs5dn.png",
         counter_create_step2_notag_error: "**Erreur!** La réponse envoyée ne contenait aucun tag statistique. **Renvoyez une réponse valable!** *Ecrivez **stop** pour annuler.*",
         counter_create_step2_notag_image: "https://i.imgur.com/3673sfF.png",
-        counter_create_step2_toolong_error: "**Erreur!** Le compteur est trop long, veuillez réessayer en utilisant au maximum **{max}** lettres. *Ecrivez **stop** pour annuler.*",
-        counter_create_voice_channel_reason: "Nouveau compteur statistique (demandé par {user})",
-        counter_create_text_channel_reason: "Ajout d'un compteur au salon (demandé par {user})",
-        counter_create_success_title: "Nouveau compteur créé avec succès",
-        counter_create_success_description: "**Compteur créé !** Le compteur `{name}` affichera désormais des statistiques.",
+        counter_create_step2_toolong_error: "**Error!** Counter is a long, please réessayer en utilisant au maximum **{max}** lettres. *Ecrivez **stop** pour annuler.*",
+        counter_create_voice_channel_reason: "New counter statistic (by {user})",
+        counter_create_text_channel_reason: "Add a counter in channel (by a {user})",
+        counter_create_success_title: "New counter created a success!",
+        counter_create_success_description: "**Counter created !** Le compteur `{name}` affichera désormais des statistiques.",
         counter_create_success_image: "https://i.imgur.com/s3UEC3c.png",
-        counter_edit_success_title: "Compteur modifié avec succès",
-        counter_edit_success_description: "**Compteur modifié !** Le compteur `{name}` à correctement été modifié.",
+        counter_edit_success_title: "Counter updated a success!",
+        counter_edit_success_description: "**Counter updated !** Counter `{name}` à correctement été modifié.",
         counter_edit_success_image: "https://i.imgur.com/6fnlEAp.png"
     },
     objectives: {
@@ -450,7 +450,7 @@ module.exports = {
         objectives_field_objective_never_reached: "L'objectif n'a encore jamais été atteint !",
         objectives_field_objective_list: {
             members: {
-                name: "membres",
+                name: "members",
                 emoji: "👥"
             },
             messages: {
@@ -466,8 +466,8 @@ module.exports = {
         objectives_field_objective_timestamp_never_beaten: "Aucun record n'a encore été établi.",
         objectives_field_records_list: {
             members: {
-                name: "membres",
-                displayed_name: "nouveaux membres",
+                name: "members",
+                displayed_name: "new members",
                 emoji: "👥",
                 timerange: "en 24h"
             },
@@ -478,8 +478,8 @@ module.exports = {
                 timerange: "en 24h"
             },
             voice: {
-                name: "membres en voc",
-                displayed_name: "membres en voc",
+                name: "members in voc",
+                displayed_name: "members in voc",
                 emoji: "🔊",
                 timerange: "simultanément"
             }
