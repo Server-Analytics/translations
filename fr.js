@@ -390,7 +390,7 @@ module.exports = {
         counter_create_step1_select_image_topic: "https://i.imgur.com/CVKaZAS.png",
 
         // Step 1 - Errors
-        counter_create_step1_select_error_notexists_category: "**Erreur!** L'id entré n'appartient à aucune catégorie.. *Assurez-vous de l'avoir correctement copié.*",
+        counter_create_step1_select_error_notexists_category: "**Erreur!** L'ID entré n'appartient à aucune catégorie.. *Assurez-vous de l'avoir correctement copié.*",
         counter_create_step1_select_error_notexists_topic: "**Erreur!** Le salon mentionné n'existe pas ou n'est pas accessible par le bot.. *Assurez-vous de l'avoir correctement mentionné.*",
         counter_create_step1_select_error_notcategory_category: "**Erreur!** L'ID entré n'est pas celui d'une catégorie, mais celui d'un salon vocal/textuel. *Assurez-vous de l'avoir correctement copié.*",
         counter_create_step1_select_error_nottext_topic: "**Erreur!** Le salon mentionné n'est pas textuel. *Assurez-vous de l'avoir correctement mentionné.*",
