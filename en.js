@@ -413,7 +413,7 @@ module.exports = {
         counter_command_already_running: "One step at a time!** Another user is currently configuring a counter in this channel. Ask them to type `stop` or finish their counter.",
         counter_create_step1_options: {
             voice: [
-                "VC",
+                "Voice Chat",
                 "<:vc:891320179533950986>"
             ],
             category: [
