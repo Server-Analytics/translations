@@ -137,43 +137,43 @@ module.exports = {
             "Personal stats",
             "Server stats"
         ],
-        set_reset_select_stats_descr: "**Attention !** Cette action est __irréversible__, en conséquent, assurez-vous de bien savoir ce que vous faites !\n\nCependant, si vous êtes persuadés à **110%** de l'action que vous entreprenez, choissisez les **différentes** statistiques à **réinitialiser** dans le menu-déroulant.",
-        set_reset_select_stats_placeholder: "Statistiques à réinitialiser..",
-        set_reset_recap_desc: "**Récapitulatif:** Vous vous appretez à **supprimer** les données ci-dessous inscrites. **NOTEZ** que les entrées ne sont pas mises à jour, mais complètement **supprimées**; donc irrécupérables!",
-        set_reset_recap_confirm: "CONFIRMER",
-        set_reset_success_message: "**C'est fait..** Les statistiques entrées devraient être supprimées sous peu.",
+        set_reset_select_stats_descr: "**Warning!** This action is __irreversible__, in turn, make sure to know what you're doing!\n\nHowever, if you're **110%** sure you want to do this action, select the **different** statistics to **reset** in the dropdown menu.",
+        set_reset_select_stats_placeholder: "Statistics to reset..",
+        set_reset_recap_desc: "**Overview:** You're about to **delete** the data written below. **NOTE** that entries aren't updated, but completely **deleted**; so unrecoverable!",
+        set_reset_recap_confirm: "CONFIRM",
+        set_reset_success_message: "**Done..** Selected statistics should be deleted shortly.",
         set_reset_dropdown_options: {
             members_stats: [
-                "Statistiques des membres",
-                "Statistiques de TOUS les membres du serveur.",
+                "Member stats",
+                "ALL server members' statistics.",
                 [
                     "/",
-                    "TOUS les membres auront leurs stats à 0!"
+                    "ALL members will have their stats reset!"
                 ]
             ],
             global_stats: [
-                "Statistiques globales",
-                "Nombre total de messages, temps total en voc etc..",
+                "Global stats",
+                "Overall number of messages, overall time in VCs, etc..",
                 [
-                    "Vous perdrez votre place dans les classements!",
-                    "TOUT sera réinitialisé; premium, clés d'activations etc.."
+                    "You will lose your place in rankings!",
+                    "EVERYTHING will be reset; premium, activation keys, etc.."
                 ]
             ],
             temporal_stats: [
-                "Statistiques temporelles",
+                "Temporary statistics",
                 "Graphiques, statistiques sur N jours."
             ],
             voice_sessions: [
-                "Sessions vocales",
-                "Historique des sessions vocales"
+                "VC sessions",
+                "VC sessions history"
             ],
             temp_leaderboards: [
-                "Classements temporaires",
-                "Classements sur 24h, 7j et 28j."
+                "Temporary rankings",
+                "Rankings on 24h, 7d et 28d."
             ],
             objectives: [
-                "Objectifs",
-                "Objectifs et records du serveur."
+                "Objectives",
+                "Server objectives and records."
             ]
         }
     },
@@ -367,50 +367,50 @@ module.exports = {
         }
     },
     counter: {
-        counter_error_bot_permission: "**Permissions insuffisantes!** Le bot ne détiens pas les permissions nécessaires pour **gérer les compteurs**. Requiert `MANAGE_CHANNELS`.",
-        counter_error_user_permission: "**Whoops!** Cette commande est réservée aux staffs du serveur.. (requiert `MANAGE_GUILD`).",
+        counter_error_bot_permission: "**Not enough permissions!** The bot doesn't have the needed permissions to **gérer les compteurs**. Requiert `MANAGE_CHANNELS`.",
+        counter_error_user_permission: "**Whoops!** This command is only for server staff.. (requires `MANAGE_GUILD`).",
         counter_help_empty_title: "Create a stat counter",
-        counter_help_empty_description: "Ce serveur n'a pas encore configuré de **compteurs**. *Cliquez sur le bouton du dessous pour en créer un.*",
+        counter_help_empty_description: "This server didn't configure any **counters**. *Click on the button below to create one.*",
         counter_help_empty_button: "Create a counter",
         counter_help_empty_image: "https://i.imgur.com/iAYFGLq.png",
-        counter_create_cancel_message: "**Annulé!** La création du compteur à été annulée.",
+        counter_create_cancel_message: "**Canceled!** The counter creation has been canceled.",
         counter_list_embed_title: "Compteurs Statistiques",
-        counter_list_embed_description: "Pour créer, éditer ou supprimer un counter, utilisez les boutons du dessous.",
-        counter_list_embed_field_title: "[{counter} / {max}] Liste des compteurs:",
+        counter_list_embed_description: "To create, edit or delete a counter, use the buttons below.",
+        counter_list_embed_field_title: "[{counter} / {max}] Counter list:",
         counter_list_buttons_delete: "Delete",
         counter_list_buttons_edit: "Edit",
-        counter_max_reached_embed_title: "Limite de compteurs atteinte..",
-        counter_max_reached_embed_description: "**Vous avez atteint la limite de compteurs..**\n> • Pour en créer un, supprimez un compteur existant.\n> • Faites devenir votre serveur **premium** pour bénéficier de plus de compteurs et autres avantages !\n> • Rejoignez notre **serveur** et participez à nos giveaways.\n\n<:l_:855936761436176404> **[Cliquez ici pour devenir premium](https://discordanalytics.fr/client/premium.php)**",
+        counter_max_reached_embed_title: "Counter limit reached..",
+        counter_max_reached_embed_description: "**You reached the counter limit..**\n> • To create one, delete an existing counter.\n> • Get **premium** for your server to benefit from more counters and other advantages!\n> • Join our **server** and participate in our giveaways.\n\n<:l_:855936761436176404> **[Click here to get premium](https://discordanalytics.fr/client/premium.php)**",
         counter_max_reached_embed_image: "https://i.imgur.com/0WzeRWE.png",
         counter_max_reached_embed_button_premium: "Become Premium",
         counter_max_reached_embed_button_discord: "Discord Server",
-        counter_delete_channel_reason: "Suppression du compteur par {user}",
-        counter_delete_message: "**C'est fait!** Le/les compteurs sélectionnés ont été supprimés.",
+        counter_delete_channel_reason: "Counter deletion by {user}",
+        counter_delete_message: "**Done!** The selected counter(s) have been deleted.",
         counter_edit_embed_title: "Edit a counter",
         counter_edit_embed_title_delete: "Delete a counter",
-        counter_edit_embed_description: "**Modifiez** un compteur en le séléctionnant dans le **menu-déroulant** du dessous.",
-        counter_edit_embed_description_delete: "**Supprimez** un ou plusieurs compteurs en les sélectionnant dans le **menu-déroulant** du dessous.",
+        counter_edit_embed_description: "**Edit** a counter by selecting it in the **dropdown menu** down below.",
+        counter_edit_embed_description_delete: "**Delete** one or multiple counters by selecting them in the **dropdown menu** below.",
         counter_edit_embed_placeholder: "Select a counter",
-        counter_edit_embed_select_prefix: "Compteur #",
-        counter_edit_embed_select_topic: "Topic de #",
+        counter_edit_embed_select_prefix: "Counter #",
+        counter_edit_embed_select_topic: "# topic",
         counter_edit_embed_select_cancel: "Cancel",
         counter_edit_embed_select_cancel_descr: "Select to cancel",
-        counter_edit_embed_cancel_message: "**Sélection annulée!** Vous pouvez à nouveau utiliser la commande.",
+        counter_edit_embed_cancel_message: "**Canceled selection!** You can use the command again.",
         counter_create_step1_title: "Counter type",
-        counter_create_step1_description: "Choisissez le type de compteur que vous souhaitez créer.",
+        counter_create_step1_description: "Choose the counter type you want to create.",
         counter_create_step1_image: "https://i.imgur.com/qYAOyg4.png",
         counter_create_step1_interaction_placeholder: "Select counter type..",
         counter_create_step1_select_title_category: "Choose a category",
         counter_create_step1_select_title_topic: "Choose a channel",
-        counter_create_step1_select_description_category: "**Entrez** l'identifiant de la catégorie à modifier. *Ecrivez **stop** pour annuler.*",
-        counter_create_step1_select_description_topic: "**Mentionnez** le salon sur lequel modifier le topic. *Ecrivez **stop** pour annuler.*",
+        counter_create_step1_select_description_category: "**Enter** the id of the category to edit. *Type **stop** to cancel.*",
+        counter_create_step1_select_description_topic: "**Mention** the channel to edit the topic. *Type **stop** to cancel.*",
         counter_create_step1_select_image_category: "https://i.imgur.com/UhWpcGT.png",
         counter_create_step1_select_image_topic: "https://i.imgur.com/CVKaZAS.png",
         counter_create_step1_select_error_notexists_category: "**Erreur!** L'id entré n'appartient à aucune catégorie.. *Assurez-vous de l'avoir correctement copié.*",
         counter_create_step1_select_error_notexists_topic: "**Erreur!** Le salon mentionné n'existe pas ou n'est pas accessible par le bot.. *Assurez-vous de l'avoir correctement mentionné.*",
         counter_create_step1_select_error_notcategory_category: "**Erreur!** L'ID entré n'est pas celui d'une catégorie, mais celui d'un salon vocal/textuel. *Assurez-vous de l'avoir correctement copié.*",
         counter_create_step1_select_error_nottext_topic: "**Erreur!** Le salon mentionné n'est pas textuel. *Assurez-vous de l'avoir correctement mentionné.*",
-        counter_command_already_running: "Chaque chose en son temps!** Un autre utilisateur configure déjà un compteur dans ce salon. Demandez-lui d'écrire `stop` ou de terminer son compteur.",
+        counter_command_already_running: "One step at a time!** Another user is currently configuring a counter in this channel. Ask them to type `stop` or finish their counter.",
         counter_create_step1_options: {
             voice: [
                 "Salon vocal",
@@ -425,32 +425,32 @@ module.exports = {
                 "<:txt:891320180066635787>"
             ]
         },
-        counter_create_step2_title: "Contenu du compteur",
-        counter_create_step2_description: "Le contenu est le texte affiché dans le compteur. **Longueur max pour `{type}`: {max} caractères.** *Ecrivez **stop** pour annuler.*",
+        counter_create_step2_title: "Counter content",
+        counter_create_step2_description: "The content is the text shown in the counter **Max length for `{type}`: {max} characters.** *Type **stop** to cancel.*",
         counter_create_step2_image: "https://i.imgur.com/LHHs5dn.png",
-        counter_create_step2_notag_error: "**Erreur!** La réponse envoyée ne contenait aucun tag statistique. **Renvoyez une réponse valable!** *Ecrivez **stop** pour annuler.*",
+        counter_create_step2_notag_error: "**Error!** The sent answer does not contain any statistic tag. **Send a valid answer!** *Type **stop** to cancel.*",
         counter_create_step2_notag_image: "https://i.imgur.com/3673sfF.png",
-        counter_create_step2_toolong_error: "**Erreur!** Le compteur est trop long, veuillez réessayer en utilisant au maximum **{max}** lettres. *Ecrivez **stop** pour annuler.*",
-        counter_create_voice_channel_reason: "Nouveau compteur statistique (demandé par {user})",
-        counter_create_text_channel_reason: "Ajout d'un compteur au salon (demandé par {user})",
-        counter_create_success_title: "Nouveau compteur créé avec succès",
-        counter_create_success_description: "**Compteur créé !** Le compteur `{name}` affichera désormais des statistiques.",
+        counter_create_step2_toolong_error: "**Error!** The counter is too long, please retry while using maximum **{max}** letters. *Type **stop** to cancel.*",
+        counter_create_voice_channel_reason: "New statistic counter (requested by {user})",
+        counter_create_text_channel_reason: "New counter in channel (requested by {user})",
+        counter_create_success_title: "New counter created with success",
+        counter_create_success_description: "**Counter created !** The counter `{name}` will now show statistics.",
         counter_create_success_image: "https://i.imgur.com/s3UEC3c.png",
-        counter_edit_success_title: "Compteur modifié avec succès",
-        counter_edit_success_description: "**Compteur modifié !** Le compteur `{name}` à correctement été modifié.",
+        counter_edit_success_title: "Counter edited with success",
+        counter_edit_success_description: "**Compteur edited !** The counter `{name}` has been edited with success.",
         counter_edit_success_image: "https://i.imgur.com/6fnlEAp.png"
     },
     objectives: {
-        objectives_main_embed_title: "Objectifs et records",
-        objectives_main_embed_description: "Visualisez les **objectifs** et **records** du serveur.\n<:pl:856170070141304832> **Une fois atteints,** les objectifs se mettent à jour **automatiquement**.\n:clock10: *Fuseau Horaire: `{timezone}`*",
-        objectives_field_objective_title: "Objectifs",
-        objectives_field_objective_prefix: "Objectif:",
+        objectives_main_embed_title: "Objectives and records",
+        objectives_main_embed_description: "View server **objectives** and **records**.\n<:pl:856170070141304832> **Once reached,** objectives will update **automatically**.\n:clock10: *Timezone: `{timezone}`*",
+        objectives_field_objective_title: "Objectives",
+        objectives_field_objective_prefix: "Objective:",
         objectives_field_objective_progression: "Progression:",
-        objectives_field_objective_last_reached: "**{objective(n-1)}** {unit} atteint le {timestamp[-1]}",
+        objectives_field_objective_last_reached: "**{objective(n-1)}** {unit} reached the {timestamp[-1]}",
         objectives_field_objective_never_reached: "L'objectif n'a encore jamais été atteint !",
         objectives_field_objective_list: {
             members: {
-                name: "membres",
+                name: "members",
                 emoji: "👥"
             },
             messages: {
@@ -459,9 +459,9 @@ module.exports = {
             }
         },
         objectives_field_records_title: "Records",
-        objectives_field_records_prefix: "Record de {statUnit}",
-        objectives_field_objective_recval: "Record de `{recval}` {statUnit} {timerange}",
-        objectives_field_objective_timestamp: "Record atteint le {timestamp}",
+        objectives_field_records_prefix: "{statUnit} record",
+        objectives_field_objective_recval: "Record of `{recval}` {statUnit} {timerange}",
+        objectives_field_objective_timestamp: "Record reached on the {timestamp}",
         objectives_field_objective_timestamp_beaten: "**Nouveau record !** Record battu aujourd'hui.",
         objectives_field_objective_timestamp_never_beaten: "Aucun record n'a encore été établi.",
         objectives_field_records_list: {
