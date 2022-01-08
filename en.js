@@ -164,8 +164,8 @@ module.exports = {
                 "Graphiques, statistiques sur N jours."
             ],
             voice_sessions: [
-                "Vocal sessions",
-                "Vocal sessions history"
+                "VC sessions",
+                "VC sessions history"
             ],
             temp_leaderboards: [
                 "Temporary rankings",
@@ -460,7 +460,7 @@ module.exports = {
         },
         objectives_field_records_title: "Records",
         objectives_field_records_prefix: "{statUnit} record",
-        objectives_field_objective_recval: "`{recval}` {statUnit} {timerange} record",
+        objectives_field_objective_recval: "Record of `{recval}` {statUnit} {timerange}",
         objectives_field_objective_timestamp: "Record reached on the {timestamp}",
         objectives_field_objective_timestamp_beaten: "**Nouveau record !** Record battu aujourd'hui.",
         objectives_field_objective_timestamp_never_beaten: "Aucun record n'a encore été établi.",
