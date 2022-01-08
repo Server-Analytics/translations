@@ -447,7 +447,7 @@ module.exports = {
         objectives_field_objective_prefix: "Objective:",
         objectives_field_objective_progression: "Progression:",
         objectives_field_objective_last_reached: "**{objective(n-1)}** {unit} reached the {timestamp[-1]}",
-        objectives_field_objective_never_reached: "L'objectif n'a encore jamais été atteint !",
+        objectives_field_objective_never_reached: "The objective has never been reached yet!",
         objectives_field_objective_list: {
             members: {
                 name: "members",
@@ -462,26 +462,26 @@ module.exports = {
         objectives_field_records_prefix: "{statUnit} record",
         objectives_field_objective_recval: "Record of `{recval}` {statUnit} {timerange}",
         objectives_field_objective_timestamp: "Record reached on the {timestamp}",
-        objectives_field_objective_timestamp_beaten: "**Nouveau record !** Record battu aujourd'hui.",
-        objectives_field_objective_timestamp_never_beaten: "Aucun record n'a encore été établi.",
+        objectives_field_objective_timestamp_beaten: "**New record!** Record beaten today.",
+        objectives_field_objective_timestamp_never_beaten: "No record has been set yet.",
         objectives_field_records_list: {
             members: {
-                name: "membres",
-                displayed_name: "nouveaux membres",
+                name: "members",
+                displayed_name: "new members",
                 emoji: "👥",
-                timerange: "en 24h"
+                timerange: "in 24 hours" 
             },
             messages: {
                 name: "messages",
                 displayed_name: "messages",
                 emoji: "💬",
-                timerange: "en 24h"
+                timerange: "in 24 hours"
             },
             voice: {
-                name: "membres en voc",
-                displayed_name: "membres en voc",
+                name: "membres en vc",
+                displayed_name: "members in vc",
                 emoji: "🔊",
-                timerange: "simultanément"
+                timerange: "simultaneously"
             }
         }
     },
