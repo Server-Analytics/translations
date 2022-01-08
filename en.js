@@ -161,7 +161,7 @@ module.exports = {
             ],
             temporal_stats: [
                 "Temporary statistics",
-                "Graphiques, statistiques sur N jours."
+                "Graphs, statistics on N days."
             ],
             voice_sessions: [
                 "VC sessions",
@@ -406,22 +406,22 @@ module.exports = {
         counter_create_step1_select_description_topic: "**Mention** the channel to edit the topic. *Type **stop** to cancel.*",
         counter_create_step1_select_image_category: "https://i.imgur.com/UhWpcGT.png",
         counter_create_step1_select_image_topic: "https://i.imgur.com/CVKaZAS.png",
-        counter_create_step1_select_error_notexists_category: "**Erreur!** L'id entré n'appartient à aucune catégorie.. *Assurez-vous de l'avoir correctement copié.*",
-        counter_create_step1_select_error_notexists_topic: "**Erreur!** Le salon mentionné n'existe pas ou n'est pas accessible par le bot.. *Assurez-vous de l'avoir correctement mentionné.*",
-        counter_create_step1_select_error_notcategory_category: "**Erreur!** L'ID entré n'est pas celui d'une catégorie, mais celui d'un salon vocal/textuel. *Assurez-vous de l'avoir correctement copié.*",
-        counter_create_step1_select_error_nottext_topic: "**Erreur!** Le salon mentionné n'est pas textuel. *Assurez-vous de l'avoir correctement mentionné.*",
+        counter_create_step1_select_error_notexists_category: "**Error!** The ID entered does not belong to any category. *Make sure you have copied it correctly.*",
+        counter_create_step1_select_error_notexists_topic: "**Error!** The mentioned channel does not exist or is not accessible by the bot. *Make sure you have mentioned it correctly.*",
+        counter_create_step1_select_error_notcategory_category: "**Error!** The ID entered is not a category ID, but a voice/text channel ID. *Make sure you have copied it correctly.*",
+        counter_create_step1_select_error_nottext_topic: "**Error!** The mentioned channel is not textual. *Make sure you have mentioned it correctly.*",
         counter_command_already_running: "One step at a time!** Another user is currently configuring a counter in this channel. Ask them to type `stop` or finish their counter.",
         counter_create_step1_options: {
             voice: [
-                "Salon vocal",
+                "VC",
                 "<:vc:891320179533950986>"
             ],
             category: [
-                "Catégorie",
+                "Category",
                 "<:ctg:891320722302062603>"
             ],
             topic: [
-                "Topic de salon",
+                "Channel Topic",
                 "<:txt:891320180066635787>"
             ]
         },
