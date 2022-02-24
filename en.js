@@ -1,5 +1,5 @@
 /**
- * Ce fichier à été généré pour la dernière fois le 20/11/2021 à 17:31:47 par le script de génération de fichier langue.
+ * Ce fichier à été généré pour la dernière fois le 24/02/2022 à 19:56:45 par le script de génération de fichier langue.
  * Si celui-ci ne comporte pas les textes des dernières versions, pensez à le régénérer, ou demandez à qqn d'autre de le faire (sur le salon "traductions" du serveur Discord).
  *
  * @version 1.0.0 - Version du générateur
@@ -17,28 +17,60 @@ module.exports = {
     },
     general: {
         months_list: {
-            "1": "January",
-            "2": "February",
-            "3": "March",
-            "4": "April",
-            "5": "May",
-            "6": "June",
-            "7": "July",
-            "8": "August",
-            "9": "September",
-            "10": "October",
-            "11": "November",
-            "12": "December"
+            "1": [
+                "janvier"
+            ],
+            "2": [
+                "février"
+            ],
+            "3": [
+                "mars"
+            ],
+            "4": [
+                "avril"
+            ],
+            "5": [
+                "mai"
+            ],
+            "6": [
+                "juin"
+            ],
+            "7": [
+                "juillet"
+            ],
+            "8": [
+                "août"
+            ],
+            "9": [
+                "septembre"
+            ],
+            "10": [
+                "octobre"
+            ],
+            "11": [
+                "novembre"
+            ],
+            "12": [
+                "décembre"
+            ]
+        },
+        time_formats: {
+            "STANDARD SLASH + YEAR": "{DAY}/{MONTH}/{YEAR}",
+            "STANDARD SLASH + YEAR HH:SS": "{DAY}/{MONTH}/{YEAR} à {HOUR}h{MINUTE}",
+            "STANDARD FILE DATE": "{DAY}_{MONTH}_{YEAR}",
+            "DD MONTH around HH": "{DAY} {MONTH} vers {HOUR}h",
+            "DD MONTH at HH": "{DAY} {MONTH} à {HOUR}h",
+            "DD MONTH": "{DAY} {MONTH}"
         },
         time_names: {
             days: [
-                " day",
-                " days",
-                "d"
+                " jour",
+                " jours",
+                "j"
             ],
             hours: [
-                " hour",
-                " hours",
+                " heure",
+                " heures",
                 "h"
             ],
             minutes: [
@@ -47,430 +79,345 @@ module.exports = {
                 " min"
             ],
             seconds: [
-                " second",
-                " seconds",
+                " seconde",
+                " secondes",
                 "s"
-            ]
-        },
-        command_maintenance_text_3: "🏳️** • Data processing »** Server Analytics is currently processing all the statistics that have been recorded **today**, to avoid a network overload and ensure the continuity of our services, come back in ` ${mtnc.duration} `"
-    },
-    help: {
-        help_embed_title: "Server Analytics help page",
-        help_embed_field1_name: "Server statistics",
-        help_embed_field1_content: "`${prfx}stats` - Server detailed statistics\n> `${prfx}top` - Server members leaderboards\n> `${prfx}graph` - Generate charts\n> `${prfx}forecast` - Forecasts\n> `${prfx}trends` - Server activity trends\n> `${prfx}objectives` - Server objectives and records",
-        help_embed_field2_name: "Personal statistics",
-        help_embed_field2_content: "`${prfx}me` - Display your statistics on this server\n> `${prfx}u [@member]` - Display the statistics of a member",
-        help_embed_field3_name: "Other commands",
-        help_embed_field3_content: "`${prfx}counter` - Create and manage counter channels\n> `${prfx}invite` - Invite the bot on your server\n> `${prfx}set` - Modify Server Analytics configuration",
-        help_embed_field4_name: "Important links",
-        help_embed_field4_content: "[`Website`](https://discordanalytics.fr) • [`Our Server`](https://discord.gg/g62eVMr) • [`Invite the bot`](https://cutt.ly/regmeY2)",
-        help_embed_field4_premium_since: "ServerPremium for",
-        help_embed_field4_get_premium: "**» Not yet premium?** *Type s.premium*",
-        help_embed_author: "Asked by"
-    },
-    enable: {
-        enable_error_access: "Whoops!** Command access is reserved for Administrators and Managers of Server Analytics.",
-        enable_error_not_exist: "The specified activation key does not exist or has already been claimed...",
-        enable_error_expired: "The specified activation key has expired and can no longer be used...",
-        enable_error_already_claimed: "This server has already activated this command! Use your activation key on another server.",
-        enable_error_command_not_exist: "It looks like this command no longer exists or is now public...",
-        enable_list_error_no_key: "No activation key has been activated on this server...",
-        enable_list_embed_description: "List of commands activated by activation key on this server",
-        enable_list_embed_title: "Activated commands on this server",
-        enable_list_embed_activated_cmds: "Activated commands:",
-        enable_list_embed_activated_cmds_content: "This server has **${x}** activated commands:",
-        enable_list_embed_privileges: "Activated privileges:",
-        enable_list_embed_privileges_count: "This server has **${x}** activated privileges:",
-        enable_list_embed_privileges_empty: "*No activated privileges on this server*",
-        enable_premium_success: "**» All set!** You have activated the **ServerPremium** on this server until",
-        enable_premium_success_msg: "*All the advantages should be activated in less than **240s***",
-        enable_premium_success_alt: "**» All set!** You have extended your **ServerPremium** subscription until",
-        enable_privilege_update: "**» All set!** Server Privileges have been updated!"
-    },
-    forecast: {
-        loading_message_prefix: "Loading",
-        loading_message_ai: "Initialising the **IA** model and training.",
-        loading_messages_maths: "Calculating and generating forecasts...",
-        graph_name_ai_process: "Predictive analysis by Artificial Intelligence",
-        graph_name_maths_process: "Predictive analysis by using mathematical process",
-        forecast_help_title: "Statistic forecast of",
-        forecast_help_description: "**Project yourself into the future** using our Artificial Intelligence and statistical analysis.",
-        forecast_help_cmd_members_maths: "Member growth forecast on this server",
-        forecast_help_cmd_members_ai: "**Artificial Intelligence**\n> *Predictive analysis by IA of member growth on this server.*\n> ⚠ Slow and not precise: not recommended",
-        forecast_help_footer_name: "🧪 • Experimental Command",
-        forecast_message_completed: "**» Done !** Forecast generated in **${time}** s."
-    },
-    set: {
-        set_updated_config: "Server configuration updated!",
-        set_lang_list_title: "Change the bot language",
-        set_lang_list_description: "Change the bot language by typing `${prfx}set lang [language]`, for example `${prfx}set lang en` to set the server language to English.",
-        set_lang_error_wrong_countrycode: "The given language doesn't exist or isn't yet available ! Possible inputs:",
-        set_lang_update_embed_title: "Bot language updated !",
-        set_lang_update_embed_content: "Commands will now be displayed in",
-        set_compare_disabled: "**Alrignt!** It's now **impossible** for other servers to compare their statistics with yours. *Retype the command to re-enable the feature.*",
-        set_compare_enabled: "**Alright!** It's once again **possible** to compare your server statistics. *Retype the command to disable the feature.*",
-        set_help_embed_title: "Configuration of ${botName}",
-        set_help_embed_allowCompare: "Allow/deny other servers to compare your statistics",
-        set_help_embed_hoverColor: "Change the background colour when hovering over the server on our website",
-        set_help_embed_lang: "Change the language of Server Analytics. (Passer en français)",
-        set_help_embed_reset: "Reset your statistics or the server's statistics.",
-        set_reset_embeds_title: "Statistics reset",
-        set_reset_select_type_descr: "Before starting, you must chose what statistics category you want to delete:\n\n> • **Personal statistics:** will only affect your stats, other users will have no loss.\n> • **Server statistics:** will affect server stats and all of its members (including you!).",
-        set_reset_select_buttons: [
-            "Personal stats",
-            "Server stats"
-        ],
-        set_reset_select_stats_descr: "**Warning!** This action is __irreversible__, in turn, make sure to know what you're doing!\n\nHowever, if you're **110%** sure you want to do this action, select the **different** statistics to **reset** in the dropdown menu.",
-        set_reset_select_stats_placeholder: "Statistics to reset..",
-        set_reset_recap_desc: "**Overview:** You're about to **delete** the data written below. **NOTE** that entries aren't updated, but completely **deleted**; so unrecoverable!",
-        set_reset_recap_confirm: "CONFIRM",
-        set_reset_success_message: "**Done..** Selected statistics should be deleted shortly.",
-        set_reset_dropdown_options: {
-            members_stats: [
-                "Member stats",
-                "ALL server members' statistics.",
-                [
-                    "/",
-                    "ALL members will have their stats reset!"
-                ]
             ],
-            global_stats: [
-                "Global stats",
-                "Overall number of messages, overall time in VCs, etc..",
-                [
-                    "You will lose your place in rankings!",
-                    "EVERYTHING will be reset; premium, activation keys, etc.."
-                ]
+            weeks: [
+                " semaine",
+                " semaines",
+                " sem"
             ],
-            temporal_stats: [
-                "Temporary statistics",
-                "Graphs, statistics on N days."
+            months: [
+                " mois",
+                " mois",
+                "m"
             ],
-            voice_sessions: [
-                "VC sessions",
-                "VC sessions history"
-            ],
-            temp_leaderboards: [
-                "Temporary rankings",
-                "Rankings on 24h, 7d et 28d."
-            ],
-            objectives: [
-                "Objectives",
-                "Server objectives and records."
+            years: [
+                " an",
+                " ans",
+                "a"
             ]
         }
     },
-    stats: {
-        stats_error_compare_not_exist: "The ID entered isn't for a valid server or Server Analytics isn't on it...\n> **How to find the ID ?** https://i.imgur.com/IsSzZ2O.png",
-        stats_error_compare_disabled: "You're trying to compare your statistics with a server that doesn't allow this feature...\n> 💡 **»** *You can also refuse to be compared by typing `${prfx}set allowCompare`.*",
-        stats_error_compare_not_member: "For confidentiality reasons, you must be a member of the server you wish to compare to make a comparison.",
-        stats_error_restricted_premium: "This statistical table is only available to servers with Server Premium. For more info, type ` s.premium `",
-        stats_error_restricted_dev: "Access to this statistical table has been restricted. It may be under maintenance or being created... Come back later !",
-        stats_error_no_datas: "I'm running out of statistics! Just give me a few minutes to start collecting server statistics...",
-        stats_error_empty_board: "The format of the statistics table is incorrect: No statistics to display...",
-        stats_error_unknown_method: "The custom static method entered on the object doesn't exist, check the array structure.",
-        stats_embed_title: "Statistical table",
-        stats_embed_compared_with: "Statistics compared with",
-        stats_embed_compare_instr: "Compare with another server",
-        stats_embed_content_chart_timerange: "The last 6 days",
-        stats_embed_content_empty_logs: "You haven't joined any voices in the last 31 days.",
-        stats_embed_chart_default_name: "Graph of Sent Messages",
-        stats_embed_footer: "Generated in",
-        stats_help_embed_title: "Statistics panels of ${guildName}",
-        stats_help_embed_description: "**View your statistics** and server statistics using the standard and custom panels.",
-        stats_help_embed_field_your_boards: "Your statistics panels",
-        stats_help_embed_field_your_boards_empty: "**Whoops !** It's not yet possible to create your own statistical tables... Come back later!",
-        stats_help_embed_footer: "Experimental command",
-        stats_boards_slash_names: [
-            "messages",
-            "members",
-            "voice"
-        ],
-        stats_board_messages_category1: "Sent Messages",
-        stats_board_messages_category2: "Mentions and Activity",
-        stats_board_messages_category3: "Deleted and average",
-        stats_board_messages_category1_subcategory1: "✉ • Sent Messages:",
-        stats_board_messages_category1_displayedText: "\n> **You »**",
-        stats_board_messages_category1_subcategory2: "📊 • Graph:",
-        stats_board_messages_category2_subcategory1: "📌 • Pings:",
-        stats_board_messages_category2_subcategory2: "👥 • Active Members:",
-        stats_board_messages_category3_subcategory1: "🗑 • Deleted:",
-        stats_board_messages_category3_subcategory1_unitName: "Delted",
-        stats_board_messages_category3_subcategory2: "📋 • On average:",
-        stats_board_messages_category3_subcategory2_displayedText: "> `{%a%}` messages/**month**\n> `{%b%}` messages/**day**\n> `{%d%}` messages/**hour**\n> `{%c%}` messages/**member**",
-        stats_board_members_category1: "Member Count",
-        stats_board_members_category2: "Leaves and joins",
-        stats_board_members_category3: "Graphs",
-        stats_board_members_category1_subcategory1: "👥 • Growth:",
-        stats_board_members_category1_subcategory1_displayedText: "> Members",
-        stats_board_members_category1_subcategory1_unitName: "members",
-        stats_board_members_category1_subcategory2: "📋 • On average:",
-        stats_board_members_category1_subcategory2_displayedText: "*New members:*\n> `+ {%a%}` membres/**month**\n> `+ {%b%}` membres/**day**\n> `+ {%d%}` membres/**hour**",
-        stats_board_members_category2_subcategory1: "<:ji:856170053836734525> • Joined:",
-        stats_board_members_category2_subcategory1_unitName: "joins",
-        stats_board_members_category2_subcategory2: "<:li:856170054101106768> • Left:",
-        stats_board_members_category2_subcategory2_unitName: "left",
-        stats_board_members_category3_subcategory1: "📈 • Joins:",
-        stats_board_members_category3_subcategory2: "📉 • Leaves:",
-        stats_board_voice_category1: "Voice stats",
-        stats_board_voice_category2: "Your Voice Statistics",
-        stats_board_voice_category3: "VC Sessions",
-        stats_board_voice_category1_subcategory1: "🔊 • Time spent in VC:",
-        stats_board_voice_category1_subcategory1_displayText: "\n> **You »** ",
-        stats_board_voice_category1_subcategory2: "📊 • Graph:",
-        stats_board_voice_category2_subcategory1: "👥 • Time spent in VC:",
-        stats_board_voice_category2_subcategory2: "📊 • Graph:",
-        stats_board_voice_category3_subcategory1: "📚 • Your last VC sessions:"
-    },
-    invite: {
-        invite_message_title: "Invite ${botName}",
-        invite_message_add_bot: "Invite the bot",
-        invite_message_dashboard: "Dashboard",
-        invite_message_discord_server: "Support Server"
-    },
-    graph: {
-        graph_error_no_datas: "I haven't collected enough statistics to generate a graph... Come back later :(",
-        graph_error_low_timerange: "It is not yet possible to display charts for a period less than **6 days**",
-        graph_error_high_timerange: "It is not yet possible to display charts for a period longer than **9999 days**",
-        graph_error_premium_timerange: "Only servers with an active premium subscription can display stats for periods longer **31 days**!",
-        graph_help_embed_title: "Generate a graph",
-        graph_help_embed_content: "Display a **${x}-days** chart:",
-        graph_help_embed_available_graphs: "Available graphs",
-        graph_list: {
-            messages: {
-                type: "guild",
-                graphName: "Graph on sent messages",
-                graphDescription: "Graph showing sent messages on this server.",
-                columnName: "messages"
+    help: {
+        help_screen: {
+            title: "Page d'aide",
+            description: "Merci d'utiliser **{projectName}** v.**{version}** ! *Vous pouvez consulter le dernier patch note en cliquant [**ici**]({lastPatchNoteLink}).*",
+            fallback_message: "Cette catégorie est vide :(",
+            buttons: {
+                website: "Site web",
+                support_server: "Serveur Support",
+                invite_bot: "Inviter le bot"
             },
-            members: {
-                type: "guild",
-                graphName: "Graph on member growth",
-                graphDescription: "Graph showing the member growth of this server.",
-                columnName: "membres",
-                processMethod: "set"
-            },
-            mentions: {
-                type: "guild",
-                graphName: "Graph on pings",
-                graphDescription: "Graph showing the total amount of pings on this server.",
-                columnName: "mentions"
-            },
-            myMessages: {
-                type: "user",
-                graphName: "Graph on your messages sent",
-                graphDescription: "Graph showing the number of messages you sent in this server.",
-                columnName: "messages"
-            },
-            voiceTime: {
-                type: "guild",
-                graphName: "Graph on time spent in VC",
-                graphDescription: "Graph showing time spent in Voice Channels on this server.",
-                columnName: "voice_time",
-                format: "time",
-                normalizeFactor: 1000
+            categories: {
+                STATS: "Commandes statistiques",
+                SECONDARY_STATS: "Commandes secondaires",
+                OTHER: "Autres commandes"
             }
         },
-        graph_help_embed_interaction_placeholder: "Select a graph to display.."
+        commands: {
+            graph: {
+                short_description: "Générer un graphique"
+            },
+            top: {
+                short_description: "Afficher les classements du serveur"
+            },
+            me: {
+                short_description: "Afficher vos statistiques personnelles"
+            },
+            sync: {
+                short_description: "Synchronisation statistique"
+            },
+            rawstats: {
+                short_description: "Statut des modules et état du cache"
+            },
+            botstats: {
+                short_description: "Statistiques et infos sur le bot"
+            }
+        }
+    },
+    graph: {
+        errors: {
+            fetch_error: "**Whoops!** Impossible de récupérer les données nécessaires pour établir un graphique.. *Si le problème persiste, veuillez signaler le bogue sur le serveur support.*"
+        },
+        help_screen: {
+            embed_title: "Créer un graphique",
+            embed_description: "**Représentez** vos statistiques ou celles du serveur sous forme de graphiques. Commencez par choisir une **préconfiguration** :",
+            image_title: "Graphiques",
+            embed_field_server_graph: "Graphiques du serveur",
+            embed_field_user_graph: "Graphique de vos stats",
+            components_guild_graph_select_menu: "Choisir un graphique sur les stats du serveur..",
+            components_user_graph_select_menu: "..ou un graphique avec vos statistiques !"
+        },
+        graph_main_screen: {
+            advanced: {
+                confirm_button: "Générer",
+                advanced_button: "Options avancées",
+                advanced_embed_description: "**Adaptez** et **personnalisez** l'interprétation et l'affichage de vos graphiques.",
+                advanced_embed_options_field_title: "Options disponibles :",
+                advanced_options: {
+                    display_bar_chart: "Affichage en barres",
+                    increment_stats: "Somme cumulative",
+                    remove_inexistant_reports: "Retrait des rapports inexistants",
+                    display_ticks: "Affichage des points",
+                    group_values: "Groupement statistique"
+                },
+                timerange_select_menu: {
+                    placeholder: "Choisir un intervalle de temps..",
+                    option_title: "Affichage sur {timeRange}",
+                    premium_only_description: "Premium uniquement"
+                }
+            },
+            export: {
+                export_button: "Exporter",
+                export_done: "**Graphique exporté !** Vous pouvez ouvrir le fichier `.csv` avec votre logiciel de tableur préféré.",
+                export_software_import_tip: "Lors de l'import, nous vous conseillons de suivre la **configuration recommandée** pour éviter les problèmes d'interprétation :",
+                export_config: [
+                    [
+                        "Jeu de caractères",
+                        "UTF-8 / Unicode (UTF-8)"
+                    ],
+                    [
+                        "Séparateur de colonnes",
+                        "Virgule (,)"
+                    ],
+                    [
+                        "Séparateur de lignes",
+                        "Retour à la ligne (\\n)"
+                    ]
+                ]
+            }
+        },
+        graph_types: {
+            server_messages: {
+                title: "Messages Envoyés",
+                description: "Graphique résumant l'activité par messages du serveur.",
+                graph_name: "Résumé de l'activité par message"
+            },
+            server_voicetime: {
+                title: "Temps passé en vocal",
+                description: "Graphique résumant l'activité vocale du serveur.",
+                graph_name: "Résumé de l'activité vocale"
+            },
+            server_members: {
+                title: "Membres",
+                description: "Graphique résumant le nombre de membres du serveur.",
+                graph_name: "Résumé de l'évolution du nombre de membres"
+            },
+            server_deleted: {
+                title: "Messages Supprimés",
+                description: "Graphique résumant le montant de messages supprimés.",
+                graph_name: "Résumé du nombre de messages supprimés"
+            },
+            server_reactions: {
+                title: "Réactions",
+                description: "Graphique résumant le nombre de réactions aux messages.",
+                graph_name: "Résumé du nombre de réactions"
+            },
+            server_joined: {
+                title: "Nouveaux membres",
+                description: "Graphique résumant le nombre de nouveaux arrivants.",
+                graph_name: "Résumé du nombre de nouveaux arrivants"
+            },
+            server_left: {
+                title: "Départs",
+                description: "Graphique résumant le nombre de membres ayant quitté.",
+                graph_name: "Résumé du nombre de départs"
+            },
+            user_myMessages: {
+                title: "Messages Envoyés",
+                description: "Graphique résumant votre activité par messages.",
+                graph_name: "Résumé de l'activité par message"
+            },
+            user_myVoicetime: {
+                title: "Temps en vocal",
+                description: "Graphique résumant votre activité vocale.",
+                graph_name: "Résumé de l'activité vocale"
+            },
+            user_myReactedCount: {
+                title: "Réactions données",
+                description: "Graphique résumant le nombre de réactions données.",
+                graph_name: "Résumé du nombre de réactions données"
+            },
+            user_myDeletedMessages: {
+                title: "Messages Supprimés",
+                description: "Graphique résumant votre montant de messages supprimés.",
+                graph_name: "Résumé du nombre de messages supprimés"
+            }
+        }
     },
     top: {
-        top_error_invalid_timerange: "You must specify a valid duration, for the moment the possible entries are: `24h`` 7d` and `28d`.",
-        top_error_invalid_user_id: "The `ID` entered is not valid: (\ n> ** How do I find the ID? ** https://i.imgur.com/IsSzZ2O.png",
-        top_error_user_id_not_found: "Could not find the user you are looking for, try again with a valid `ID`!",
-        top_general_message_unitName: "messages",
-        top_general_your_rank: "Your rank:",
-        top_category_global_title: "Global Leaderboards",
-        top_category_messages_name: "Messages Sent",
-        top_category_voice_name: "Time spent in voice",
-        top_category_ranks_name: "Positions and progressions",
-        top_category_ranks_prtg_top: "Top `${x}%`", // Top xx.xx% du serveur
-        top_category_ranks_messages_until: "messages left until", // Messages left until position #x-1
-        top_category_ranks_voice_until: "until", // <Time left> until position #x-1
-        top_category_ranks_messages_until_alt: "messages left until", // Messages left until position #1
-        top_category_ranks_voice_until_alt: "until", // <Time left> until position #1
-        top_category_ranks_user_first: "You are **1st** in this server !",
-        top_embed_author: "Rankings for",
-        top_embed_description_title: "Global leaderboards for all server members.",
-        top_embed_description_instructions: "Display **28d**, **7d** et **24h** leaderboards: ` ${prfx}top [ 28d | 7d | 24h ]`\n> <:ps:856186498377187348> Ranks of a member: `${prfx}top [ID]`",
-        top_embed_description_timerange: "Server Ranking", // Server leaderboard <these last x days>
-        top_embed_description_reset: "Reset", // Reset <daily to xx: xx>
-        top_embed_description_instructions_user_top: "User ranking: `${prfx}top [ID]`",
-        top_user_top_not_available: "<:ji:856170053836734525> **It's not yet available! ** Competitions, performances and more are coming soon! To be informed in advance of all the news, join our Discord Server » https://discord.gg/g62eVMr",
-        timeranges_names: {
-            "1": [
-                "these last 24 hours",
-                "on 24h",
-                "today",
-                "every day at 00:00 (UTC)"
+        not_enough_data: "**Whoops!** Je dispose de trop peu de données pour établir des classements pour le moment.. *Si le problème persiste, renseignez-vous auprès de notre serveur support.*",
+        not_allowed_timerange: "**Whoops!** Vous ne pouvez pas choisir un intervalle temporel plus long que **{max}** jours.",
+        top_canvas_leaderboard_date: "Classements globaux au {date}",
+        top_canvas_leaderboard_temp_date: "Classements {type} du {date1} au {date2}",
+        top_canvas_empty_username: "Personne",
+        top_canvas_not_found_username: "Introuvable",
+        top_canvas_leaderboard_temp_types: {
+            "0": "complets",
+            "5": "partiels",
+            "10": "schématiques"
+        },
+        pos_abbreviations: {
+            "1": "er",
+            "2": "nd",
+            "3": "rd",
+            other: "e"
+        },
+        stat_units: {
+            messages: [
+                "Messages",
+                "messages"
             ],
-            "7": [
-                "these last 7 days",
-                "on 7d",
-                "this week",
-                "every saturday at 00:00 (UTC)",
-            ],
-            "28": [
-                "these last 28 days",
-                "on 28d",
-                "this month",
-                "every 1st of the month at 00:00 (UTC)",
-            ],
+            voice: [
+                "Heures en voc",
+                "heures en voc"
+            ]
+        },
+        ready_to_use_timeranges: {
+            image_title: "Plages temporelles",
+            embed_title: "Sélectionnez une plage temporelle",
+            embed_description: "Sélectionnez un intervalle de temps sur laquelle établir les classements.",
+            embed_data_FULL: "Données complètes",
+            embed_data_PARTIAL_5: "Données partielles",
+            embed_data_PARTIAL_10: "Données schématiques",
+            embed_data_partial_disclamer: "Pour limiter la saturation du bot, certains classements sont **partiels** ou **schématiques**, les stats y sont inexactes mais suffisantes pour déterminer les rangs.",
+            embed_data_learn_more: "En savoir plus",
+            components_days_acronym: "j"
         }
     },
     me: {
-        me_card_header_createdAt: "Signed up",
-        me_card_header_joinedAt: "Joined on",
-        me_card_unit_messages: "Messages Sent",
-        me_card_unit_in_vc: "In Voice Chat",
-        me_card_top_global_unit: "Rank",
-        me_card_daily_top_rank_global_unit: "Today",
-        me_stat_box_messages_sent: "Messages Sent",
-        me_stat_box_voice_time: "Time spent in VC",
-        me_stat_box_mentions: "Mentions",
-        me_stat_box_mentionned: "Mentionned",
-        me_stats_box_leaderboards: "Leaderboards",
-        me_stats_box_ranks: "Activity Ranks",
-        me_stats_box_message_graph: "Graph",
-        me_stats_box_ranksNames: {
-            X: "No data",
-            F: "Verry little activity",
-            "F+": "Verry little activity",
-            "D-": "Not very active",
-            D: "Not very active",
-            "D+": "Not very active",
-            "C-": "Passively Active",
-            C: "Passively Active",
-            "C+": "Passively Active",
-            "B-": "Rather Active",
-            B: "Rather Active",
-            "B+": "Active",
-            "A-": "Very active",
-            A: "Very active",
-            "A+": "Strong activity"
+        errors: {
+            cannot_fetch_user: "**Whoops!** Impossible de récupérer les informations de cet utilisateur.. réessayez plus tard !",
+            data_flag_fetch_error: "**Whoops!** Une erreur est survenue lors de la récupération des données pour le **DATA_FLAG** : `{flag}`."
+        },
+        card: {
+            header_joined_at: "Rejoint le",
+            header_created_at: "Créé le",
+            global_stats_messages: "Messages envoyés",
+            global_stats_voice: "Heures en vocal",
+            global_stats_leaderboard: "Dans le classement",
+            buttons_edit: "Modifier",
+            units: {
+                timeranges: [
+                    "28j",
+                    "7j",
+                    "24h"
+                ],
+                messages: [
+                    "message",
+                    "messages"
+                ],
+                voice: [
+                    "heure",
+                    "heures"
+                ],
+                reactionsGiven: [
+                    "réaction",
+                    "réactions"
+                ],
+                deletedMessages: [
+                    "message",
+                    "messages"
+                ]
+            },
+            elements: {
+                messages: {
+                    title: "Messages envoyés"
+                },
+                voice: {
+                    title: "Temps en vocal"
+                },
+                reactionsGiven: {
+                    title: "Réactions données"
+                },
+                involvement: {
+                    title: "Engagement",
+                    text: "Taux de présence sur le serveur/au cours du mois dernier."
+                },
+                deletedMessages: {
+                    title: "Messages supprimés"
+                },
+                ranks: {
+                    "messages-voice": {
+                        title: "Activity Ranks",
+                        names: {
+                            X: "Aucune donnée",
+                            F: "Très peu actif",
+                            "F+": "Très peu actif",
+                            "D-": "Peu actif",
+                            D: "Peu actif",
+                            "D+": "Peu actif",
+                            "C-": "Passivement Actif",
+                            C: "Passivement Actif",
+                            "C+": "Passivement Actif",
+                            "B-": "Plutôt Actif",
+                            B: "Plutôt Actif",
+                            "B+": "Actif",
+                            "A-": "Très Actif",
+                            A: "Très Actif",
+                            "A+": "Forte Activité"
+                        }
+                    }
+                }
+            }
+        },
+        edit: {
+            errors: {
+                SELECTED_LOCKED_CONTENT: "**Cette statistique est bloquée !** Pour l'utiliser, vous devez l'acheter ! *Pour cela, voici quelques étapes :*\n\n{emoji} **Se connecter au site :**\n> Rendez-vous sur note [site web]({link}), connectez-vous, puis en survolant votre avatar, cliquez sur *'Boutique'* et finalement, dans le menu latéral gauche, cliquez sur 'Boutique /me'.\n\n{emoji} **Acheter la statistique :**\n> Une fois dans la boutique /me, sélectionnez l'élément `{type}`, puis, à l'étape suivante, achetez la statistique `{content}` !"
+            },
+            agreement_message: "**Important : ** avant que vous ne puissiez modifier la disposition de votre carte, vous devez accepter à ce que nous enregistrions vos préférences sur *l'ensemble de vos serveurs*. Ces données ne seront **pas supprimées** si vous quittez ce serveur ou supprimez votre compte et seront **publiques**, d'où l'importance de ce message./Si vous **acceptez** la récolte et le stockage de ces données, appuyez sur le bouton **'Accepter'** ci-dessous.",
+            agreement_confirm_button: "Accepter",
+            agreement_reject_button: "Rejeter",
+            agreement_reject_message: "**Nous n'enregistrerons pas vos préférences.**\n> Si vous avez davantage de questions sur la manière dont nous disposons de vos **données**, vous pouvez rejoindre notre **Serveur Discord**. *Autrement, si vous changez d'avis, vous pouvez retaper la commande !*",
+            agreement_reject_easteregg_gif: "https://tenor.com/view/dujardin-jean-daccord-comme-ca-gif-10162502",
+            main_embed_description: "**Modifiez** la disposition des éléments statistiques sur votre carte. *Sélectionnez un élément dans le menu déroulant pour le modifier !*",
+            buttons_save: "Sauvegarder",
+            main_embed_fields_name: "Ligne {n} :",
+            main_embed_select_displayed: "Affiché :",
+            main_embed_select_placeholder: "Sélectionner un élément",
+            select_type_embed_description: "**Très bien !** Choisissez quel type d'élément afficher dans l'emplacement **#{n}**.",
+            select_type_embed_cancelled: "**Temps mort !** La sélection de l'élément a été annulée.",
+            select_content_description: "**Très bien !** Choisissez quel type de statistique vous souhaiteriez afficher dans la boîte `{name}`.",
+            select_content_menu_locked_description: "Sélectionnez pour acheter cette statistique.",
+            elements: {
+                graph: {
+                    title: "Graphique",
+                    description: "Affiche un graphique."
+                },
+                percentage: {
+                    title: "Pourcentage",
+                    description: "Affiche un pourcentage + barre de progression."
+                },
+                ranks: {
+                    title: "Rangs",
+                    description: "Evaluation notée de F à A+."
+                },
+                timeranges: {
+                    title: "Statistiques temporelles",
+                    description: "Affiche une données sous 3 plages temporelles."
+                }
+            }
         }
     },
-    counter: {
-        counter_error_bot_permission: "**Not enough permissions!** The bot doesn't have the needed permissions to **gérer les compteurs**. Requiert `MANAGE_CHANNELS`.",
-        counter_error_user_permission: "**Whoops!** This command is only for server staff.. (requires `MANAGE_GUILD`).",
-        counter_help_empty_title: "Create a stat counter",
-        counter_help_empty_description: "This server didn't configure any **counters**. *Click on the button below to create one.*",
-        counter_help_empty_button: "Create a counter",
-        counter_help_empty_image: "https://i.imgur.com/iAYFGLq.png",
-        counter_create_cancel_message: "**Canceled!** The counter creation has been canceled.",
-        counter_list_embed_title: "Compteurs Statistiques",
-        counter_list_embed_description: "To create, edit or delete a counter, use the buttons below.",
-        counter_list_embed_field_title: "[{counter} / {max}] Counter list:",
-        counter_list_buttons_delete: "Delete",
-        counter_list_buttons_edit: "Edit",
-        counter_max_reached_embed_title: "Counter limit reached..",
-        counter_max_reached_embed_description: "**You reached the counter limit..**\n> • To create one, delete an existing counter.\n> • Get **premium** for your server to benefit from more counters and other advantages!\n> • Join our **server** and participate in our giveaways.\n\n<:l_:855936761436176404> **[Click here to get premium](https://discordanalytics.fr/client/premium.php)**",
-        counter_max_reached_embed_image: "https://i.imgur.com/0WzeRWE.png",
-        counter_max_reached_embed_button_premium: "Become Premium",
-        counter_max_reached_embed_button_discord: "Discord Server",
-        counter_delete_channel_reason: "Counter deletion by {user}",
-        counter_delete_message: "**Done!** The selected counter(s) have been deleted.",
-        counter_edit_embed_title: "Edit a counter",
-        counter_edit_embed_title_delete: "Delete a counter",
-        counter_edit_embed_description: "**Edit** a counter by selecting it in the **dropdown menu** down below.",
-        counter_edit_embed_description_delete: "**Delete** one or multiple counters by selecting them in the **dropdown menu** below.",
-        counter_edit_embed_placeholder: "Select a counter",
-        counter_edit_embed_select_prefix: "Counter #",
-        counter_edit_embed_select_topic: "# topic",
-        counter_edit_embed_select_cancel: "Cancel",
-        counter_edit_embed_select_cancel_descr: "Select to cancel",
-        counter_edit_embed_cancel_message: "**Canceled selection!** You can use the command again.",
-        counter_create_step1_title: "Counter type",
-        counter_create_step1_description: "Choose the counter type you want to create.",
-        counter_create_step1_image: "https://i.imgur.com/qYAOyg4.png",
-        counter_create_step1_interaction_placeholder: "Select counter type..",
-        counter_create_step1_select_title_category: "Choose a category",
-        counter_create_step1_select_title_topic: "Choose a channel",
-        counter_create_step1_select_description_category: "**Enter** the id of the category to edit. *Type **stop** to cancel.*",
-        counter_create_step1_select_description_topic: "**Mention** the channel to edit the topic. *Type **stop** to cancel.*",
-        counter_create_step1_select_image_category: "https://i.imgur.com/UhWpcGT.png",
-        counter_create_step1_select_image_topic: "https://i.imgur.com/CVKaZAS.png",
-        counter_create_step1_select_error_notexists_category: "**Error!** The ID entered does not belong to any category. *Make sure you have copied it correctly.*",
-        counter_create_step1_select_error_notexists_topic: "**Error!** The mentioned channel does not exist or is not accessible by the bot. *Make sure you have mentioned it correctly.*",
-        counter_create_step1_select_error_notcategory_category: "**Error!** The ID entered is not a category ID, but a voice/text channel ID. *Make sure you have copied it correctly.*",
-        counter_create_step1_select_error_nottext_topic: "**Error!** The mentioned channel is not textual. *Make sure you have mentioned it correctly.*",
-        counter_command_already_running: "One step at a time!** Another user is currently configuring a counter in this channel. Ask them to type `stop` or finish their counter.",
-        counter_create_step1_options: {
-            voice: [
-                "Voice Chat",
-                "<:vc:891320179533950986>"
-            ],
-            category: [
-                "Category",
-                "<:ctg:891320722302062603>"
-            ],
-            topic: [
-                "Channel Topic",
-                "<:txt:891320180066635787>"
-            ]
-        },
-        counter_create_step2_title: "Counter content",
-        counter_create_step2_description: "The content is the text shown in the counter **Max length for `{type}`: {max} characters.** *Type **stop** to cancel.*",
-        counter_create_step2_image: "https://i.imgur.com/LHHs5dn.png",
-        counter_create_step2_notag_error: "**Error!** The sent answer does not contain any statistic tag. **Send a valid answer!** *Type **stop** to cancel.*",
-        counter_create_step2_notag_image: "https://i.imgur.com/3673sfF.png",
-        counter_create_step2_toolong_error: "**Error!** The counter is too long, please retry while using maximum **{max}** letters. *Type **stop** to cancel.*",
-        counter_create_voice_channel_reason: "New statistic counter (requested by {user})",
-        counter_create_text_channel_reason: "New counter in channel (requested by {user})",
-        counter_create_success_title: "New counter created with success",
-        counter_create_success_description: "**Counter created !** The counter `{name}` will now show statistics.",
-        counter_create_success_image: "https://i.imgur.com/s3UEC3c.png",
-        counter_edit_success_title: "Counter edited with success",
-        counter_edit_success_description: "**Compteur edited !** The counter `{name}` has been edited with success.",
-        counter_edit_success_image: "https://i.imgur.com/6fnlEAp.png"
-    },
-    objectives: {
-        objectives_main_embed_title: "Objectives and records",
-        objectives_main_embed_description: "View server **objectives** and **records**.\n<:pl:856170070141304832> **Once reached,** objectives will update **automatically**.\n:clock10: *Timezone: `{timezone}`*",
-        objectives_field_objective_title: "Objectives",
-        objectives_field_objective_prefix: "Objective:",
-        objectives_field_objective_progression: "Progression:",
-        objectives_field_objective_last_reached: "**{objective(n-1)}** {unit} reached the {timestamp[-1]}",
-        objectives_field_objective_never_reached: "The objective has never been reached yet!",
-        objectives_field_objective_list: {
-            members: {
-                name: "members",
-                emoji: "👥"
-            },
-            messages: {
-                name: "messages",
-                emoji: "💬"
-            }
-        },
-        objectives_field_records_title: "Records",
-        objectives_field_records_prefix: "{statUnit} record",
-        objectives_field_objective_recval: "Record of `{recval}` {statUnit} {timerange}",
-        objectives_field_objective_timestamp: "Record reached on the {timestamp}",
-        objectives_field_objective_timestamp_beaten: "**New record!** Record beaten today.",
-        objectives_field_objective_timestamp_never_beaten: "No record has been set yet.",
-        objectives_field_records_list: {
-            members: {
-                name: "members",
-                displayed_name: "new members",
-                emoji: "👥",
-                timerange: "in 24 hours"
-            },
-            messages: {
-                name: "messages",
-                displayed_name: "messages",
-                emoji: "💬",
-                timerange: "in 24 hours"
-            },
-            voice: {
-                name: "membres en vc",
-                displayed_name: "members in vc",
-                emoji: "🔊",
-                timerange: "simultaneously"
-            }
+    botstats: {
+        stat_type_select_placeholder: "Sélectionner une statistique",
+        graph_init_at: "Gestionnaire statistique initialisé il y a {x} heures",
+        stat_types: {
+            commandCount: "Commandes exécutées",
+            interactionCount: "Interactions reçues",
+            messageCount: "Messages enregistrés",
+            cachedGuildCount: "Serveurs en cache",
+            cachedGuildMemberCount: "Membres en cache",
+            cachedWebsiteUsersCount: "Utilisateurs en cache",
+            ramUsage: "Utilisation de la RAM",
+            databaseConnections: "Requêtes à la base de données"
         }
     },
     _FILE_UPDATES_INFO: {
-        last_update_timestamp: 1637425907525,
-        last_update_date: "20/11/2021",
+        last_update_timestamp: 1645729005037,
+        last_update_date: "24/02/2022",
         last_update_filegenerator_version: "1.0.0"
     }
 }
