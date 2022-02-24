@@ -18,40 +18,40 @@ module.exports = {
     general: {
         months_list: {
             "1": [
-                "janvier"
+                "january"
             ],
             "2": [
-                "février"
+                "february"
             ],
             "3": [
-                "mars"
+                "march"
             ],
             "4": [
-                "avril"
+                "april"
             ],
             "5": [
-                "mai"
+                "may"
             ],
             "6": [
-                "juin"
+                "june"
             ],
             "7": [
-                "juillet"
+                "july"
             ],
             "8": [
-                "août"
+                "august"
             ],
             "9": [
-                "septembre"
+                "september"
             ],
             "10": [
-                "octobre"
+                "october"
             ],
             "11": [
-                "novembre"
+                "november"
             ],
             "12": [
-                "décembre"
+                "december"
             ]
         },
         time_formats: {
@@ -64,13 +64,13 @@ module.exports = {
         },
         time_names: {
             days: [
-                " jour",
-                " jours",
-                "j"
+                " day",
+                " days",
+                "d"
             ],
             hours: [
-                " heure",
-                " heures",
+                " hour",
+                " hours",
                 "h"
             ],
             minutes: [
@@ -79,46 +79,46 @@ module.exports = {
                 " min"
             ],
             seconds: [
-                " seconde",
-                " secondes",
+                " second",
+                " seconds",
                 "s"
             ],
             weeks: [
-                " semaine",
-                " semaines",
-                " sem"
+                " week",
+                " weeks",
+                "w"
             ],
             months: [
-                " mois",
-                " mois",
+                " month",
+                " months",
                 "m"
             ],
             years: [
-                " an",
-                " ans",
-                "a"
+                " year",
+                " years",
+                "y"
             ]
         }
     },
     help: {
         help_screen: {
-            title: "Page d'aide",
-            description: "Merci d'utiliser **{projectName}** v.**{version}** ! *Vous pouvez consulter le dernier patch note en cliquant [**ici**]({lastPatchNoteLink}).*",
-            fallback_message: "Cette catégorie est vide :(",
+            title: "Help page",
+            description: "Thanks for using **{projectName}** v.Me**{version}** ! *You can consult the last patch note by clicking [**here**]({lastPatchNoteLink}).*",
+            fallback_message: "This category is empty :(",
             buttons: {
-                website: "Site web",
-                support_server: "Serveur Support",
-                invite_bot: "Inviter le bot"
+                website: "Website",
+                support_server: "Support Server",
+                invite_bot: "Invite the bot"
             },
             categories: {
-                STATS: "Commandes statistiques",
-                SECONDARY_STATS: "Commandes secondaires",
-                OTHER: "Autres commandes"
+                STATS: "Statistical commands",
+                SECONDARY_STATS: "Secondary commands",
+                OTHER: "Other commands"
             }
         },
         commands: {
             graph: {
-                short_description: "Générer un graphique"
+                short_description: "Generate a graph"
             },
             top: {
                 short_description: "Afficher les classements du serveur"
