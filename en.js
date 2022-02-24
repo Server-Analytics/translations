@@ -16,23 +16,6 @@ module.exports = {
         default: false
     },
     general: {
-        error_no_stats_short_title: "Thanks for adding Server Analytics !",
-        error_no_stats_short_content: "But in order to display statistics, I need to **configure** myself and start **saving** this server's data...\n> Time left:",
-        error_no_stats_short_image: "https://i.imgur.com/qtkhzMX.png",
-        error_no_stats_title: "Not enough data...",
-        error_no_stats_content: "Before displaying and generating projections, I need to **fetch** enough data...\n> Estimated time remaining:",
-        error_no_stats_image: "https://i.imgur.com/qtkhzMX.png",
-        cooldown_long_title: "You're in cooldown...",
-        cooldown_long_content: "**Enabling the ServerPremium** will allow all members to use this command without any limit !\n\n*The use of artificial intelligence consumes a lot of resources, support our project by enabling the premium !",
-        cooldown_long_timer_name: "Time Remaining",
-        cooldown_long_timer_content: "You can use the command again in",
-        cooldown_long_shop_name: "Shop",
-        cooldown_long_shop_content: "[` Our shop `](https://discordanalytics.fr/client/user?action=shop) *instructions below!*\n[` Join our Server `](${clientConnection.config.support.invite}) *giveaways and bonuses!*",
-        cooldown_long_image: "https://i.imgur.com/pJFcBi8.png",
-        cooldown_short_displayed_text: "Cooldown!** You must wait ${cooldownDelay} seconds between each command !",
-        command_maintenance_text: "🚧** • Maintenance »** Server Analytics is in maintenance for another ` ${mtnc.duration} `",
-        command_maintenance_lagprv_text: "🔥** • Overloaded Network »** Server Analytics is currently overused, try again in about  ` ${mtnc.duration} `",
-        command_maintenance_details: "Details:",
         months_list: {
             "1": "January",
             "2": "February",
@@ -69,7 +52,6 @@ module.exports = {
                 "s"
             ]
         },
-        command_maintenance_text_3: "🏳️** • Traitement des données »** Server Analytics est actuellement en processus **quotidien** de traitement des données, pour éviter une surcharge du réseau et veiller à la continuité de nos services, reviens dans ` ${mtnc.duration} `"
     },
     help: {
         help_embed_title: "Server Analytics help page",
