@@ -18,40 +18,40 @@ module.exports = {
     general: {
         months_list: {
             "1": [
-                "janvier"
+                "january"
             ],
             "2": [
-                "février"
+                "february"
             ],
             "3": [
-                "mars"
+                "march"
             ],
             "4": [
-                "avril"
+                "april"
             ],
             "5": [
-                "mai"
+                "may"
             ],
             "6": [
-                "juin"
+                "june"
             ],
             "7": [
-                "juillet"
+                "july"
             ],
             "8": [
-                "août"
+                "august"
             ],
             "9": [
-                "septembre"
+                "september"
             ],
             "10": [
-                "octobre"
+                "october"
             ],
             "11": [
-                "novembre"
+                "november"
             ],
             "12": [
-                "décembre"
+                "december"
             ]
         },
         time_formats: {
@@ -64,13 +64,13 @@ module.exports = {
         },
         time_names: {
             days: [
-                " jour",
-                " jours",
-                "j"
+                " day",
+                " days",
+                "d"
             ],
             hours: [
-                " heure",
-                " heures",
+                " hour",
+                " hours",
                 "h"
             ],
             minutes: [
@@ -79,67 +79,67 @@ module.exports = {
                 " min"
             ],
             seconds: [
-                " seconde",
-                " secondes",
+                " second",
+                " seconds",
                 "s"
             ],
             weeks: [
-                " semaine",
-                " semaines",
-                " sem"
+                " week",
+                " weeks",
+                " w"
             ],
             months: [
-                " mois",
-                " mois",
+                " month",
+                " month",
                 "m"
             ],
             years: [
-                " an",
-                " ans",
-                "a"
+                " year",
+                " years",
+                "y"
             ]
         }
     },
     help: {
         help_screen: {
-            title: "Page d'aide",
-            description: "Merci d'utiliser **{projectName}** v.**{version}** ! *Vous pouvez consulter le dernier patch note en cliquant [**ici**]({lastPatchNoteLink}).*",
-            fallback_message: "Cette catégorie est vide :(",
+            title: "Help page",
+            description: "Thanks for using **{projectName}** v.**{version}** ! *You can check the latest patch notes, just by clicking [**here**]({lastPatchNoteLink}).*",
+            fallback_message: "This category's empty :(",
             buttons: {
-                website: "Site web",
-                support_server: "Serveur Support",
-                invite_bot: "Inviter le bot"
+                website: "Website",
+                support_server: "Support server",
+                invite_bot: "Invite the bot"
             },
             categories: {
-                STATS: "Commandes statistiques",
-                SECONDARY_STATS: "Commandes secondaires",
-                OTHER: "Autres commandes"
+                STATS: "Statistics commands",
+                SECONDARY_STATS: "Secondary commands",
+                OTHER: "Other commands"
             }
         },
         commands: {
             graph: {
-                short_description: "Générer un graphique"
+                short_description: "Generate a graph"
             },
             top: {
-                short_description: "Afficher les classements du serveur"
+                short_description: "Show server rankings"
             },
             me: {
-                short_description: "Afficher vos statistiques personnelles"
+                short_description: "Show personal stats"
             },
             sync: {
-                short_description: "Synchronisation statistique"
+                short_description: "Stats synchronization"
             },
             rawstats: {
-                short_description: "Statut des modules et état du cache"
+                short_description: "Module and cache status"
             },
             botstats: {
-                short_description: "Statistiques et infos sur le bot"
+                short_description: "Bot stats and infos"
             }
         }
     },
     graph: {
         errors: {
-            fetch_error: "**Whoops!** Impossible de récupérer les données nécessaires pour établir un graphique.. *Si le problème persiste, veuillez signaler le bogue sur le serveur support.*"
+            fetch_error: "**Whoops!** The required data could not be retrieved to create a graph.. *If the problem happens again, please report the bug on the support server.*"
         },
         help_screen: {
             embed_title: "Créer un graphique",
@@ -170,21 +170,21 @@ module.exports = {
                 }
             },
             export: {
-                export_button: "Exporter",
-                export_done: "**Graphique exporté !** Vous pouvez ouvrir le fichier `.csv` avec votre logiciel de tableur préféré.",
-                export_software_import_tip: "Lors de l'import, nous vous conseillons de suivre la **configuration recommandée** pour éviter les problèmes d'interprétation :",
+                export_button: "Export",
+                export_done: "**Graph succesfully exported !** You can open the `.csv`  file with your favourite spreadsheet software.",
+                export_software_import_tip: "When importing, we advise you to follow the **recommended configuration** to avoid interpretation problems :",
                 export_config: [
                     [
-                        "Jeu de caractères",
+                        "Character sets",
                         "UTF-8 / Unicode (UTF-8)"
                     ],
                     [
-                        "Séparateur de colonnes",
-                        "Virgule (,)"
+                        "Column separator",
+                        "Comma (,)"
                     ],
                     [
-                        "Séparateur de lignes",
-                        "Retour à la ligne (\\n)"
+                        "Line separator",
+                        "Line break (\\n)"
                     ]
                 ]
             }
@@ -248,22 +248,22 @@ module.exports = {
         }
     },
     top: {
-        not_enough_data: "**Whoops!** Je dispose de trop peu de données pour établir des classements pour le moment.. *Si le problème persiste, renseignez-vous auprès de notre serveur support.*",
-        not_allowed_timerange: "**Whoops!** Vous ne pouvez pas choisir un intervalle temporel plus long que **{max}** jours.",
-        top_canvas_leaderboard_date: "Classements globaux au {date}",
-        top_canvas_leaderboard_temp_date: "Classements {type} du {date1} au {date2}",
-        top_canvas_empty_username: "Personne",
-        top_canvas_not_found_username: "Introuvable",
+        not_enough_data: "**Whoops!** I don't have enough data to make rankings for now.. *If the problem happens again, please report the bug on the support server.*",
+        not_allowed_timerange: "**Whoops!** You can't choose a timerange longer than **{max}** days.",
+        top_canvas_leaderboard_date: "Global rankings {date}",
+        top_canvas_leaderboard_temp_date: "Global {type} from {date1} to {date2}",
+        top_canvas_empty_username: "Nobody",
+        top_canvas_not_found_username: "User not found",
         top_canvas_leaderboard_temp_types: {
             "0": "complets",
             "5": "partiels",
             "10": "schématiques"
         },
         pos_abbreviations: {
-            "1": "er",
+            "1": "st",
             "2": "nd",
             "3": "rd",
-            other: "e"
+            other: "th"
         },
         stat_units: {
             messages: [
@@ -271,38 +271,38 @@ module.exports = {
                 "messages"
             ],
             voice: [
-                "Heures en voc",
-                "heures en voc"
+                "Hours in vocal chats",
+                "hours in vocal chats"
             ]
         },
         ready_to_use_timeranges: {
-            image_title: "Plages temporelles",
-            embed_title: "Sélectionnez une plage temporelle",
-            embed_description: "Sélectionnez un intervalle de temps sur laquelle établir les classements.",
-            embed_data_FULL: "Données complètes",
-            embed_data_PARTIAL_5: "Données partielles",
-            embed_data_PARTIAL_10: "Données schématiques",
+            image_title: "Timeranges",
+            embed_title: "Select a timerange",
+            embed_description: "Select a timerange for the ranking.",
+            embed_data_FULL: "All data",
+            embed_data_PARTIAL_5: "Partial data",
+            embed_data_PARTIAL_10: "Schematic data",
             embed_data_partial_disclamer: "Pour limiter la saturation du bot, certains classements sont **partiels** ou **schématiques**, les stats y sont inexactes mais suffisantes pour déterminer les rangs.",
-            embed_data_learn_more: "En savoir plus",
-            components_days_acronym: "j"
+            embed_data_learn_more: "Find out more",
+            components_days_acronym: "d"
         }
     },
     me: {
         errors: {
-            cannot_fetch_user: "**Whoops!** Impossible de récupérer les informations de cet utilisateur.. réessayez plus tard !",
-            data_flag_fetch_error: "**Whoops!** Une erreur est survenue lors de la récupération des données pour le **DATA_FLAG** : `{flag}`."
+            cannot_fetch_user: "**Whoops!** Couldn't gather this user's data.. try again later !",
+            data_flag_fetch_error: "**Whoops!** An error occured when gathering data for **DATA_FLAG** : `{flag}`."
         },
         card: {
-            header_joined_at: "Rejoint le",
-            header_created_at: "Créé le",
-            global_stats_messages: "Messages envoyés",
-            global_stats_voice: "Heures en vocal",
-            global_stats_leaderboard: "Dans le classement",
-            buttons_edit: "Modifier",
+            header_joined_at: "Joined on",
+            header_created_at: "Created on",
+            global_stats_messages: "Sent messages",
+            global_stats_voice: "Hours in vocal chats",
+            global_stats_leaderboard: "In rankings",
+            buttons_edit: "Edit",
             units: {
                 timeranges: [
-                    "28j",
-                    "7j",
+                    "28d",
+                    "7d",
                     "24h"
                 ],
                 messages: [
@@ -310,12 +310,12 @@ module.exports = {
                     "messages"
                 ],
                 voice: [
-                    "heure",
-                    "heures"
+                    "hour",
+                    "hours"
                 ],
                 reactionsGiven: [
-                    "réaction",
-                    "réactions"
+                    "reaction",
+                    "reactions"
                 ],
                 deletedMessages: [
                     "message",
@@ -324,40 +324,40 @@ module.exports = {
             },
             elements: {
                 messages: {
-                    title: "Messages envoyés"
+                    title: "Sent messages"
                 },
                 voice: {
-                    title: "Temps en vocal"
+                    title: "Time in vocal chats"
                 },
                 reactionsGiven: {
-                    title: "Réactions données"
+                    title: "Reactions"
                 },
                 involvement: {
                     title: "Engagement",
-                    text: "Taux de présence sur le serveur/au cours du mois dernier."
+                    text: "Presence rate on the server/during the last month."
                 },
                 deletedMessages: {
-                    title: "Messages supprimés"
+                    title: "Deleted messages"
                 },
                 ranks: {
                     "messages-voice": {
                         title: "Activity Ranks",
                         names: {
-                            X: "Aucune donnée",
-                            F: "Très peu actif",
-                            "F+": "Très peu actif",
-                            "D-": "Peu actif",
-                            D: "Peu actif",
-                            "D+": "Peu actif",
-                            "C-": "Passivement Actif",
-                            C: "Passivement Actif",
-                            "C+": "Passivement Actif",
-                            "B-": "Plutôt Actif",
-                            B: "Plutôt Actif",
-                            "B+": "Actif",
-                            "A-": "Très Actif",
-                            A: "Très Actif",
-                            "A+": "Forte Activité"
+                            X: "No data",
+                            F: "Very inactive",
+                            "F+": "Not very active",
+                            "D-": "Not very active",
+                            D: "Not very active",
+                            "D+": "Not very active",
+                            "C-": "Passively active",
+                            C: "Passively active",
+                            "C+": "Passively active",
+                            "B-": "Rather active",
+                            B: "Rather active",
+                            "B+": "Active",
+                            "A-": "Active",
+                            A: "Very active",
+                            "A+": "Extremely active"
                         }
                     }
                 }
