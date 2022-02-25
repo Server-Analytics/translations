@@ -2,8 +2,8 @@ const readline = require('readline');
 const fs = require('fs');
 
 const fileGeneratorConfig = {
-    baseLang: "fr",
-    version: "1.0.0"
+    baseLang: "fr-FR",
+    version: "1.0.1"
 }
 
 function askQuestion(query) {
@@ -21,9 +21,15 @@ function askQuestion(query) {
 async function runScript() {
     const ans = await askQuestion("Quel language souhaitez vous mettre à jour ou créer ? ");
 
+    // Check if answer is a valid language code (fr-FR, en-US, etc.)
+    if (!ans.match(/^[a-z]{2}-[A-Z]{2}$/)) {
+        console.log("Erreur : le code de langue n'est pas valide. Par exemple : en-EN pour anglais Britannique.");
+        return runScript();
+    }
+
     // Try fetching the language file
     let languageFile = {};
-    let baseLangFile = require(`../fr.js`);
+    let baseLangFile = require(`../fr-FR.js`);
 
     try {
         languageFile = require(`../${ans}.js`);
@@ -108,14 +114,20 @@ async function runScript() {
     fs.writeFile(`../${ans}.js`, `${commentHeader}module.exports = ${(languageFileJSON)}`, (err) => {
         if (err) throw err;
         console.log(`\x1b[32m Génération terminée!\x1b[0m Le fichier ${ans}.js à bien été mis à jour. Merci !`);
-    });
 
-    // Create diff file for missing fields
-    if (missingFields.length > 0) {
-        fs.writeFile(`../${ans}.diff`, `+ ${missingFields.join("\n+ ")}`, (err) => {
-            console.log(`\x1b[32m Fichier DIFF généré!\x1b[0m Le fichier ${ans}.diff à été créé et répertorie toutes les modifications générées.`);
+        // Create diff file for missing fields
+        if (missingFields.length > 0) {
+            fs.writeFile(`../${ans}.diff`, `+ ${missingFields.join("\n+ ")}`, (err) => {
+                console.log(`\x1b[32m Fichier DIFF généré!\x1b[0m Le fichier ${ans}.diff à été créé et répertorie toutes les modifications générées.`);
+            });
+        }
+
+        askQuestion("\n\n\x1b[32mGénération terminée.\x1b[0m Souhaitez-vous générer un autre fichier ? (y/n) ").then(ans => {
+            if (ans.toLowerCase() === "y") runScript();
+            else process.exit();
         });
-    }
+
+    });
 
 };
 

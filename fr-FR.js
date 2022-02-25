@@ -188,6 +188,7 @@ module.exports = {
     top: {
         not_enough_data: "**Whoops!** Je dispose de trop peu de données pour établir des classements pour le moment.. *Si le problème persiste, renseignez-vous auprès de notre serveur support.*",
         not_allowed_timerange: "**Whoops!** Vous ne pouvez pas choisir un intervalle temporel plus long que **{max}** jours.",
+        not_allowed_timestamp_low: "**Whoops!** Vous ne pouvez pas choisir un intervalle temporel d'une durée inférieure à **{max}** jour(s).",
         top_canvas_leaderboard_date: "Classements globaux au {date}",
         top_canvas_leaderboard_temp_date: "Classements {type} du {date1} au {date2}",
         top_canvas_empty_username: "Personne",

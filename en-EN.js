@@ -56,10 +56,10 @@ module.exports = {
         },
         time_formats: {
             "STANDARD SLASH + YEAR": "{DAY}/{MONTH}/{YEAR}",
-            "STANDARD SLASH + YEAR HH:SS": "{DAY}/{MONTH}/{YEAR} à {HOUR}h{MINUTE}",
+            "STANDARD SLASH + YEAR HH:SS": "{DAY}/{MONTH}/{YEAR} at {HOUR}h{MINUTE}",
             "STANDARD FILE DATE": "{DAY}_{MONTH}_{YEAR}",
-            "DD MONTH around HH": "{DAY} {MONTH} vers {HOUR}h",
-            "DD MONTH at HH": "{DAY} {MONTH} à {HOUR}h",
+            "DD MONTH around HH": "{DAY} {MONTH} around {HOUR}h",
+            "DD MONTH at HH": "{DAY} {MONTH} at {HOUR}h",
             "DD MONTH": "{DAY} {MONTH}"
         },
         time_names: {
@@ -104,7 +104,7 @@ module.exports = {
         help_screen: {
             title: "Help page",
             description: "Thanks for using **{projectName}** v.**{version}** ! *You can check the latest patch notes, just by clicking [**here**]({lastPatchNoteLink}).*",
-            fallback_message: "This category's empty :(",
+            fallback_message: "This category is empty :(",
             buttons: {
                 website: "Website",
                 support_server: "Support server",
@@ -171,7 +171,7 @@ module.exports = {
             },
             export: {
                 export_button: "Export",
-                export_done: "**Graph succesfully exported !** You can open the `.csv`  file with your favourite spreadsheet software.",
+                export_done: "**Graph succesfully exported !** You can open the `.csv` file with your favourite spreadsheet software.",
                 export_software_import_tip: "When importing, we advise you to follow the **recommended configuration** to avoid interpretation problems :",
                 export_config: [
                     [
@@ -250,8 +250,9 @@ module.exports = {
     top: {
         not_enough_data: "**Whoops!** I don't have enough data to make rankings for now.. *If the problem happens again, please report the bug on the support server.*",
         not_allowed_timerange: "**Whoops!** You can't choose a timerange longer than **{max}** days.",
-        top_canvas_leaderboard_date: "Global rankings {date}",
-        top_canvas_leaderboard_temp_date: "Global {type} from {date1} to {date2}",
+        not_allowed_timestamp_low: "**Whoops!** Vous ne pouvez pas choisir un intervalle temporel d'une durée inférieure à **{max}** jour(s).",
+        top_canvas_leaderboard_date: "Global rankings on {date}",
+        top_canvas_leaderboard_temp_date: "{type} rankings from {date1} to {date2}",
         top_canvas_empty_username: "Nobody",
         top_canvas_not_found_username: "User not found",
         top_canvas_leaderboard_temp_types: {
