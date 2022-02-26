@@ -366,7 +366,7 @@ module.exports = {
         },
         edit: {
             errors: {
-                SELECTED_LOCKED_CONTENT: "**This statistic is locked !** To use it, you must purchase it ! *In order to do that, here's what you must do :*\n\n{emoji} **Login on the website :**\n> Check out our [website({link}), login, then when hovering your avatar, click on *'Shop'* and finally, in the left sidebar, click on 'Shop /me'.\n\n{emoji} **Purchase the statistic :**\n> When in the shop /me, select the element `{type}`, then, during the next step, purchase the statistic `{content}` !"
+                SELECTED_LOCKED_CONTENT: "**This statistic is locked !** To use it, you must purchase it ! *In order to do that, here's what you must do :*\n\n{emoji} **Login on the website :**\n> Check out our [website]({link}), login, then when hovering your avatar, click on *'Shop'* and finally, in the left sidebar, click on 'Shop /me'.\n\n{emoji} **Purchase the statistic :**\n> When in the shop /me, select the element `{type}`, then, during the next step, purchase the statistic `{content}` !"
             },
             agreement_message: "**Important : ** before you edit your card's arrangement, you must accept we save your preferences on *all your servers*. This data will **not be deleted** if you leave this server or delete your account and will be **public**, hence why this message's important./If you **accept** the data collection and storage, press **'Accept'** below.",
             agreement_confirm_button: "Accept",
@@ -378,7 +378,7 @@ module.exports = {
             main_embed_fields_name: "Line {n} :",
             main_embed_select_displayed: "Displayed :",
             main_embed_select_placeholder: "Select an element",
-            select_type_embed_description: "**Alright!** Select what element type to display in this location **#{n}**.",
+            select_type_embed_description: "**Alright!**Select what kind of element you want to display in this location **#{n}**.",
             select_type_embed_cancelled: "**Time-out!** The element's selection has been cancelled.",
             select_content_description: "**Alright!** Select what type of statistic you wish to display in the `{name}` box.",
             select_content_menu_locked_description: "Select to purchase this statistic.",
