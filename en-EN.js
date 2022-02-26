@@ -403,17 +403,17 @@ module.exports = {
         }
     },
     botstats: {
-        stat_type_select_placeholder: "Sélectionner une statistique",
-        graph_init_at: "Gestionnaire statistique initialisé il y a {x} heures",
+        stat_type_select_placeholder: "Select a statistic",
+        graph_init_at: "Statistic manager started {x} hours ago",
         stat_types: {
-            commandCount: "Commandes exécutées",
-            interactionCount: "Interactions reçues",
-            messageCount: "Messages enregistrés",
-            cachedGuildCount: "Serveurs en cache",
-            cachedGuildMemberCount: "Membres en cache",
-            cachedWebsiteUsersCount: "Utilisateurs en cache",
-            ramUsage: "Utilisation de la RAM",
-            databaseConnections: "Requêtes à la base de données"
+            commandCount: "Ran commands",
+            interactionCount: "Received interactions",
+            messageCount: "Registered messages",
+            cachedGuildCount: "Cached servers",
+            cachedGuildMemberCount: "Cached members",
+            cachedWebsiteUsersCount: "Cached users",
+            ramUsage: "RAM Usage",
+            databaseConnections: "Database queries"
         }
     },
     _FILE_UPDATES_INFO: {
