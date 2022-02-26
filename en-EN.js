@@ -366,38 +366,38 @@ module.exports = {
         },
         edit: {
             errors: {
-                SELECTED_LOCKED_CONTENT: "**Cette statistique est bloquée !** Pour l'utiliser, vous devez l'acheter ! *Pour cela, voici quelques étapes :*\n\n{emoji} **Se connecter au site :**\n> Rendez-vous sur note [site web]({link}), connectez-vous, puis en survolant votre avatar, cliquez sur *'Boutique'* et finalement, dans le menu latéral gauche, cliquez sur 'Boutique /me'.\n\n{emoji} **Acheter la statistique :**\n> Une fois dans la boutique /me, sélectionnez l'élément `{type}`, puis, à l'étape suivante, achetez la statistique `{content}` !"
+                SELECTED_LOCKED_CONTENT: "**This statistic is locked !** To use it, you must purchase it ! *In order to do that, here's what you must do :*\n\n{emoji} **Login on the website :**\n> Check out our [website({link}), login, then when hovering your avatar, click on *'Shop'* and finally, in the left sidebar, click on 'Shop /me'.\n\n{emoji} **Purchase the statistic :**\n> When in the shop /me, select the element `{type}`, then, during the next step, purchase the statistic `{content}` !"
             },
-            agreement_message: "**Important : ** avant que vous ne puissiez modifier la disposition de votre carte, vous devez accepter à ce que nous enregistrions vos préférences sur *l'ensemble de vos serveurs*. Ces données ne seront **pas supprimées** si vous quittez ce serveur ou supprimez votre compte et seront **publiques**, d'où l'importance de ce message./Si vous **acceptez** la récolte et le stockage de ces données, appuyez sur le bouton **'Accepter'** ci-dessous.",
-            agreement_confirm_button: "Accepter",
-            agreement_reject_button: "Rejeter",
-            agreement_reject_message: "**Nous n'enregistrerons pas vos préférences.**\n> Si vous avez davantage de questions sur la manière dont nous disposons de vos **données**, vous pouvez rejoindre notre **Serveur Discord**. *Autrement, si vous changez d'avis, vous pouvez retaper la commande !*",
+            agreement_message: "**Important : ** before you edit your card's arrangement, you must accept we save your preferences on *all your servers*. This data will **not be deleted** if you leave this server or delete your account and will be **public**, hence why this message's important./If you **accept** the data collection and storage, press **'Accept'** below.",
+            agreement_confirm_button: "Accept",
+            agreement_reject_button: "Refuse",
+            agreement_reject_message: "**We won't save your preferences.**\n> if you have more questions about how we manage your **data**, you can join our **Discord server**. *Otherwise, if you change your mind, you can type the command again !*",
             agreement_reject_easteregg_gif: "https://tenor.com/view/dujardin-jean-daccord-comme-ca-gif-10162502",
-            main_embed_description: "**Modifiez** la disposition des éléments statistiques sur votre carte. *Sélectionnez un élément dans le menu déroulant pour le modifier !*",
-            buttons_save: "Sauvegarder",
-            main_embed_fields_name: "Ligne {n} :",
-            main_embed_select_displayed: "Affiché :",
-            main_embed_select_placeholder: "Sélectionner un élément",
-            select_type_embed_description: "**Très bien !** Choisissez quel type d'élément afficher dans l'emplacement **#{n}**.",
-            select_type_embed_cancelled: "**Temps mort !** La sélection de l'élément a été annulée.",
-            select_content_description: "**Très bien !** Choisissez quel type de statistique vous souhaiteriez afficher dans la boîte `{name}`.",
-            select_content_menu_locked_description: "Sélectionnez pour acheter cette statistique.",
+            main_embed_description: "**Edit** the arrangement of the statistic elements on your card. *Select an element in the dropdown menu to edit it!*",
+            buttons_save: "Save",
+            main_embed_fields_name: "Line {n} :",
+            main_embed_select_displayed: "Displayed :",
+            main_embed_select_placeholder: "Select an element",
+            select_type_embed_description: "**Alright!** Select what element type to display in this location **#{n}**.",
+            select_type_embed_cancelled: "**Time-out!** The element's selection has been cancelled.",
+            select_content_description: "**Alright!** Select what type of statistic you wish to display in the `{name}` box.",
+            select_content_menu_locked_description: "Select to purchase this statistic.",
             elements: {
                 graph: {
-                    title: "Graphique",
-                    description: "Affiche un graphique."
+                    title: "Graph",
+                    description: "Displays a graph."
                 },
                 percentage: {
-                    title: "Pourcentage",
-                    description: "Affiche un pourcentage + barre de progression."
+                    title: "Percentage",
+                    description: "Displays a percentage + progression bar."
                 },
                 ranks: {
-                    title: "Rangs",
-                    description: "Evaluation notée de F à A+."
+                    title: "Ranks",
+                    description: "Evaluation from F to A+."
                 },
                 timeranges: {
-                    title: "Statistiques temporelles",
-                    description: "Affiche une données sous 3 plages temporelles."
+                    title: "Time statistics",
+                    description: "Displays a value in 3 time ranges."
                 }
             }
         }
