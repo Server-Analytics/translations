@@ -98,6 +98,10 @@ module.exports = {
                 " years",
                 "y"
             ]
+        },
+        errors: {
+            bot_missing_permissions: "**Whoops!** Je n'ai pas les permissions suffisantes pour exécuter cette commande.\n> J'ai besoin de : {missingPermissions}",
+            cmd_missing_permissions: "**Whoops!** Vous ne disposez pas des permissions nécessaires pour exécuter cette commande.\n> Il vous manque : {missingPermissions}",
         }
     },
     help: {
