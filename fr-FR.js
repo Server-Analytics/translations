@@ -85,6 +85,12 @@ module.exports = {
             "botstats": {
                 short_description: "Statistiques et infos sur le bot",
             },
+            "lang": {
+                short_description: "Change preferred language",
+            },
+            "stats": {
+                short_description: "Afficher vos statistiques générales",
+            }
         }
     },
 
@@ -98,8 +104,8 @@ module.exports = {
             image_title: "Graphiques",
             embed_field_server_graph: "Graphiques du serveur",
             embed_field_user_graph: "Graphique de vos stats",
-            components_guild_graph_select_menu: "Choisir un graphique sur les stats du serveur..",
-            components_user_graph_select_menu: "..ou un graphique avec vos statistiques !"
+            components_guild_graph_select_menu: "📊 Graphique sur les stats du serveur",
+            components_user_graph_select_menu: "👤 Graphique avec vos statistiques"
         },
         graph_main_screen: {
             advanced: {
@@ -167,6 +173,11 @@ module.exports = {
                 description: "Graphique résumant le nombre de membres ayant quitté.",
                 graph_name: "Résumé du nombre de départs",
             },
+            server_boosts: {
+                title: "Boosts",
+                description: "Graphique résumant le nombre de boosts.",
+                graph_name: "Résumé du nombre de boosts",
+            },
             user_myMessages: {
                 title: "Messages Envoyés",
                 description: "Graphique résumant votre activité par messages.",
@@ -186,6 +197,103 @@ module.exports = {
                 title: "Messages Supprimés",
                 description: "Graphique résumant votre montant de messages supprimés.",
                 graph_name: "Résumé du nombre de messages supprimés",
+            }
+        }
+    },
+
+    stats: {
+        errors: {
+            fetch_error: "**Whoops!** Impossible de récupérer les données nécessaires pour afficher les statistiques.. *Si le problème persiste, veuillez signaler le bogue sur le serveur support.*",
+        },
+        help_screen: {
+            embed_title: "Afficher une statistique",
+            embed_description: "**Représentez** vos statistiques ou celles du serveur. Commencez par choisir une **préconfiguration** :",
+            image_title: "Statistiques",
+            embed_field_server_stats: "Statistiques du serveur",
+            embed_field_user_stats: "Vos statistiques",
+            components_guild_stat_select_menu: "📊 Statistiques du serveur",
+            components_user_stat_select_menu: "👤 Vos statistiques"
+        },
+        timerange_modal: {
+            title: "Choisir un intervalle de temps",
+            label: "Intervalle temporel (en jours) :",
+            error_title: "Whoops !",
+            error_not_number: "Vous n'avez pas entré un nombre valide.. *Exemple : `7`, `12`, `30`, etc.*",
+            error_too_short: "L'intervalle temporel entré est trop court, *il doit être d'au moins `une semaine` !*",
+            error_not_premium: "Pour accéder à vos statistiques au delà de `31` jours, vous devez être *premium*.",
+            button_retry: "Réessayer",
+        },
+        stat_view: {
+            general: {
+                text_x_days: "{days} jours",
+                last_x_days: "Ces derniers {days} jours",
+            },
+            graph: {
+                infoboxes: {
+                    per_day: "/j",
+                    today_title: "Ces dernières 24 heures",
+                    evolution_title: "Evolution",
+                    average_title: "En moyenne",
+                    max_title: "Valeur maximum",
+                    min_title: "Valeur minimum"
+                }
+            }
+        },
+        stats_types: {
+            server_messages: {
+                title: "Messages envoyés",
+                description: "Messages envoyés sur ce serveur.",
+                view_name: "Activité par messages",
+            },
+            server_voicetime: {
+                title: "Temps passé en vocal",
+                description: "Activité vocale du serveur.",
+                view_name: "Activité vocale",
+            },
+            server_members: {
+                title: "Membres",
+                description: "Nombre de membres sur ce serveur.",
+                view_name: "Évolution du nombre de membres",
+            },
+            server_deleted: {
+                title: "Messages supprimés",
+                description: "Messages supprimés sur ce serveur.",
+                view_name: "Messages supprimés",
+            },
+            server_reactions: {
+                title: "Réactions",
+                description: "Réactions aux messages du serveur.",
+                view_name: "Réactions aux messages",
+            },
+            server_joined: {
+                title: "Nouveaux membres",
+                description: "Nouveaux membres sur ce serveur.",
+                view_name: "Nouveaux arrivants",
+            },
+            server_left: {
+                title: "Départs",
+                description: "Membres ayant quittés ce serveur.",
+                view_name: "Nombre de départs",
+            },
+            server_boosts: {
+                title: "Boosts",
+                description: "Boosts du serveur.",
+                view_name: "Boosts du serveur",
+            },
+            user_myMessages: {
+                title: "Messages envoyés",
+                description: "Vos messages envoyés sur ce serveur.",
+                view_name: "Activté par messages",
+            },
+            user_myVoicetime: {
+                title: "Temps en vocal",
+                description: "Votre temps passé en vocal.",
+                view_name: "Activité vocale",
+            },
+            user_myDeletedMessages: {
+                title: "Messages supprimés",
+                description: "Vos messages supprimés.",
+                view_name: "Messages supprimés",
             }
         }
     },
@@ -238,6 +346,7 @@ module.exports = {
             header_created_at: "Créé le",
             global_stats_messages: "Messages envoyés",
             global_stats_voice: "Heures en vocal",
+            global_stats_voice_minutes: "Minutes en vocal",
             global_stats_leaderboard: "Dans le classement",
             buttons_edit: "Modifier",
             units: {
@@ -260,6 +369,14 @@ module.exports = {
                 involvement: {
                     title: "Engagement",
                     text: "Taux de présence sur le serveur/au cours du mois dernier."
+                },
+                firstPlaceMessages: {
+                    title: "Progression #1",
+                    text: "Progression pour devenir #1 du/serveur en terme de messages."
+                },
+                nextPlaceMessages: {
+                    title: "Progression classement",
+                    text: "Progression pour atteindre le/rang #{x} en messages.",
                 },
                 deletedMessages: {
                     title: "Messages supprimés",
@@ -293,9 +410,10 @@ module.exports = {
 
         edit: {
             errors: {
-                "SELECTED_LOCKED_CONTENT": "**Cette statistique est bloquée !** Pour l'utiliser, vous devez l'acheter ! *Pour cela, voici quelques étapes :*\n\n{emoji} **Se connecter au site :**\n> Rendez-vous sur note [site web]({link}), connectez-vous, puis en survolant votre avatar, cliquez sur *'Boutique'* et finalement, dans le menu latéral gauche, cliquez sur 'Boutique /me'.\n\n{emoji} **Acheter la statistique :**\n> Une fois dans la boutique /me, sélectionnez l'élément `{type}`, puis, à l'étape suivante, achetez la statistique `{content}` !"
+                "SELECTED_LOCKED_CONTENT": "**Cette statistique est bloquée !** Pour l'utiliser, vous devez l'acheter ! *Pour cela, voici quelques étapes :*\n\n{emoji} **Se connecter au site :**\n> Rendez-vous sur note **[site web]({link})**, puis cliquez sur `Se connecter`, et enfin, rendez-vous dans la **boutique**.\n\n{emoji} **Acheter la statistique :**\n> Une fois dans la boutique /me, sélectionnez l'élément **`{type}`**, puis, à l'étape suivante, achetez la statistique **`{content}`** !\n\u200b",
+                "SELECTED_LOCKED_CONTENT_IMAGE": "https://i.imgur.com/o4LyrQt.png"
             },
-            agreement_message: "**Important : ** avant que vous ne puissiez modifier la disposition de votre carte, vous devez accepter à ce que nous enregistrions vos préférences sur *l'ensemble de vos serveurs*. Ces données ne seront **pas supprimées** si vous quittez ce serveur ou supprimez votre compte et seront **publiques**, d'où l'importance de ce message./Si vous **acceptez** la récolte et le stockage de ces données, appuyez sur le bouton **'Accepter'** ci-dessous.",
+            agreement_message: "**Important : ** avant de pouvoir modifier votre carte, vous devez accepter à ce que nous **enregistrions** vos préférences. Ces données seront publiques et ne seront **pas** automatiquement **supprimées**.",
             agreement_confirm_button: "Accepter",
             agreement_reject_button: "Rejeter",
             agreement_reject_message: "**Nous n'enregistrerons pas vos préférences.**\n> Si vous avez davantage de questions sur la manière dont nous disposons de vos **données**, vous pouvez rejoindre notre **Serveur Discord**. *Autrement, si vous changez d'avis, vous pouvez retaper la commande !*",
@@ -327,7 +445,13 @@ module.exports = {
                     description: "Affiche une données sous 3 plages temporelles."
                 }
             }
+        },
+
+        dummy: {
+            box_displayed: "Affiché :",
+            card_sub_title: "Carte factice",
         }
+
     },
 
     botstats: {
@@ -342,6 +466,24 @@ module.exports = {
             "cachedWebsiteUsersCount": "Utilisateurs en cache",
             "ramUsage": "Utilisation de la RAM",
             "databaseConnections": "Requêtes à la base de données",
+        }
+    },
+
+    lang: {
+        select_screen: {
+            components_lang_select_placeholder: "Sélectionner une langue",
+            components_lang_select_no_options_title: "Aucune langue disponible",
+            components_lang_select_no_options_description: "Aidez-nous à traduire le bot !",
+            custom_display_title: "Langues",
+            embed_description: "**Bonjour, hello, holà..** Sélectionnez la langue d'affichage du bot.",
+            embed_field_available_languages: "Langues disponibles :",
+            embed_field_help_translate_title: "Aider à traduire :",
+            embed_field_help_translate_content: "Propulsez le projet en le traduisant dans votre langue ; plus d'informations sur notre [serveur Discord]({link}). Merci !",
+        },
+        updated_lang_screen: {
+            no_available_languages: "**Aucune traduction disponible !** Je n'ai pas encore été traduit.. Mais si tu souhaites remédier à ce problème, rejoins-nous ici : {link} !",
+            embed_description: "**Bonjour !** Vos préférences linguistiques ont été mises à jour.",
+            embed_description_details: "La langue choisie sera affichée sur tous vos serveurs, et pour vous seul."
         }
     }
 

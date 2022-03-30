@@ -1,16 +1,16 @@
 /**
- * Ce fichier à été généré pour la dernière fois le 24/02/2022 à 19:56:45 par le script de génération de fichier langue.
+ * Ce fichier à été généré pour la dernière fois le 30/03/2022 à 20:58:37 par le script de génération de fichier langue.
  * Si celui-ci ne comporte pas les textes des dernières versions, pensez à le régénérer, ou demandez à qqn d'autre de le faire (sur le salon "traductions" du serveur Discord).
  *
- * @version 1.0.0 - Version du générateur
- * @language en
- * @default fr
+ * @version 1.0.1 - Version du générateur
+ * @language en-EN
+ * @default fr-FR
  */
 
 module.exports = {
     infos: {
         public: true,
-        language_code: "en",
+        language_code: "en-EN",
         language_name: "English",
         language_flag: "🇬🇧",
         default: false
@@ -101,7 +101,7 @@ module.exports = {
         },
         errors: {
             bot_missing_permissions: "**Whoops!** Je n'ai pas les permissions suffisantes pour exécuter cette commande.\n> J'ai besoin de : {missingPermissions}",
-            cmd_missing_permissions: "**Whoops!** Vous ne disposez pas des permissions nécessaires pour exécuter cette commande.\n> Il vous manque : {missingPermissions}",
+            cmd_missing_permissions: "**Whoops!** Vous ne disposez pas des permissions nécessaires pour exécuter cette commande.\n> Il vous manque : {missingPermissions}"
         }
     },
     help: {
@@ -138,6 +138,12 @@ module.exports = {
             },
             botstats: {
                 short_description: "Bot stats and infos"
+            },
+            lang: {
+                short_description: "Change preferred language"
+            },
+            stats: {
+                short_description: "Afficher vos statistiques générales"
             }
         }
     },
@@ -248,6 +254,11 @@ module.exports = {
                 title: "Messages Supprimés",
                 description: "Graphique résumant votre montant de messages supprimés.",
                 graph_name: "Résumé du nombre de messages supprimés"
+            },
+            server_boosts: {
+                title: "Boosts",
+                description: "Graphique résumant le nombre de boosts.",
+                graph_name: "Résumé du nombre de boosts"
             }
         }
     },
@@ -365,12 +376,22 @@ module.exports = {
                             "A+": "Extremely active"
                         }
                     }
+                },
+                firstPlaceMessages: {
+                    title: "Progression #1",
+                    text: "Progression pour devenir #1 du/serveur en terme de messages."
+                },
+                nextPlaceMessages: {
+                    title: "Progression classement",
+                    text: "Progression pour atteindre le/rang #{x} en messages."
                 }
-            }
+            },
+            global_stats_voice_minutes: "Minutes en vocal"
         },
         edit: {
             errors: {
-                SELECTED_LOCKED_CONTENT: "**This statistic is locked !** To use it, you must purchase it ! *In order to do that, here's what you must do :*\n\n{emoji} **Login on the website :**\n> Check out our [website]({link}), login, then when hovering your avatar, click on *'Shop'* and finally, in the left sidebar, click on 'Shop /me'.\n\n{emoji} **Purchase the statistic :**\n> When in the shop /me, select the element `{type}`, then, during the next step, purchase the statistic `{content}` !"
+                SELECTED_LOCKED_CONTENT: "**This statistic is locked !** To use it, you must purchase it ! *In order to do that, here's what you must do :*\n\n{emoji} **Login on the website :**\n> Check out our [website]({link}), login, then when hovering your avatar, click on *'Shop'* and finally, in the left sidebar, click on 'Shop /me'.\n\n{emoji} **Purchase the statistic :**\n> When in the shop /me, select the element `{type}`, then, during the next step, purchase the statistic `{content}` !",
+                SELECTED_LOCKED_CONTENT_IMAGE: "https://i.imgur.com/o4LyrQt.png"
             },
             agreement_message: "**Important : ** before you edit your card's arrangement, you must accept we save your preferences on *all your servers*. This data will **not be deleted** if you leave this server or delete your account and will be **public**, hence why this message's important./If you **accept** the data collection and storage, press **'Accept'** below.",
             agreement_confirm_button: "Accept",
@@ -404,6 +425,10 @@ module.exports = {
                     description: "Displays a value in 3 time ranges."
                 }
             }
+        },
+        dummy: {
+            box_displayed: "Affiché :",
+            card_sub_title: "Carte factice"
         }
     },
     botstats: {
@@ -421,8 +446,121 @@ module.exports = {
         }
     },
     _FILE_UPDATES_INFO: {
-        last_update_timestamp: 1645729005037,
-        last_update_date: "24/02/2022",
-        last_update_filegenerator_version: "1.0.0"
+        last_update_timestamp: 1648666717455,
+        last_update_date: "30/03/2022",
+        last_update_filegenerator_version: "1.0.1"
+    },
+    stats: {
+        errors: {
+            fetch_error: "**Whoops!** Impossible de récupérer les données nécessaires pour afficher les statistiques.. *Si le problème persiste, veuillez signaler le bogue sur le serveur support.*"
+        },
+        help_screen: {
+            embed_title: "Afficher une statistique",
+            embed_description: "**Représentez** vos statistiques ou celles du serveur. Commencez par choisir une **préconfiguration** :",
+            image_title: "Statistiques",
+            embed_field_server_stats: "Statistiques du serveur",
+            embed_field_user_stats: "Vos statistiques",
+            components_guild_stat_select_menu: "📊 Statistiques du serveur",
+            components_user_stat_select_menu: "👤 Vos statistiques"
+        },
+        timerange_modal: {
+            title: "Choisir un intervalle de temps",
+            label: "Intervalle temporel (en jours) :",
+            error_title: "Whoops !",
+            error_not_number: "Vous n'avez pas entré un nombre valide.. *Exemple : `7`, `12`, `30`, etc.*",
+            error_too_short: "L'intervalle temporel entré est trop court, *il doit être d'au moins `une semaine` !*",
+            error_not_premium: "Pour accéder à vos statistiques au delà de `31` jours, vous devez être *premium*.",
+            button_retry: "Réessayer"
+        },
+        stat_view: {
+            general: {
+                text_x_days: "{days} jours",
+                last_x_days: "Ces derniers {days} jours"
+            },
+            graph: {
+                infoboxes: {
+                    per_day: "/j",
+                    today_title: "Ces dernières 24 heures",
+                    evolution_title: "Evolution",
+                    average_title: "En moyenne",
+                    max_title: "Valeur maximum",
+                    min_title: "Valeur minimum"
+                }
+            }
+        },
+        stats_types: {
+            server_messages: {
+                title: "Messages envoyés",
+                description: "Messages envoyés sur ce serveur.",
+                view_name: "Activité par messages"
+            },
+            server_voicetime: {
+                title: "Temps passé en vocal",
+                description: "Activité vocale du serveur.",
+                view_name: "Activité vocale"
+            },
+            server_members: {
+                title: "Membres",
+                description: "Nombre de membres sur ce serveur.",
+                view_name: "Évolution du nombre de membres"
+            },
+            server_deleted: {
+                title: "Messages supprimés",
+                description: "Messages supprimés sur ce serveur.",
+                view_name: "Messages supprimés"
+            },
+            server_reactions: {
+                title: "Réactions",
+                description: "Réactions aux messages du serveur.",
+                view_name: "Réactions aux messages"
+            },
+            server_joined: {
+                title: "Nouveaux membres",
+                description: "Nouveaux membres sur ce serveur.",
+                view_name: "Nouveaux arrivants"
+            },
+            server_left: {
+                title: "Départs",
+                description: "Membres ayant quittés ce serveur.",
+                view_name: "Nombre de départs"
+            },
+            server_boosts: {
+                title: "Boosts",
+                description: "Boosts du serveur.",
+                view_name: "Boosts du serveur"
+            },
+            user_myMessages: {
+                title: "Messages envoyés",
+                description: "Vos messages envoyés sur ce serveur.",
+                view_name: "Activté par messages"
+            },
+            user_myVoicetime: {
+                title: "Temps en vocal",
+                description: "Votre temps passé en vocal.",
+                view_name: "Activité vocale"
+            },
+            user_myDeletedMessages: {
+                title: "Messages supprimés",
+                description: "Vos messages supprimés.",
+                view_name: "Messages supprimés"
+            }
+        }
+    },
+    lang: {
+        select_screen: {
+            components_lang_select_placeholder: "Sélectionner une langue",
+            components_lang_select_no_options_title: "Aucune langue disponible",
+            components_lang_select_no_options_description: "Aidez-nous à traduire le bot !",
+            custom_display_title: "Langues",
+            embed_description: "**Bonjour, hello, holà..** Sélectionnez la langue d'affichage du bot.",
+            embed_field_available_languages: "Langues disponibles :",
+            embed_field_help_translate_title: "Aider à traduire :",
+            embed_field_help_translate_content: "Propulsez le projet en le traduisant dans votre langue ; plus d'informations sur notre [serveur Discord]({link}). Merci !"
+        },
+        updated_lang_screen: {
+            no_available_languages: "**Aucune traduction disponible !** Je n'ai pas encore été traduit.. Mais si tu souhaites remédier à ce problème, rejoins-nous ici : {link} !",
+            embed_description: "**Bonjour !** Vos préférences linguistiques ont été mises à jour.",
+            embed_description_details: "La langue choisie sera affichée sur tous vos serveurs, et pour vous seul."
+        }
     }
 }
