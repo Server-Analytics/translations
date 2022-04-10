@@ -18,40 +18,40 @@ module.exports = {
     general: {
         months_list: {
             "1": [
-                "janvier"
+                "Januar"
             ],
             "2": [
-                "février"
+                "Februar"
             ],
             "3": [
-                "mars"
+                "März"
             ],
             "4": [
-                "avril"
+                "April"
             ],
             "5": [
-                "mai"
+                "Mai"
             ],
             "6": [
-                "juin"
+                "Juni"
             ],
             "7": [
-                "juillet"
+                "Juli"
             ],
             "8": [
-                "août"
+                "August"
             ],
             "9": [
-                "septembre"
+                "September"
             ],
             "10": [
-                "octobre"
+                "Oktober"
             ],
             "11": [
-                "novembre"
+                "November"
             ],
             "12": [
-                "décembre"
+                "Dezember"
             ]
         },
         time_formats: {
