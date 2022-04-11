@@ -153,7 +153,7 @@ module.exports = {
         },
         help_screen: {
             embed_title: "Create a graph",
-            embed_description: "**Represent** your own or the server's statistics in graphical form. Start by choosing a **preconfiguration** :",
+            embed_description: "**Visualize** your own or the server's statistics in the form of graphics. Start by choosing a **preconfiguration** :",
             image_title: "Graphics",
             embed_field_server_graph: "Server graphics",
             embed_field_user_graph: "Graph of your stats",
