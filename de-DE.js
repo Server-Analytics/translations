@@ -64,38 +64,38 @@ module.exports = {
         },
         time_names: {
             days: [
-                " jour",
-                " jours",
+                " Tag",
+                " Tage",
                 "j"
             ],
             hours: [
-                " heure",
-                " heures",
+                " Stunde",
+                " Stunden",
                 "h"
             ],
             minutes: [
-                " minute",
-                " minutes",
+                " Minute",
+                " Minuten",
                 " min"
             ],
             seconds: [
-                " seconde",
-                " secondes",
+                " Sekunde",
+                " Sekunden",
                 "s"
             ],
             weeks: [
-                " semaine",
-                " semaines",
+                " Woche",
+                " Wochen",
                 " sem"
             ],
             months: [
-                " mois",
-                " mois",
+                " Monat",
+                " Monate",
                 "m"
             ],
             years: [
-                " an",
-                " ans",
+                " Jahr",
+                " Jahre",
                 "a"
             ]
         },
