@@ -156,8 +156,8 @@ module.exports = {
             embed_description: "**Visualize** your own or the server's statistics in the form of graphics. Start by choosing a **preconfiguration** :",
             image_title: "Graphics",
             embed_field_server_graph: "Server graphics",
-            embed_field_user_graph: "Graph of your stats",
-            components_guild_graph_select_menu: "Choose a graph on the server stats..",
+            embed_field_user_graph: "Graph with your stats",
+            components_guild_graph_select_menu: "Choose a graph with server stats..",
             components_user_graph_select_menu: "..or a graph with your statistics !"
         },
         graph_main_screen: {
