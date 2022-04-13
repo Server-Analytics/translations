@@ -100,8 +100,8 @@ module.exports = {
             ]
         },
         errors: {
-            bot_missing_permissions: "**Whoops!** Je n'ai pas les permissions suffisantes pour exécuter cette commande.\n> J'ai besoin de : {missingPermissions}",
-            cmd_missing_permissions: "**Whoops!** Vous ne disposez pas des permissions nécessaires pour exécuter cette commande.\n> Il vous manque : {missingPermissions}"
+            bot_missing_permissions: "**Whoops!** I don't have sufficient permissions to run this command.\n> I need : {missingPermissions}",
+            cmd_missing_permissions: "**Whoops!** You don't have the necessary permissions to run this command.\n> You're missing : {missingPermissions}"
         }
     },
     help: {
@@ -143,7 +143,7 @@ module.exports = {
                 short_description: "Change preferred language"
             },
             stats: {
-                short_description: "Afficher vos statistiques générales"
+                short_description: "Display your general statistics"
             }
         }
     },
@@ -152,13 +152,13 @@ module.exports = {
             fetch_error: "**Whoops!** The required data could not be retrieved to create a graph.. *If the problem happens again, please report the bug on the support server.*"
         },
         help_screen: {
-            embed_title: "Créer un graphique",
-            embed_description: "**Représentez** vos statistiques ou celles du serveur sous forme de graphiques. Commencez par choisir une **préconfiguration** :",
-            image_title: "Graphiques",
-            embed_field_server_graph: "Graphiques du serveur",
-            embed_field_user_graph: "Graphique de vos stats",
-            components_guild_graph_select_menu: "Choisir un graphique sur les stats du serveur..",
-            components_user_graph_select_menu: "..ou un graphique avec vos statistiques !"
+            embed_title: "Create a graph",
+            embed_description: "**Visualize** your own or the server's statistics in the form of graphics. Start by choosing a **preconfiguration** :",
+            image_title: "Graphics",
+            embed_field_server_graph: "Server graphics",
+            embed_field_user_graph: "Graph with your stats",
+            components_guild_graph_select_menu: "Choose a graph with server stats..",
+            components_user_graph_select_menu: "..or a graph with your statistics !"
         },
         graph_main_screen: {
             advanced: {
