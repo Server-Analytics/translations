@@ -9,7 +9,7 @@
 
 module.exports = {
     infos: {
-        public: true,
+        public: false,
         language_code: "de-DE",
         language_name: "Allemand",
         language_flag: "🇩🇪",
@@ -18,40 +18,40 @@ module.exports = {
     general: {
         months_list: {
             "1": [
-                "janvier"
+                "Januar"
             ],
             "2": [
-                "février"
+                "Februar"
             ],
             "3": [
-                "mars"
+                "März"
             ],
             "4": [
-                "avril"
+                "April"
             ],
             "5": [
-                "mai"
+                "Mai"
             ],
             "6": [
-                "juin"
+                "Juni"
             ],
             "7": [
-                "juillet"
+                "Juli"
             ],
             "8": [
-                "août"
+                "August"
             ],
             "9": [
-                "septembre"
+                "September"
             ],
             "10": [
-                "octobre"
+                "Oktober"
             ],
             "11": [
-                "novembre"
+                "November"
             ],
             "12": [
-                "décembre"
+                "Dezember"
             ]
         },
         time_formats: {
@@ -64,38 +64,38 @@ module.exports = {
         },
         time_names: {
             days: [
-                " jour",
-                " jours",
+                " Tag",
+                " Tage",
                 "j"
             ],
             hours: [
-                " heure",
-                " heures",
+                " Stunde",
+                " Stunden",
                 "h"
             ],
             minutes: [
-                " minute",
-                " minutes",
+                " Minute",
+                " Minuten",
                 " min"
             ],
             seconds: [
-                " seconde",
-                " secondes",
+                " Sekunde",
+                " Sekunden",
                 "s"
             ],
             weeks: [
-                " semaine",
-                " semaines",
+                " Woche",
+                " Wochen",
                 " sem"
             ],
             months: [
-                " mois",
-                " mois",
+                " Monat",
+                " Monate",
                 "m"
             ],
             years: [
-                " an",
-                " ans",
+                " Jahr",
+                " Jahre",
                 "a"
             ]
         },
@@ -592,6 +592,14 @@ module.exports = {
                             description: "Intensité de l'activité en fonction de la date"
                         }
                     }
+                },
+                firstPlaceMessages: {
+                    title: "Progression #1",
+                    text: "Progression pour devenir #1 du/serveur en terme de messages."
+                },
+                nextPlaceMessages: {
+                    title: "Progression classement",
+                    text: "Progression pour atteindre le/rang #{x} en messages."
                 }
             },
             global_stats_voice_minutes: "Minutes en vocal"
