@@ -146,7 +146,7 @@ module.exports = {
             embed_description: "**Display** your stats or the server's stats with graphs. Start by selecting a **configuration** :",
             image_title: "Graphs",
             embed_field_server_graph: "Server graphs",
-            embed_field_user_graph: "Your stats' graphs",
+            embed_field_user_graph: "Graphs with your stats",
             components_guild_graph_select_menu: "Select a server stats graph..",
             components_user_graph_select_menu: "..or a graph with your stats!"
         },
@@ -154,7 +154,7 @@ module.exports = {
             advanced: {
                 confirm_button: "Generate",
                 advanced_button: "Advanced settings",
-                advanced_embed_description: "**Adapt** and **customize** your graphs' interpretation and display layout.",
+                advanced_embed_description: "**Adapt** and **customize** the display layout and dataset representation.",
                 advanced_embed_options_field_title: "Available options:",
                 advanced_options: {
                     display_bar_chart: "Bar display",
@@ -192,57 +192,57 @@ module.exports = {
         graph_types: {
             server_messages: {
                 title: "Sent Messages",
-                description: "Graph by server activity in messages.",
-                graph_name: "Summary of activity by messages"
+                description: "Graph summarizing server activity in messages.",
+                graph_name: "Summary of message activity"
             },
             server_voicetime: {
                 title: "Time spent in voice",
-                description: "Graph by server voice activity.",
+                description: "Graph summarizing server voice activity.",
                 graph_name: "Summary of voice activity"
             },
             server_members: {
                 title: "Members",
-                description: "Graph by number of server members.",
+                description: "Graph summarizing number of server members.",
                 graph_name: "Summary of server members evolution"
             },
             server_deleted: {
                 title: "Deleted Messages",
-                description: "Graph by amount of deleted messages.",
+                description: "Graph summarizing amount of deleted messages.",
                 graph_name: "Summary of deleted messages"
             },
             server_reactions: {
                 title: "Reactions",
-                description: "Graph by reactions to messages.",
+                description: "Graph summarizing reactions to messages.",
                 graph_name: "Summary of reactions"
             },
             server_joined: {
                 title: "New members",
-                description: "Graph by newcomers.",
+                description: "Graph summarizing newcomers.",
                 graph_name: "Summary of newcomers"
             },
             server_left: {
                 title: "Members who left",
-                description: "Graph by members who left.",
+                description: "Graph summarizing members who left.",
                 graph_name: "Summary of members who left"
             },
             user_myMessages: {
                 title: "Sent Messages",
-                description: "Graph by your activity in messages.",
+                description: "Graph summarizing your activity in messages.",
                 graph_name: "Summary of activity by messages"
             },
             user_myVoicetime: {
                 title: "Time spent in voice",
-                description: "Graph by your voice activity.",
+                description: "Graph summarizing your voice activity.",
                 graph_name: "Summary of voice activity"
             },
             user_myReactedCount: {
                 title: "Reactions",
-                description: "Graph by reactions to messages.",
+                description: "Graph summarizing reactions to messages.",
                 graph_name: "Summary of given reactions"
             },
             user_myDeletedMessages: {
                 title: "Deleted Messages",
-                description: "Graph by your amount of deleted messages.",
+                description: "Graph summarizing your amount of deleted messages.",
                 graph_name: "Summary of deleted messages"
             }
         }
