@@ -102,53 +102,53 @@ module.exports = {
         errors: {
             bot_missing_permissions: "**Whoops!** I don't have sufficient permissions to run this command.\n> I need : {missingPermissions}",
             cmd_missing_permissions: "**Whoops!** You don't have the necessary permissions to run this command.\n> You're missing : {missingPermissions}",
-            bot_unusable: "**Bot en maintenance !** {selfName} n'est pas disponible pour le moment. *Veuillez réessayer plus tard.*"
+            bot_unusable: "**Bot in maintenance !** {selfName} is not available at this time. *Please try again later*",
         },
         week_days_list: {
             "0": [
-                "dimanche",
-                "dim"
+                "sunday",
+                "sun"
             ],
             "1": [
-                "lundi",
-                "lun"
+                "monday",
+                "mon"
             ],
             "2": [
-                "mardi",
-                "mar"
+                "tuesday",
+                "tues"
             ],
             "3": [
-                "mercredi",
-                "mer"
+                "wednesday",
+                "wed"
             ],
             "4": [
-                "jeudi",
-                "jeu"
+                "thursday",
+                "thu"
             ],
             "5": [
-                "vendredi",
-                "ven"
+                "friday",
+                "fri"
             ],
             "6": [
-                "samedi",
-                "sam"
+                "saturday",
+                "sat"
             ]
         },
         common: {
-            go_back: "Retour",
-            cancel: "Annuler",
-            confirm: "Confirmer",
-            retry: "Réessayer",
-            get_premium: "Devenir Premium"
+            go_back: "Back",
+            cancel: "Cancel",
+            confirm: "Confirm",
+            retry: "Try again",
+            get_premium: "Become Premium"
         },
         timerange_modal: {
-            title: "Choisir un intervalle de temps",
-            label: "Intervalle temporel (en jours) :",
+            title: "Choose a time interval",
+            label: "Time interval (in days) :",
             error_title: "Whoops !",
-            error_not_number: "Vous n'avez pas entré un nombre valide.. *Exemple : `7`, `12`, `30`, etc.*",
-            error_too_short: "L'intervalle temporel entré est trop court, *il doit être d'au moins `une semaine` !*",
-            error_not_premium: "Pour accéder à vos statistiques au delà de `31` jours, vous devez être **premium**. *Utilisez la commande `/subscribe` pour en savoir plus !*",
-            error_button_retry: "Réessayer"
+            error_not_number: "You haven't entered a valid number ! *Example : `7`, `12`, `30`, etc.*",
+            error_too_short: "The time interval is too short, *it must be at least `one week` !*",
+            error_not_premium: "To access your statistics beyond `31` days, you must be **premium**. *Use the `/subscribe` command to learn more !*",
+            error_button_retry: "Try again"
         }
     },
     help: {
@@ -166,7 +166,7 @@ module.exports = {
                 SECONDARY_STATS: "Secondary commands",
                 OTHER: "Other commands"
             },
-            premium_expires_in: "***Le premium** du serveur expire dans {days} jours.*"
+            premium_expires_in: "*The server **premium** expires in {days} days.*"
         },
         commands: {
             graph: {
@@ -194,10 +194,10 @@ module.exports = {
                 short_description: "Display your general statistics"
             },
             subscribe: {
-                short_description: "Abonnement premium"
+                short_description: "Premium subscription"
             },
             counters: {
-                short_description: "Gérer les compteurs du serveur"
+                short_description: "Manage server's counters"
             }
         }
     },
@@ -311,8 +311,8 @@ module.exports = {
             },
             server_boosts: {
                 title: "Boosts",
-                description: "Graphique résumant le nombre de boosts.",
-                graph_name: "Résumé du nombre de boosts"
+                description: "Graph summarizing the amount of boosts.",
+                graph_name: "Summary of the amount of boosts"
             }
         }
     },
@@ -355,7 +355,7 @@ module.exports = {
             embed_data_partial_disclamer: "To limit bot overload, some of the rankings are **incomplete** or **schematics**, their stats are inaccurate but sufficient enough to calculate rankings.",
             embed_data_learn_more: "Find out more",
             components_days_acronym: "d",
-            error_premium_restricted: "**Whoops!** Calculer autant de données nous demande beaucoup de ressources. C'est pourquoi les classements temporaires sont limités aux **{max} derniers jours** pour les serveurs non-premium.."
+            error_premium_restricted: "**Whoops!** Calculating so much data takes a lot of resources. This is why temporary rankings are limited to the **last {max} days** for non-premium servers.."
         }
     },
     me: {
@@ -432,151 +432,151 @@ module.exports = {
                         }
                     },
                     meta: {
-                        title: "Rangs",
-                        description: "Evaluation notée de F à A+."
+                        title: "Ranks",
+                        description: "Evaluation rated from F to A+."
                     },
                     elements: {
                         "messages-voice": {
                             title: "Activity Ranks",
                             rank_titles: [
-                                "Messages envoyés",
-                                "Activité vocale"
+                                "Messages sent",
+                                "Voice activity"
                             ],
                             names: {
-                                X: "Aucune donnée",
-                                F: "Très peu actif",
-                                "F+": "Très peu actif",
-                                "D-": "Peu actif",
-                                D: "Peu actif",
-                                "D+": "Peu actif",
-                                "C-": "Passivement Actif",
-                                C: "Passivement Actif",
-                                "C+": "Passivement Actif",
-                                "B-": "Plutôt Actif",
-                                B: "Plutôt Actif",
-                                "B+": "Actif",
-                                "A-": "Très Actif",
-                                A: "Très Actif",
-                                "A+": "Forte Activité"
+                                X: "No data",
+                                F: "Very inactive",
+                                "F+": "Not very active",
+                                "D-": "Not very active",
+                                D: "Not very active",
+                                "D+": "Not very active",
+                                "C-": "Passively active",
+                                C: "Passively active",
+                                "C+": "Passively active",
+                                "B-": "Rather active",
+                                B: "Rather active",
+                                "B+": "Active",
+                                "A-": "Active",
+                                A: "very active",
+                                "A+": "Extremely active"
                             }
                         }
                     }
                 },
                 firstPlaceMessages: {
                     title: "Progression #1",
-                    text: "Progression pour devenir #1 du/serveur en terme de messages."
+                    text: "Progression to become #1 of the/server in terms of messages."
                 },
                 nextPlaceMessages: {
-                    title: "Progression classement",
-                    text: "Progression pour atteindre le/rang #{x} en messages."
+                    title: "Ranking progression",
+                    text: "Progression towards server/ranks #{x} in terms of messages."
                 },
                 graph: {
                     meta: {
-                        title: "Graphique",
-                        description: "Affiche un graphique."
+                        title: "Graphic",
+                        description: "Displays a graph."
                     },
                     elements: {
                         messages: {
-                            title: "Messages envoyés",
-                            description: "Graphique sur vos messages envoyés"
+                            title: "Sent messages",
+                            description: "Graphic on your sent messages"
                         },
                         voice: {
-                            title: "Temps en vocal",
-                            description: "Graphique sur votre activité vocale"
+                            title: "Vocal time",
+                            description: "Graphic on your voice activity"
                         },
                         reactionsGiven: {
-                            title: "Réactions données",
-                            description: "Graphique sur vos réactions données"
+                            title: "Added reactions",
+                            description: "Graphic on your added reactions"
                         },
                         deletedMessages: {
-                            title: "Messages supprimés",
-                            description: "Graphique sur vos messages supprimés"
+                            title: "Deleted messages",
+                            description: "Graphic on your deleted messages"
                         }
                     }
                 },
                 percentage: {
                     meta: {
-                        title: "Pourcentage",
-                        description: "Affiche un pourcentage + barre de progression."
+                        title: "Percentage",
+                        description: "Displays a percentage + progress bar."
                     },
                     elements: {
                         involvement: {
                             title: "Engagement",
-                            text: "Taux de présence sur le serveur/au cours du mois dernier.",
-                            description: "Présence en % sur ce serveur"
+                            text: "Presence rate on the server /in the last month.",
+                            description: "Presence in % on this server"
                         },
                         firstPlaceMessages: {
                             title: "Progression #1",
-                            text: "Progression pour devenir #1 du/serveur en terme de messages.",
-                            description: "Progression pour devenir #1 du serveur"
+                            text: "Progression to become #1 of the/server in terms of messages.",
+                            description: "Progression to become #1 of the server"
                         },
                         nextPlaceMessages: {
-                            title: "Progression classement",
-                            text: "Progression pour atteindre le/rang #{x} en messages.",
-                            description: "Progression dans le classement"
+                            title: "Ranking progression",
+                            text: "Progression towards server/ranks #{x} in terms of messages.",
+                            description: "Ranking progression"
                         }
                     }
                 },
                 timeranges: {
                     meta: {
-                        title: "Statistiques temporelles",
-                        description: "Affiche une données sous 3 plages temporelles."
+                        title: "Time statistics",
+                        description: "Displays a data under 3 time ranges."
                     },
                     elements: {
                         messages: {
-                            title: "Messages envoyés",
-                            description: "Statistiques sur vos messages envoyés."
+                            title: "Sent messages",
+                            description: "Statistics on your sent messages."
                         },
                         voice: {
-                            title: "Temps en vocal",
-                            description: "Statistiques sur votre activité vocale."
+                            title: "Vocal time",
+                            description: "Statistics on your voice activity."
                         },
                         reactionsGiven: {
-                            title: "Réactions données",
-                            description: "Statistiques sur vos réactions données."
+                            title: "Added reactions",
+                            description: "Statistics on your added reactions."
                         },
                         deletedMessages: {
-                            title: "Messages supprimés",
-                            description: "Statistiques sur vos messages supprimés."
+                            title: "Deleted messages",
+                            description: "Statistics on your deleted messages."
                         }
                     }
                 },
                 numeric: {
                     meta: {
-                        title: "Valeur numérique",
-                        description: "Affiche un nombre accompagné de texte."
+                        title: "Numeric value",
+                        description: "Displays a number with text."
                     },
                     elements: {
                         firstPlaceMessages: {
                             title: "Progression #1",
-                            text: "Messages restants avant/d'atteindre le rang #1",
-                            description: "Messages restants avant de devenir #1 du serveur"
+                            text: "Remaining messages before/reaching rank #1",
+                            description: "Remaining messages before becoming server's #1"
                         },
                         nextPlaceMessages: {
-                            title: "Progression classement",
-                            text: "Messages restants avant/d'atteindre le rang #{x]",
-                            description: "Messages avant le prochain rang du classement"
+                            title: "Ranking progression",
+                            text: "Remaining messages before/reaching rank #{x]",
+                            description: "Messages before the next ranking"
                         },
                         daysSinceAccJoin: {
-                            title: "Jours depuis l'arrivée",
-                            text: "Jours depuis votre/arrivée sur le serveur",
-                            description: "Nombre de jours depuis votre arrivée sur ce serveur"
+                            title: "Days since arrival",
+                            text: "Days since your/arrival on the server",
+                            description: "Number of days since your arrival on this server"
                         },
                         daysSinceAccCreation: {
-                            title: "Jours depuis la création",
-                            text: "Jours depuis la création/de votre compte",
-                            description: "Nombre de jours depuis la création de votre compte"
+                            title: "Days since inception",
+                            text: "Days since/your account was created",
+                            description: "Number of days since your account was created"
                         }
                     }
                 },
                 correlogram: {
                     meta: {
-                        title: "Corrélogramme",
-                        description: "Affiche un corrélogramme."
+                        title: "Correlogram",
+                        description: "Displays a correlogram."
                     },
                     elements: {
                         messages: {
-                            title: "Messages envoyés",
+                            title: "Sent messages",
                             description: "Intensité de l'activité en fonction de la date"
                         },
                         voice: {
