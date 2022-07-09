@@ -207,30 +207,30 @@ module.exports = {
         },
         help_screen: {
             embed_title: "Create a graph",
-            embed_description: "**Visualize** your own or the server's statistics in the form of graphics. Start by choosing a **preconfiguration** :",
-            image_title: "Graphics",
-            embed_field_server_graph: "Server graphics",
-            embed_field_user_graph: "Graph with your stats",
-            components_guild_graph_select_menu: "Choose a graph with server stats..",
-            components_user_graph_select_menu: "..or a graph with your statistics !"
+            embed_description: "**Display** your stats or the server's stats with graphs. Start by selecting a **configuration** :",
+            image_title: "Graphs",
+            embed_field_server_graph: "Server graphs",
+            embed_field_user_graph: "Graphs with your stats",
+            components_guild_graph_select_menu: "Select a server stats graph..",
+            components_user_graph_select_menu: "..or a graph with your stats!"
         },
         graph_main_screen: {
             advanced: {
-                confirm_button: "Générer",
-                advanced_button: "Options avancées",
-                advanced_embed_description: "**Adaptez** et **personnalisez** l'interprétation et l'affichage de vos graphiques.",
-                advanced_embed_options_field_title: "Options disponibles :",
+                confirm_button: "Generate",
+                advanced_button: "Advanced settings",
+                advanced_embed_description: "**Adapt** and **customize** the display layout and dataset representation.",
+                advanced_embed_options_field_title: "Available options:",
                 advanced_options: {
-                    display_bar_chart: "Affichage en barres",
-                    increment_stats: "Somme cumulative",
-                    remove_inexistant_reports: "Retrait des rapports inexistants",
-                    display_ticks: "Affichage des points",
-                    group_values: "Groupement statistique"
+                    display_bar_chart: "Bar display",
+                    increment_stats: "Cumulative sum",
+                    remove_inexistant_reports: "Removing of inexistants reports",
+                    display_ticks: "Point display",
+                    group_values: "Statistical grouping"
                 },
                 timerange_select_menu: {
-                    placeholder: "Choisir un intervalle de temps..",
-                    option_title: "Affichage sur {timeRange}",
-                    premium_only_description: "Premium uniquement"
+                    placeholder: "Select a time range..",
+                    option_title: "{timeRange} display",
+                    premium_only_description: "Premium only"
                 }
             },
             export: {
@@ -255,59 +255,59 @@ module.exports = {
         },
         graph_types: {
             server_messages: {
-                title: "Messages Envoyés",
-                description: "Graphique résumant l'activité par messages du serveur.",
-                graph_name: "Résumé de l'activité par message"
+                title: "Sent Messages",
+                description: "Graph summarizing server activity in messages.",
+                graph_name: "Summary of message activity"
             },
             server_voicetime: {
-                title: "Temps passé en vocal",
-                description: "Graphique résumant l'activité vocale du serveur.",
-                graph_name: "Résumé de l'activité vocale"
+                title: "Time spent in voice",
+                description: "Graph summarizing server voice activity.",
+                graph_name: "Summary of voice activity"
             },
             server_members: {
-                title: "Membres",
-                description: "Graphique résumant le nombre de membres du serveur.",
-                graph_name: "Résumé de l'évolution du nombre de membres"
+                title: "Members",
+                description: "Graph summarizing number of server members.",
+                graph_name: "Summary of server members evolution"
             },
             server_deleted: {
-                title: "Messages Supprimés",
-                description: "Graphique résumant le montant de messages supprimés.",
-                graph_name: "Résumé du nombre de messages supprimés"
+                title: "Deleted Messages",
+                description: "Graph summarizing amount of deleted messages.",
+                graph_name: "Summary of deleted messages"
             },
             server_reactions: {
-                title: "Réactions",
-                description: "Graphique résumant le nombre de réactions aux messages.",
-                graph_name: "Résumé du nombre de réactions"
+                title: "Reactions",
+                description: "Graph summarizing reactions to messages.",
+                graph_name: "Summary of reactions"
             },
             server_joined: {
-                title: "Nouveaux membres",
-                description: "Graphique résumant le nombre de nouveaux arrivants.",
-                graph_name: "Résumé du nombre de nouveaux arrivants"
+                title: "New members",
+                description: "Graph summarizing newcomers.",
+                graph_name: "Summary of newcomers"
             },
             server_left: {
-                title: "Départs",
-                description: "Graphique résumant le nombre de membres ayant quitté.",
-                graph_name: "Résumé du nombre de départs"
+                title: "Members who left",
+                description: "Graph summarizing members who left.",
+                graph_name: "Summary of members who left"
             },
             user_myMessages: {
-                title: "Messages Envoyés",
-                description: "Graphique résumant votre activité par messages.",
-                graph_name: "Résumé de l'activité par message"
+                title: "Sent Messages",
+                description: "Graph summarizing your activity in messages.",
+                graph_name: "Summary of activity by messages"
             },
             user_myVoicetime: {
-                title: "Temps en vocal",
-                description: "Graphique résumant votre activité vocale.",
-                graph_name: "Résumé de l'activité vocale"
+                title: "Time spent in voice",
+                description: "Graph summarizing your voice activity.",
+                graph_name: "Summary of voice activity"
             },
             user_myReactedCount: {
-                title: "Réactions données",
-                description: "Graphique résumant le nombre de réactions données.",
-                graph_name: "Résumé du nombre de réactions données"
+                title: "Reactions",
+                description: "Graph summarizing reactions to messages.",
+                graph_name: "Summary of given reactions"
             },
             user_myDeletedMessages: {
-                title: "Messages Supprimés",
-                description: "Graphique résumant votre montant de messages supprimés.",
-                graph_name: "Résumé du nombre de messages supprimés"
+                title: "Deleted Messages",
+                description: "Graph summarizing your amount of deleted messages.",
+                graph_name: "Summary of deleted messages"
             },
             server_boosts: {
                 title: "Boosts",
@@ -319,15 +319,15 @@ module.exports = {
     top: {
         not_enough_data: "**Whoops!** I don't have enough data to make rankings for now.. *If the problem happens again, please report the bug on the support server.*",
         not_allowed_timerange: "**Whoops!** You can't choose a timerange longer than **{max}** days.",
-        not_allowed_timestamp_low: "**Whoops!** Vous ne pouvez pas choisir un intervalle temporel d'une durée inférieure à **{max}** jour(s).",
+        not_allowed_timestamp_low: "**Whoops!** You can't select a time range inferior to **{max}** day(s).",
         top_canvas_leaderboard_date: "Global rankings on {date}",
         top_canvas_leaderboard_temp_date: "{type} rankings from {date1} to {date2}",
         top_canvas_empty_username: "Nobody",
         top_canvas_not_found_username: "User not found",
         top_canvas_leaderboard_temp_types: {
-            "0": "complets",
-            "5": "partiels",
-            "10": "schématiques"
+            "0": "completes",
+            "5": "incompletes",
+            "10": "schematics"
         },
         pos_abbreviations: {
             "1": "st",
@@ -352,7 +352,7 @@ module.exports = {
             embed_data_FULL: "All data",
             embed_data_PARTIAL_5: "Partial data",
             embed_data_PARTIAL_10: "Schematic data",
-            embed_data_partial_disclamer: "Pour limiter la saturation du bot, certains classements sont **partiels** ou **schématiques**, les stats y sont inexactes mais suffisantes pour déterminer les rangs.",
+            embed_data_partial_disclamer: "To limit bot overload, some of the rankings are **incomplete** or **schematics**, their stats are inaccurate but sufficient enough to calculate rankings.",
             embed_data_learn_more: "Find out more",
             components_days_acronym: "d",
             error_premium_restricted: "**Whoops!** Calculer autant de données nous demande beaucoup de ressources. C'est pourquoi les classements temporaires sont limités aux **{max} derniers jours** pour les serveurs non-premium.."
