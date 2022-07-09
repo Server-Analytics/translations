@@ -366,8 +366,8 @@ module.exports = {
         card: {
             header_joined_at: "Joined on",
             header_created_at: "Created on",
-            global_stats_messages: "Sent messages",
-            global_stats_voice: "Hours in vocal chats",
+            global_stats_messages: "Messages sent",
+            global_stats_voice: "Hours in VCs",
             global_stats_leaderboard: "In rankings",
             buttons_edit: "Edit",
             units: {
@@ -395,10 +395,10 @@ module.exports = {
             },
             elements: {
                 messages: {
-                    title: "Sent messages"
+                    title: "Messages sent"
                 },
                 voice: {
-                    title: "Time in vocal chats"
+                    title: "Time in VCs"
                 },
                 reactionsGiven: {
                     title: "Reactions"
@@ -649,7 +649,7 @@ module.exports = {
     },
     botstats: {
         stat_type_select_placeholder: "Select a statistic",
-        graph_init_at: "Statistic manager started {x} hours ago",
+        graph_init_at: "Statistic manager started {x} hours ago ({days} days)",
         stat_types: {
             commandCount: "Ran commands",
             interactionCount: "Received interactions",

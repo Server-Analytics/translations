@@ -595,6 +595,7 @@ module.exports = {
             "cachedGuildMemberCount": "Membres en cache",
             "cachedWebsiteUsersCount": "Utilisateurs en cache",
             "refreshedCounters": "Compteurs mis à jour",
+            "displayedAds": "Messages premium affichés",
             "ramUsage": "Utilisation de la RAM (Mb)",
         }
     },
