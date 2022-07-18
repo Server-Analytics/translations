@@ -255,6 +255,7 @@ module.exports = {
             general: {
                 text_x_days: "{days} jours",
                 last_x_days: "Ces derniers {days} jours",
+                total: "Au total",
             },
             graph: {
                 infoboxes: {
