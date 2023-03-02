@@ -327,6 +327,18 @@ module.exports = {
         }
     },
 
+    top2: {
+        positions_abbreviations: {
+            1: "1er",
+            2: "2nd",
+            3: "3e",
+            "default": "{position}e"
+        },
+        leaderboard: {
+            unknown: "Introuvable",
+        }
+    },
+
     top: {
         not_enough_data: "**Whoops!** Je dispose de trop peu de données pour établir des classements pour le moment.. *Si le problème persiste, renseignez-vous auprès de notre serveur support.*",
         not_allowed_timerange: "**Whoops!** Vous ne pouvez pas choisir un intervalle temporel plus long que **{max}** jours.",
