@@ -104,8 +104,8 @@ module.exports = {
                 "h"
             ],
             minutes: [
-                " minutos",
                 " minuto",
+                " minutos",
                 " min"
             ],
             seconds: [
@@ -632,7 +632,7 @@ module.exports = {
                                 "F+": "Muy poco activo",
                                 "D-": "Poco activo",
                                 D: "Poco activo",
-                                "D+": "Peu Actif",
+                                "D+": "Poco Activo",
                                 "C-": "Pasivamente activo",
                                 C: "Pasivamente activo",
                                 "C+": "Pasivamente activo",
