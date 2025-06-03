@@ -24,11 +24,6 @@
                 "11": "nov",
                 "12": "dec"
             },
-            "links": {
-                "join_support": "Serveur support",
-                "add_bot": "Ajouter le bot",
-                "github": "GitHub"
-            },
             "months": {
                 "1": "janvier",
                 "2": "février",
@@ -55,7 +50,12 @@
                 "5": "ven",
                 "6": "sam"
             },
-            "modification_warning_text": "Ces statistiques ont été générées ou modifiées à la demande de l'utilisateur et ne sont pas authentiques."
+            "modification_warning_text": "Ces statistiques ont été générées ou modifiées à la demande de l'utilisateur et ne sont pas authentiques.",
+            "links": {
+                "join_support": "Serveur Support",
+                "github": "GitHub",
+                "add_bot": "Ajouter le bot"
+            }
         },
         "errors": {
             "an_error_occured": "Ouch.. une erreur est survenue",
@@ -68,7 +68,8 @@
                 "guild_not_found": "Impossible de trouver le serveur dans le cache local.",
                 "database_querry_failed": "La requête à la base de données a échoué.",
                 "invalid_subcommand": "La sous-commande utilisée n'existe pas.",
-                "unknown_option": "L'option utilisée n'existe pas."
+                "unknown_option": "L'option utilisée n'existe pas.",
+                "member_not_found": "Le membre n'a pas été trouvé dans le cache local ou distant."
             },
             "interaction_expired_title": "🕓 La commande a expiré",
             "interaction_expired_description": "Cette commande à été exécutée il y a **trop longtemps**.\n*Vous pouvez toujours l'exécuter à nouveau !*",
@@ -77,8 +78,8 @@
                 "no_reason": "**{{botname}}** est momentanément indisponible.\n*Nous nous excusons pour la gêne occasionnée.*",
                 "with_reason": "**{{botname}}** est momentanément indisponible, *nous nous excusons pour la gêne occasionnée.*\n\n> {{reason}}"
             },
-            "interaction_not_yours_title": "general.errors.interaction_not_yours_title",
-            "interaction_not_yours_description": "general.errors.interaction_not_yours_description"
+            "interaction_not_yours_title": "🙌 Ce n'est pas votre commande",
+            "interaction_not_yours_description": "Cette commande a été exécutée par un **autre utilisateur**.\nVous ne pouvez donc pas directement interagir avec."
         },
         "commands": {
             "loading": {
@@ -88,15 +89,9 @@
                     "default": "Votre commande est en cours de traitement..."
                 },
                 "bot": {
-                    "add_bot": "general.commands.loading.bot.add_bot",
-                    "join_support": "general.commands.loading.bot.join_support"
+                    "add_bot": "Obtenez les stats de votre serveur en ajoutant le bot !",
+                    "join_support": "Une question ? Besoin d'aide ? Rejoignez le serveur support !"
                 }
-            }
-        },
-        "texts": {
-            "links": {
-                "join_support": "general.texts.links.join_support",
-                "add_bot": "general.texts.links.add_bot"
             }
         }
     },
@@ -116,11 +111,7 @@
                     "description": "Désactiver le mode maintenance"
                 },
                 "name": "maintenance",
-                "description": "Gérer le mode maintenance",
-                "enableraison": {
-                    "name": "admin.slash.maintenance.enableraison.name",
-                    "description": "admin.slash.maintenance.enableraison.description"
-                }
+                "description": "Gérer le mode maintenance"
             },
             "cache": {
                 "counts": {
@@ -168,31 +159,7 @@
                     "description": "Gérer le cache des bots"
                 },
                 "name": "cache",
-                "description": "Gérer le cache du système",
-                "guildsguild-id": {
-                    "name": "admin.slash.cache.guildsguild-id.name",
-                    "description": "admin.slash.cache.guildsguild-id.description"
-                },
-                "usersuser-id": {
-                    "name": "admin.slash.cache.usersuser-id.name",
-                    "description": "admin.slash.cache.usersuser-id.description"
-                },
-                "guild-membersguild-id": {
-                    "name": "admin.slash.cache.guild-membersguild-id.name",
-                    "description": "admin.slash.cache.guild-membersguild-id.description"
-                },
-                "guild-membersmember-id": {
-                    "name": "admin.slash.cache.guild-membersmember-id.name",
-                    "description": "admin.slash.cache.guild-membersmember-id.description"
-                },
-                "guild-botsguild-id": {
-                    "name": "admin.slash.cache.guild-botsguild-id.name",
-                    "description": "admin.slash.cache.guild-botsguild-id.description"
-                },
-                "guild-botsbot-id": {
-                    "name": "admin.slash.cache.guild-botsbot-id.name",
-                    "description": "admin.slash.cache.guild-botsbot-id.description"
-                }
+                "description": "Gérer le cache du système"
             },
             "name": "admin",
             "description": "Commandes administratives"
@@ -225,7 +192,7 @@
                 "last_year": "Année dernière"
             },
             "common": {
-                "error_generic_box": "stats.view.common.error_generic_box"
+                "error_generic_box": "Oups! Impossible d'afficher cette carte."
             }
         }
     },
@@ -261,7 +228,11 @@
         },
         "slash": {
             "name": "me",
-            "description": "📊 • Afficher vos statistiques personnelles"
+            "description": "📊 • Afficher vos statistiques personnelles",
+            "user": {
+                "name": "utilisateur",
+                "description": "Afficher les statistiques d'un autre membre"
+            }
         }
     },
     "top": {
@@ -279,9 +250,10 @@
         },
         "texts": {
             "positions": {
+                "0": "e",
                 "1": "er",
                 "2": "nd",
-                "3": "top.texts.positions.3",
+                "3": "e",
                 "other": "e"
             },
             "leaderboards": {
