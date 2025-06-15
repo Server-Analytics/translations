@@ -8,7 +8,8 @@
                 "day": {
                     "one": "jour",
                     "other": "jours"
-                }
+                },
+                "members": "general.common.units.members"
             },
             "months_short": {
                 "1": "jan",
@@ -53,6 +54,7 @@
             "modification_warning_text": "Ces statistiques ont été générées ou modifiées à la demande de l'utilisateur et ne sont pas authentiques.",
             "links": {
                 "join_support": "Serveur Support",
+                "join": "Rejoindre",
                 "github": "GitHub",
                 "add_bot": "Ajouter le bot"
             }
@@ -66,7 +68,7 @@
             "common": {
                 "interaction_followup_timeout": "La commande ne répond plus.",
                 "guild_not_found": "Impossible de trouver le serveur dans le cache local.",
-                "database_querry_failed": "La requête à la base de données a échoué.",
+                "database_querry_failed": "La requête à la base de données a échouée.",
                 "invalid_subcommand": "La sous-commande utilisée n'existe pas.",
                 "unknown_option": "L'option utilisée n'existe pas.",
                 "member_not_found": "Le membre n'a pas été trouvé dans le cache local ou distant."
@@ -84,13 +86,22 @@
         "commands": {
             "loading": {
                 "interaction_loading_button": "Chargement...",
-                "loading_prefix_message": "**Chargement...**",
+                "loading_prefix_message": "**Chargement..**",
                 "generic": {
-                    "default": "Votre commande est en cours de traitement..."
+                    "default": "Votre commande est en cours de traitement.",
+                    "stats_are_loading": "Chargement de vos statistiques en cours.",
+                    "crunching_numbers": "Calcul de vos statistiques en cours.",
+                    "fetching_your_data": "Récupération de vos données en cours."
                 },
                 "bot": {
-                    "add_bot": "Obtenez les stats de votre serveur en ajoutant le bot !",
-                    "join_support": "Une question ? Besoin d'aide ? Rejoignez le serveur support !"
+                    "add_bot": "**Ajoutez le bot** sur vos serveurs en cliquant sur le bouton en dessous !",
+                    "join_support": "**Une question ?** Posez-la-nous sur le serveur support !",
+                    "news_and_updates": "Rejoignez le **serveur support** pour être informé des nouveautés et mises à jour.",
+                    "creation_date": "**Server Analytics** récolte vos stats depuis le <t:1558271715:D> !",
+                    "creation_date_relative": "**Server Analytics** a été créé <t:1558271715:R> !",
+                    "thanks_for_using_bot": "Merci beaucoup d'utiliser **{{botname}}** !",
+                    "bot_is_entirely_free": "**{{botname}}** est entièrement gratuit, et le restera !",
+                    "have_a_suggestion": "**Une idée** ou suggestion ? Venez nous en parler, ça nous interesse !"
                 }
             }
         }
@@ -233,6 +244,10 @@
                 "name": "utilisateur",
                 "description": "Afficher les statistiques d'un autre membre"
             }
+        },
+        "loading": {
+            "old_tile_feature": "Il y a fort longtemps, le `/me` n'existait qu'au format texte !",
+            "user_option": "L'option `utilisateur` permet d'afficher les stats d'un autre membre."
         }
     },
     "top": {
