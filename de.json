@@ -6,102 +6,102 @@
             },
             "units": {
                 "day": {
-                    "one": "jour",
-                    "other": "jours"
+                    "one": "Tag",
+                    "other": "Tage"
                 },
-                "members": "general.common.units.members"
+                "members": "Mitglieder"
             },
             "months_short": {
-                "1": "jan",
-                "2": "fev",
-                "3": "mar",
-                "4": "avr",
-                "5": "mai",
-                "6": "juin",
-                "7": "juil",
-                "8": "aout",
-                "9": "sept",
-                "10": "oct",
-                "11": "nov",
-                "12": "dec"
+                "1": "Jan",
+                "2": "Feb",
+                "3": "Mär",
+                "4": "Apr",
+                "5": "Mai",
+                "6": "Jun",
+                "7": "Jul",
+                "8": "Aug",
+                "9": "Sep",
+                "10": "Okt",
+                "11": "Nov",
+                "12": "Dez"
             },
             "months": {
-                "1": "janvier",
-                "2": "février",
-                "3": "mars",
-                "4": "avril",
-                "5": "mai",
-                "6": "juin",
-                "7": "juillet",
-                "8": "août",
-                "9": "septembre",
-                "10": "octobre",
-                "11": "novembre",
-                "12": "décembre"
+                "1": "Januar",
+                "2": "Februar",
+                "3": "März",
+                "4": "April",
+                "5": "Mai",
+                "6": "Juni",
+                "7": "Juli",
+                "8": "August",
+                "9": "September",
+                "10": "Oktober",
+                "11": "November",
+                "12": "Dezember"
             },
             "countdown": {
-                "days_left": "J-{{days}}"
+                "days_left": "T-{{days}}"
             },
             "days_short": {
-                "0": "dim",
-                "1": "lun",
-                "2": "mar",
-                "3": "mer",
-                "4": "jeu",
-                "5": "ven",
-                "6": "sam"
+                "0": "So",
+                "1": "Mo",
+                "2": "Di",
+                "3": "Mi",
+                "4": "Do",
+                "5": "Fr",
+                "6": "Sa"
             },
-            "modification_warning_text": "Ces statistiques ont été générées ou modifiées à la demande de l'utilisateur et ne sont pas authentiques.",
+            "modification_warning_text": "Diese Statistiken wurden auf Benutzeranfrage generiert oder geändert und sind nicht authentisch.",
             "links": {
-                "join_support": "Serveur Support",
-                "join": "Rejoindre",
+                "join_support": "Support-Server",
+                "join": "Beitreten",
                 "github": "GitHub",
-                "add_bot": "Ajouter le bot"
+                "add_bot": "Bot hinzufügen"
             }
         },
         "errors": {
-            "an_error_occured": "Ouch.. une erreur est survenue",
-            "an_error_occured_end": "**Si cette erreur persiste,** merci de contacter le [support]({{support_link}}) !",
-            "an_internal_error_occured": "Aïe... une erreur interne est survenue",
-            "an_internal_error_occured_end": "**Nous avons fait remonter l'erreur aux développeurs,** désolé pour la gêne occasionnée.**",
-            "an_internal_error_occured_body": "On dirait que quelque chose s'est très mal passé.\n**Nous avons fait remonter l'erreur aux développeurs,** et nous allons faire de notre mieux pour résoudre rapidement le problème.",
+            "an_error_occured": "Ups.. ein Fehler ist aufgetreten",
+            "an_error_occured_end": "**Falls dieser Fehler weiterhin auftritt,** kontaktiere bitte den [Support]({{support_link}}) !",
+            "an_internal_error_occured": "Autsch... ein interner Fehler ist aufgetreten",
+            "an_internal_error_occured_end": "**Wir haben den Fehler an die Entwickler weitergeleitet,** entschuldige die Unannehmlichkeiten.**",
+            "an_internal_error_occured_body": "Es sieht so aus, als wäre etwas schiefgelaufen.\n**Wir haben den Fehler an die Entwickler weitergeleitet,** und werden unser Bestes geben, das Problem schnell zu lösen.",
             "common": {
-                "interaction_followup_timeout": "La commande ne répond plus.",
-                "guild_not_found": "Impossible de trouver le serveur dans le cache local.",
-                "database_querry_failed": "La requête à la base de données a échouée.",
-                "invalid_subcommand": "La sous-commande utilisée n'existe pas.",
-                "unknown_option": "L'option utilisée n'existe pas.",
-                "member_not_found": "Le membre n'a pas été trouvé dans le cache local ou distant."
+                "interaction_followup_timeout": "Der Befehl antwortet nicht mehr.",
+                "guild_not_found": "Server im lokalen Cache nicht gefunden.",
+                "database_querry_failed": "Die Datenbankabfrage ist fehlgeschlagen.",
+                "invalid_subcommand": "Der verwendete Unterbefehl existiert nicht.",
+                "unknown_option": "Die verwendete Option existiert nicht.",
+                "member_not_found": "Das Mitglied wurde im lokalen oder entfernten Cache nicht gefunden."
             },
-            "interaction_expired_title": "🕓 La commande a expiré",
-            "interaction_expired_description": "Cette commande à été exécutée il y a **trop longtemps**.\n*Vous pouvez toujours l'exécuter à nouveau !*",
+            "interaction_expired_title": "🕓 Der Befehl ist abgelaufen",
+            "interaction_expired_description": "Dieser Befehl wurde vor **zu langer Zeit** ausgeführt.\n*Du kannst ihn jederzeit erneut ausführen!*",
             "maintenance": {
-                "title": "Maintenance en cours..",
-                "no_reason": "**{{botname}}** est momentanément indisponible.\n*Nous nous excusons pour la gêne occasionnée.*",
-                "with_reason": "**{{botname}}** est momentanément indisponible, *nous nous excusons pour la gêne occasionnée.*\n\n> {{reason}}"
+                "title": "Wartung läuft..",
+                "no_reason": "**{{botname}}** ist vorübergehend nicht verfügbar.\n*Wir entschuldigen uns für die Unannehmlichkeiten.*",
+                "with_reason": "**{{botname}}** ist vorübergehend nicht verfügbar, *wir entschuldigen uns für die Unannehmlichkeiten.*\n\n> {{reason}}"
             },
-            "interaction_not_yours_title": "🙌 Ce n'est pas votre commande",
-            "interaction_not_yours_description": "Cette commande a été exécutée par un **autre utilisateur**.\nVous ne pouvez donc pas directement interagir avec."
+            "interaction_not_yours_title": "🙌 Das ist nicht dein Befehl",
+            "interaction_not_yours_description": "Dieser Befehl wurde von einem **anderen Benutzer** ausgeführt.\nDu kannst daher nicht direkt damit interagieren."
         },
         "commands": {
             "loading": {
-                "interaction_loading_button": "Chargement...",
-                "loading_prefix_message": "**Chargement..**",
+                "interaction_loading_button": "Lädt...",
+                "loading_prefix_message": "**Lädt..**",
                 "generic": {
-                    "default": "Votre commande est en cours de traitement.",
-                    "stats_are_loading": "Chargement de vos statistiques en cours.",
-                    "crunching_numbers": "Calcul de vos statistiques en cours.",
-                    "fetching_your_data": "Récupération de vos données en cours."
+                    "default": "Dein Befehl wird verarbeitet.",
+                    "stats_are_loading": "Deine Statistiken werden geladen.",
+                    "crunching_numbers": "Deine Statistiken werden berechnet.",
+                    "fetching_your_data": "Deine Daten werden abgerufen."
                 },
                 "bot": {
-                    "add_bot": "**Ajoutez le bot** sur vos serveurs en cliquant sur le bouton en dessous !",
-                    "join_support": "**Une question ?** Posez-la-nous sur le serveur support !",
-                    "news_and_updates": "Rejoignez le **serveur support** pour être informé des nouveautés et mises à jour.",
-                    "creation_date": "**Server Analytics** récolte vos stats depuis le <t:1558271715:D> !",
-                    "creation_date_relative": "**Server Analytics** a été créé <t:1558271715:R> !",
-                    "thanks_for_using_bot": "Merci beaucoup d'utiliser **{{botname}}** !",
-                    "bot_is_entirely_free": "**{{botname}}** est entièrement gratuit, et le restera !",
-                    "have_a_suggestion": "**Une idée** ou suggestion ? Venez nous en parler, ça nous interesse !"
+                    "add_bot": "**Füge den Bot** zu deinen Servern hinzu, indem du auf den Button unten klickst!",
+                    "join_support": "**Eine Frage?** Stelle sie uns auf dem Support-Server!",
+                    "news_and_updates": "Tritt dem **Support-Server** bei, um über Neuigkeiten und Updates informiert zu werden.",
+                    "creation_date": "**Server Analytics** sammelt deine Stats seit dem <t:1558271715:D> !",
+                    "creation_date_relative": "**Server Analytics** wurde <t:1558271715:R> erstellt!",
+                    "thanks_for_using_bot": "Vielen Dank, dass du **{{botname}}** benutzt!",
+                    "bot_is_entirely_free": "**{{botname}}** ist völlig kostenlos und wird es bleiben!",
+                    "have_a_suggestion": "**Eine Idee** oder Vorschlag? Komm und rede mit uns darüber, das interessiert uns!"
                 }
             }
         }
@@ -111,99 +111,99 @@
             "maintenance": {
                 "enable": {
                     "raison": {
-                        "name": "raison",
-                        "description": "Raison de la maintenance"
+                        "name": "grund",
+                        "description": "Grund für die Wartung"
                     },
-                    "name": "activer",
-                    "description": "Activer le mode maintenance"
+                    "name": "aktivieren",
+                    "description": "Wartungsmodus aktivieren"
                 },
                 "disable": {
-                    "name": "désactiver",
-                    "description": "Désactiver le mode maintenance"
+                    "name": "deaktivieren",
+                    "description": "Wartungsmodus deaktivieren"
                 },
-                "name": "maintenance",
-                "description": "Gérer le mode maintenance"
+                "name": "wartung",
+                "description": "Wartungsmodus verwalten"
             },
             "cache": {
                 "counts": {
-                    "name": "compteurs",
-                    "description": "Afficher les compteurs du cache"
+                    "name": "zähler",
+                    "description": "Cache-Zähler anzeigen"
                 },
                 "guilds": {
                     "guild-id": {
-                        "name": "serveur-id",
-                        "description": "ID du serveur à consulter"
+                        "name": "server-id",
+                        "description": "ID des zu betrachtenden Servers"
                     },
-                    "name": "serveurs",
-                    "description": "Gérer le cache des serveurs"
+                    "name": "server",
+                    "description": "Server-Cache verwalten"
                 },
                 "users": {
                     "user-id": {
-                        "name": "utilisateur-id",
-                        "description": "ID de l'utilisateur à consulter"
+                        "name": "benutzer-id",
+                        "description": "ID des zu betrachtenden Benutzers"
                     },
-                    "name": "utilisateurs",
-                    "description": "Gérer le cache des utilisateurs"
+                    "name": "benutzer",
+                    "description": "Benutzer-Cache verwalten"
                 },
                 "guild-members": {
                     "guild-id": {
-                        "name": "serveur-id",
-                        "description": "ID du serveur à consulter"
+                        "name": "server-id",
+                        "description": "ID des zu betrachtenden Servers"
                     },
                     "member-id": {
-                        "name": "membre-id",
-                        "description": "ID du membre à consulter"
+                        "name": "mitglied-id",
+                        "description": "ID des zu betrachtenden Mitglieds"
                     },
-                    "name": "membres",
-                    "description": "Gérer le cache des membres"
+                    "name": "mitglieder",
+                    "description": "Mitglieder-Cache verwalten"
                 },
                 "guild-bots": {
                     "guild-id": {
-                        "name": "serveur-id",
-                        "description": "ID du serveur à consulter"
+                        "name": "server-id",
+                        "description": "ID des zu betrachtenden Servers"
                     },
                     "bot-id": {
                         "name": "bot-id",
-                        "description": "ID du bot à consulter"
+                        "description": "ID des zu betrachtenden Bots"
                     },
                     "name": "bots",
-                    "description": "Gérer le cache des bots"
+                    "description": "Bot-Cache verwalten"
                 },
                 "name": "cache",
-                "description": "Gérer le cache du système"
+                "description": "System-Cache verwalten"
             },
             "name": "admin",
-            "description": "Commandes administratives"
+            "description": "Administrative Befehle"
         },
         "maintenance": {
-            "disabled_ok": "✅ **Ok!** La maintenance a été désactivée.",
-            "enabled_ok": "🚧 **Ok!** Le mode maintenance a été activé."
+            "disabled_ok": "✅ **Ok!** Die Wartung wurde deaktiviert.",
+            "enabled_ok": "🚧 **Ok!** Der Wartungsmodus wurde aktiviert."
         }
     },
     "stats": {
         "slash": {
             "messages": {
-                "name": "messages",
-                "description": "📊 • Statistiques sur messages envoyés dans ce serveur"
+                "name": "nachrichten",
+                "description": "📊 • Statistiken über gesendete Nachrichten auf diesem Server"
             },
             "members": {
-                "name": "membres",
-                "description": "📊 • Statistiques sur les membres du serveur"
+                "name": "mitglieder",
+                "description": "📊 • Statistiken über die Servermitglieder"
             },
             "name": "stats",
-            "description": "📊 • Afficher les statistiques du serveur"
+            "description": "📊 • Server-Statistiken anzeigen"
         },
         "view": {
             "periods_comparison": {
-                "today": "Aujourd'hui",
-                "yesterday": "Hier",
-                "this_month": "Ce mois-ci",
-                "last_month": "Mois dernier",
-                "this_year": "Cette année",
-                "last_year": "Année dernière"
+                "today": "Heute",
+                "yesterday": "Gestern",
+                "this_month": "Diesen Monat",
+                "last_month": "Letzten Monat",
+                "this_year": "Dieses Jahr",
+                "last_year": "Letztes Jahr"
             },
             "common": {
-                "error_generic_box": "Oups! Impossible d'afficher cette carte."
+                "error_generic_box": "Ups! Diese Karte kann nicht angezeigt werden."
             }
         }
     },
@@ -212,131 +212,131 @@
             "body": {
                 "titles": {
                     "stats_vs_last_period": {
-                        "message_count": "Messages envoyés",
-                        "voice_time": "Temps passé en vocal"
+                        "message_count": "Gesendete Nachrichten",
+                        "voice_time": "Zeit im Voice-Chat"
                     },
                     "histogram": {
-                        "message_count": "Messages sur {{days}} jours",
-                        "voice_time": "Temps en vocal sur {{days}} jours"
+                        "message_count": "Nachrichten über {{days}} Tage",
+                        "voice_time": "Voice-Zeit über {{days}} Tage"
                     },
                     "highlights": "Highlights",
-                    "stat_of_the_day": "Stat' du jour"
+                    "stat_of_the_day": "Stat des Tages"
                 },
                 "highlights": {
-                    "no_highlights": "Aucun fait marquant pour l'instant.",
-                    "come_back_later": "Reviens plus tard !"
+                    "no_highlights": "Noch keine bemerkenswerten Ereignisse.",
+                    "come_back_later": "Komm später wieder!"
                 },
-                "placeholder_box_text": "Rien à afficher ici pour l'instant."
+                "placeholder_box_text": "Hier gibt's vorerst nichts anzuzeigen."
             },
             "header": {
                 "stat_boxes": {
-                    "messages_sent": "Messages envoyés",
-                    "in_vc": "En vocal",
-                    "leaderboard": "Classement",
-                    "activity_streak": "Activité consécutive"
+                    "messages_sent": "Gesendete Nachrichten",
+                    "in_vc": "Im Voice-Chat",
+                    "leaderboard": "Rangliste",
+                    "activity_streak": "Aktivitäts-Serie"
                 }
             }
         },
         "slash": {
             "name": "me",
-            "description": "📊 • Afficher vos statistiques personnelles",
+            "description": "📊 • Deine persönlichen Statistiken anzeigen",
             "user": {
-                "name": "utilisateur",
-                "description": "Afficher les statistiques d'un autre membre"
+                "name": "benutzer",
+                "description": "Statistiken eines anderen Mitglieds anzeigen"
             }
         },
         "loading": {
-            "old_tile_feature": "Il y a fort longtemps, le `/me` n'existait qu'au format texte !",
-            "user_option": "L'option `utilisateur` permet d'afficher les stats d'un autre membre."
+            "old_tile_feature": "Vor langer Zeit gab es `/me` nur im Textformat!",
+            "user_option": "Die Option `benutzer` ermöglicht es, die Stats eines anderen Mitglieds anzuzeigen."
         }
     },
     "top": {
         "slash": {
             "messages": {
-                "name": "messages",
-                "description": "🏆 • Classement des membres les plus actifs"
+                "name": "nachrichten",
+                "description": "🏆 • Rangliste der aktivsten Mitglieder"
             },
             "voice": {
                 "name": "voice",
-                "description": "🏆 • Classement des membres par temps passé en vocal"
+                "description": "🏆 • Rangliste der Mitglieder nach Voice-Chat-Zeit"
             },
             "name": "top",
-            "description": "🏆 • Classements des membres sur l'activité"
+            "description": "🏆 • Mitglieder-Ranglisten nach Aktivität"
         },
         "texts": {
             "positions": {
-                "0": "e",
-                "1": "er",
-                "2": "nd",
-                "3": "e",
-                "other": "e"
+                "0": ".",
+                "1": ".",
+                "2": ".",
+                "3": ".",
+                "other": "."
             },
             "leaderboards": {
-                "end_reached": "Vous avez atteint la fin du classement",
-                "no_data": "Aucune donnée à afficher sur la période"
+                "end_reached": "Du hast das Ende der Rangliste erreicht",
+                "no_data": "Keine Daten für diesen Zeitraum verfügbar"
             }
         },
         "leaderboards": {
             "message_count": {
-                "title": "Classement sur l'activité par écrit",
-                "stat_name": "Messages envoyés"
+                "title": "Rangliste der schriftlichen Aktivität",
+                "stat_name": "Gesendete Nachrichten"
             },
             "temp_titles": {
-                "today": "Classement du {{date}}",
-                "last_{{{value}}}_hours": "Classement sur les {{{value}}} dernières heures",
-                "full_year_date": "Classement sur l'année {{date}}",
-                "last_{{{value}}}_days": "Classement sur les {{{value}}} derniers jours",
-                "full_day_date": "Classement du {{date}}"
+                "today": "Rangliste vom {{date}}",
+                "last_{{{value}}}_hours": "Rangliste der letzten {{{value}}} Stunden",
+                "full_year_date": "Rangliste für das Jahr {{date}}",
+                "last_{{{value}}}_days": "Rangliste der letzten {{{value}}} Tage",
+                "full_day_date": "Rangliste vom {{date}}"
             },
             "voice_time": {
-                "footer_note": "min = minutes",
-                "title": "Classements sur le temps passé en vocal"
+                "footer_note": "min = Minuten",
+                "title": "Rangliste der Voice-Chat-Zeit"
             }
         },
         "timerange": {
             "select": {
                 "RANGE": {
                     "emoji": "🕓",
-                    "placeholder": "Choisissez une plage de temps",
+                    "placeholder": "Wähle einen Zeitraum",
                     "last_{{{value}}}_hours": {
-                        "label": "Dernières {{{value}}} heures",
-                        "description": "{{statname}} au cours des {{{value}}} dernières heures"
+                        "label": "Letzte {{{value}}} Stunden",
+                        "description": "{{statname}} in den letzten {{{value}}} Stunden"
                     },
                     "last_{{{value}}}_days": {
-                        "label": "Derniers {{{value}}} jours",
-                        "description": "{{statname}} au cours des {{{value}}} derniers jours"
+                        "label": "Letzte {{{value}}} Tage",
+                        "description": "{{statname}} in den letzten {{{value}}} Tagen"
                     }
                 },
                 "DAY": {
                     "emoji": "📌",
-                    "placeholder": "Choisissez une date",
+                    "placeholder": "Wähle ein Datum",
                     "today": {
-                        "label": "Aujourd'hui",
-                        "description": "{{statname}} aujourd'hui"
+                        "label": "Heute",
+                        "description": "{{statname}} heute"
                     },
                     "yesterday": {
-                        "label": "Hier",
-                        "description": "{{statname}} hier"
+                        "label": "Gestern",
+                        "description": "{{statname}} gestern"
                     },
                     "full_day_date": {
                         "label": "{{date}}",
-                        "description": "{{statname}} le {{date}}"
+                        "description": "{{statname}} am {{date}}"
                     }
                 },
                 "YEAR": {
                     "emoji": "⏳",
-                    "placeholder": "Choisissez une année",
+                    "placeholder": "Wähle ein Jahr",
                     "full_year_date": {
                         "label": "{{date}}",
-                        "description": "{{statname}} durant {{date}}"
+                        "description": "{{statname}} während {{date}}"
                     }
                 },
                 "MONTH": {
                     "emoji": "📅",
-                    "placeholder": "Choisissez un mois",
+                    "placeholder": "Wähle einen Monat",
                     "full_month_date": {
                         "label": "{{date}}",
-                        "description": "{{statname}} en {{date}}"
+                        "description": "{{statname}} im {{date}}"
                     }
                 }
             }
@@ -345,103 +345,103 @@
     "counters": {
         "meta": {
             "name": "counters",
-            "description": "⚡ • Affichez vos statistiques dans des salons"
+            "description": "⚡ • Zeige deine Statistiken in Kanälen an"
         },
         "views": {
             "no_counters": {
                 "example_channels": {
-                    "stats_category": "statistiques",
-                    "stats_members": "Membres: {{members}} 👥",
-                    "stats_messages": "Messages: {{messages}} 📝",
+                    "stats_category": "statistiken",
+                    "stats_members": "Mitglieder: {{members}} 👥",
+                    "stats_messages": "Nachrichten: {{messages}} 📝",
                     "stats_boosts": "Boosts: {{boosts}} ⭐"
                 },
-                "create_counter_title": "**Créez** des salons statistiques",
-                "create_counter_description": "Prêt à afficher les stats de ce serveur dans des salons ?",
-                "create_counter_button": "Créer un compteur"
+                "create_counter_title": "**Erstelle** Statistik-Kanäle",
+                "create_counter_description": "Bereit, die Stats dieses Servers in Kanälen anzuzeigen?",
+                "create_counter_button": "Zähler erstellen"
             },
             "select_stats_category": {
                 "header": {
-                    "choose_a_stats_category": "Choisissez une **catégorie** de stats",
-                    "to_display_on_your_counter": "qui sera affichée dans le salon compteur"
+                    "choose_a_stats_category": "Wähle eine **Kategorie** von Stats",
+                    "to_display_on_your_counter": "die im Zähler-Kanal angezeigt wird"
                 },
                 "categories": {
-                    "messages": "Messages",
-                    "members": "Membres",
-                    "server": "Serveur"
+                    "messages": "Nachrichten",
+                    "members": "Mitglieder",
+                    "server": "Server"
                 },
                 "stats_examples": {
                     "server": {
-                        "boosts_count": "Nombre de boosts",
-                        "commands_count": "Nombre de commandes",
-                        "channels_count": "Nombre de salons",
-                        "server_age": "Âge du serveur",
-                        "boost_level": "Niveau de boost"
+                        "boosts_count": "Anzahl Boosts",
+                        "commands_count": "Anzahl Befehle",
+                        "channels_count": "Anzahl Kanäle",
+                        "server_age": "Server-Alter",
+                        "boost_level": "Boost-Level"
                     },
                     "messages": {
-                        "total_count": "Nombre de messages",
-                        "messages_last_n_days": "Messages ces n derniers jours",
-                        "top_member": "Membre le plus actif",
-                        "top_monthly_member": "Membre le plus actif ce mois-ci",
-                        "average_count": "Messages en moyenne par jour"
+                        "total_count": "Anzahl Nachrichten",
+                        "messages_last_n_days": "Nachrichten der letzten n Tage",
+                        "top_member": "Aktivstes Mitglied",
+                        "top_monthly_member": "Aktivstes Mitglied diesen Monat",
+                        "average_count": "Nachrichten im Durchschnitt pro Tag"
                     },
                     "members": {
-                        "total_count": "Nombre de membres",
-                        "new_members_last_n_days": "Nouveaux membres",
-                        "left_members_last_n_days": "Départs de membres",
-                        "net_difference": "Différence nette de membres",
-                        "server_top_percent": "Position globale du serveur"
+                        "total_count": "Anzahl Mitglieder",
+                        "new_members_last_n_days": "Neue Mitglieder",
+                        "left_members_last_n_days": "Mitglieder-Abgänge",
+                        "net_difference": "Netto-Mitglieder-Differenz",
+                        "server_top_percent": "Globale Server-Position"
                     }
                 }
             },
             "select_stats_tag": {
-                "choose_a_stat_title": "Choisissez une **statistique** à afficher"
+                "choose_a_stat_title": "Wähle eine **Statistik** zum Anzeigen"
             },
             "select_stats_lookback": {
                 "header": {
-                    "choose_lookback_value": "Choisissez la **période** du compteur",
-                    "lookback_value_for_stat": "afin d'y afficher le {{statName}} sur les **x** derniers jours"
+                    "choose_lookback_value": "Wähle den **Zeitraum** des Zählers",
+                    "lookback_value_for_stat": "um dort {{statName}} der letzten **x** Tage anzuzeigen"
                 }
             },
             "select_counter_style": {
                 "header": {
-                    "choose_the_style": "Choisissez le style",
-                    "that_fits_your_counter": "qui va le mieux avec votre compteur"
+                    "choose_the_style": "Wähle den Stil",
+                    "that_fits_your_counter": "der am besten zu deinem Zähler passt"
                 },
                 "body": {
-                    "recommended_styles": "Styles recommandés",
-                    "recommended_styles_text": "Choisissez l'un des styles générés pour votre serveur avec le sélecteur ci-dessous.",
-                    "personalize": "Personnalisez"
+                    "recommended_styles": "Empfohlene Stile",
+                    "recommended_styles_text": "Wähle einen der für deinen Server generierten Stile mit dem Auswahlmenü unten.",
+                    "personalize": "Anpassen"
                 }
             },
             "counter_created": {
-                "youre_all_set": "C'est tout bon !",
-                "counter_created": "Votre compteur a été créé."
+                "youre_all_set": "Alles bereit!",
+                "counter_created": "Dein Zähler wurde erstellt."
             }
         },
         "tags": {
             "members": {
-                "name": "Nombre de membres",
-                "description": "Nombre total de membres sur le serveur",
-                "short-description": "Nombre de membres sur le serveur",
-                "channel-name": "Membres : {{value}}"
+                "name": "Anzahl Mitglieder",
+                "description": "Gesamtanzahl der Mitglieder auf dem Server",
+                "short-description": "Anzahl Mitglieder auf dem Server",
+                "channel-name": "Mitglieder: {{value}}"
             },
             "t-arrivals": {
-                "name": "Nombre d'arrivées",
-                "description": "Nombre de nouveaux membres sur n jours",
-                "short-description": "Nouveaux membres sur n jours",
-                "channel-name": "{{value}} arrivées en {{days}}j"
+                "name": "Anzahl Ankünfte",
+                "description": "Anzahl neuer Mitglieder in n Tagen",
+                "short-description": "Neue Mitglieder in n Tagen",
+                "channel-name": "{{value}} Ankünfte in {{days}}T"
             },
             "t-departures": {
-                "name": "Nombre de départs",
-                "description": "Nombre de membres ayant quitté le serveur sur n jours",
-                "short-description": "Départs de membres sur n jours",
-                "channel-name": "{{value}} départs en {{days}}j"
+                "name": "Anzahl Abgänge",
+                "description": "Anzahl Mitglieder, die den Server in n Tagen verlassen haben",
+                "short-description": "Mitglieder-Abgänge in n Tagen",
+                "channel-name": "{{value}} Abgänge in {{days}}T"
             },
             "t-members": {
-                "name": "Solde net de membres",
-                "description": "Différence entre les arrivées et départs sur n jours",
-                "short-description": "Différence entre départs & arrivées sur n jours",
-                "channel-name": "{{value}} membres en {{days}}j"
+                "name": "Netto-Mitglieder-Saldo",
+                "description": "Differenz zwischen Ankünften und Abgängen in n Tagen",
+                "short-description": "Differenz zwischen Abgängen & Ankünften in n Tagen",
+                "channel-name": "{{value}} Mitglieder in {{days}}T"
             }
         },
         "slash": {
@@ -449,73 +449,79 @@
             "description": "counters.slash.description"
         },
         "refresh-flags": {
-            "AUTO_REFRESH": "Le compteur s'actualise **automatiquement** plusieurs fois par heure.",
-            "ON_BOOST_UPDATE": "Actualisé lorsque quelqu'un **boost** le serveur.",
-            "ON_DAILY_STATS_COMPUTE": "Actualisé **automatiquement** chaque jour.",
-            "ON_MEMBER_JOIN": "Actualisé lorsqu'un **membre rejoint** le serveur.",
-            "ON_MEMBER_LEAVE": "Actualisé lorsqu'un **membre quitte** le serveur.",
-            "ON_MODERATOR_ACTION": "Actualisé lorsqu'une **action de modération** est effectuée.",
-            "ON_SERVER_UPDATE": "Actualisé lorsque les **paramètres du serveur** sont mis-à-jour.",
-            "ON_VOICE_STATE_UPDATE": "Actualisé lorsqu'un membre **quitte** ou **rejoit** un salon vocal."
+            "AUTO_REFRESH": "Der Zähler aktualisiert sich **automatisch** mehrmals pro Stunde.",
+            "ON_BOOST_UPDATE": "Aktualisiert, wenn jemand den Server **boostet**.",
+            "ON_DAILY_STATS_COMPUTE": "Wird **automatisch** jeden Tag aktualisiert.",
+            "ON_MEMBER_JOIN": "Aktualisiert, wenn ein **Mitglied beitritt**.",
+            "ON_MEMBER_LEAVE": "Aktualisiert, wenn ein **Mitglied den Server verlässt**.",
+            "ON_MODERATOR_ACTION": "Aktualisiert, wenn eine **Moderations-Aktion** durchgeführt wird.",
+            "ON_SERVER_UPDATE": "Aktualisiert, wenn die **Server-Einstellungen** geändert werden.",
+            "ON_VOICE_STATE_UPDATE": "Aktualisiert, wenn ein Mitglied einen Voice-Kanal **verlässt** oder **betritt**."
         }
     },
     "highlights": {
         "highlights": {
-            "0": "A **boosté** le serveur {{value}} fois !",
-            "2": "Est resté **en vocal** non-stop pendant **{{value}} minutes** !",
-            "3": "A été **@mentionné {{value}} fois** ce jour-ci !",
-            "5": "A eu **{{value}}** de ses messages **épinglés** !",
-            "8": "Fête ses **{{value}} ans** sur le serveur aujourd'hui !",
-            "9": "Est monté à la position **#{{value}}** du classement par messages !",
-            "10": "Est descendu à la position **#{{value}}** du classement par messages..",
-            "13": "A été actif ici pendant **{{value}} jours** consécutifs !",
-            "14": "A atteint les **{{value}} messages** envoyés !",
-            "15": "A atteint les **{{value}} minutes** passées en vocal !",
-            "16": "A établi son record de **{{value}} messages** envoyés en un jour !",
-            "17": "A établi son record de **{{value}} minutes** en vocal en un jour !",
-            "18": "La série d'activité de **{{value}} jours** a été perdue.."
+            "0": "Hat den Server **{{value}} Mal geboostet**!",
+            "2": "War **{{value}} Minuten** non-stop **im Voice-Chat**!",
+            "3": "Wurde heute **{{value}} Mal @erwähnt**!",
+            "5": "Hatte **{{value}}** seiner Nachrichten **angepinnt**!",
+            "8": "Feiert heute sein **{{value}}-jähriges** Server-Jubiläum!",
+            "9": "Ist auf Position **#{{value}}** der Nachrichten-Rangliste **aufgestiegen**!",
+            "10": "Ist auf Position **#{{value}}** der Nachrichten-Rangliste **abgerutscht**..",
+            "13": "War **{{value}} Tage** in Folge hier aktiv!",
+            "14": "Hat **{{value}} gesendete Nachrichten** erreicht!",
+            "15": "Hat **{{value}} Minuten** im Voice-Chat erreicht!",
+            "16": "Hat seinen Rekord von **{{value}} Nachrichten** an einem Tag aufgestellt!",
+            "17": "Hat seinen Rekord von **{{value}} Minuten** im Voice-Chat an einem Tag aufgestellt!",
+            "18": "Die Aktivitäts-Serie von **{{value}} Tagen** wurde unterbrochen.."
         }
     },
     "config": {
         "slash": {
             "value": {
                 "choices": {
-                    "include_bots_in_stats": "🤖 · Inclure les bots dans les stats du serveur",
-                    "enable_WCAG": "🎯 · Paramètres d'accessibilité",
-                    "advanced_menu": "⚡ · Paramètres avancés / expérimentaux"
+                    "include_bots_in_stats": "🤖 · Bots in Server-Stats einbeziehen",
+                    "enable_WCAG": "🎯 · Barrierefreiheits-Einstellungen",
+                    "advanced_menu": "⚡ · Erweiterte / experimentelle Einstellungen"
                 },
-                "name": "configurer",
-                "description": "Choisissez une option de configuration"
+                "name": "konfigurieren",
+                "description": "Wähle eine Konfigurationsoption"
             },
             "name": "config",
-            "description": "🔧 • Ajustez les paramètres du bot pour vous et le serveur"
+            "description": "🔧 • Passe die Bot-Einstellungen für dich und den Server an"
         }
     },
     "commands": {
         "config": {
             "advanced": {
-                "confirmation_button_ok": "Continuer",
-                "confirmation_title": "⚠️ Zone de configuration avancée",
-                "confirmation_description": "Les paramètres avancés servent à **débugger** le bot et modifier son comportement pour les **contributeurs** et **développeurs**.\n\nModifier ces paramètres peut causer des comportements inattendus du bot. **Êtes-vous sûr de vouloir continuer ?**",
-                "select_menu_title": "Sélectionnez une option",
-                "select_menu_fill_stats": "Générer des données factices",
-                "select_menu_clear_cache": "Vider votre cache",
-                "select_menu_set_raw_lang": "Activer/désactiver la langue brute",
-                "title": "🛠️ - Menu avancé / expérimental",
-                "description": "Ce menu est principalement dédié aux **contributeurs** du bot *(si vous n'en êtes pas encore un.. [pourquoi ne pas nous rejoindre ?]({{{support_link}}}))*.\n\nSélectionnez ci-dessous **l'action que vous souhaitez effectuer :**",
+                "confirmation_button_ok": "Fortfahren",
+                "confirmation_title": "⚠️ Erweiterte Konfigurationszone",
+                "confirmation_description": "Die erweiterten Einstellungen dienen zum **Debuggen** des Bots und zur Verhaltensänderung für **Mitwirkende** und **Entwickler**.\n\nÄnderungen an diesen Einstellungen können unerwartetes Bot-Verhalten verursachen. **Bist du sicher, dass du fortfahren möchtest?**",
+                "select_menu_title": "Wähle eine Option",
+                "select_menu_fill_stats": "Fake-Daten generieren",
+                "select_menu_clear_cache": "Deinen Cache leeren",
+                "select_menu_set_raw_lang": "Rohsprache aktivieren/deaktivieren",
+                "title": "🛠️ - Erweiterte / experimentelle Menü",
+                "description": "Dieses Menü ist hauptsächlich für **Mitwirkende** des Bots gedacht *(falls du noch keiner bist.. [warum nicht bei uns mitmachen?]({{{support_link}}}))*.\n\nWähle unten **die Aktion, die du durchführen möchtest:**",
                 "fill_stats": {
-                    "go_back_btn": "Retour",
-                    "low_values_btn": "Faibles",
-                    "high_values_btn": "Élevées",
-                    "absurd_values_btn": "Absurdes",
-                    "gapped_values_btn": "Éparpillées",
-                    "title": "Générer des données factices",
-                    "description": "Remplacez vos statistiques actuelles par un jeu de **données factices**.\n\n**Attention :** Ceci va écraser vos données actuelles. Vous pouvez retrouver vos stats en vidant votre cache dans le menu avancé. **De plus,** vos données du jour et certains highlights seront invalidés pour aujourd'hui (votre streak sera quand même conservé).",
-                    "ok_btn": "Retour au menu avancé",
-                    "ok_title": "✅ Statistiques générées",
-                    "ok_description": "Vos nouvelles statistiques devraient être visibles sur toutes les commandes.\n\n> **Rappel :** Vous pouvez retrouver vos (vraies) statistiques en vidant votre cache dans le menu avancé."
+                    "go_back_btn": "Zurück",
+                    "low_values_btn": "Niedrig",
+                    "high_values_btn": "Hoch",
+                    "absurd_values_btn": "Absurd",
+                    "gapped_values_btn": "Verstreut",
+                    "title": "Fake-Daten generieren",
+                    "description": "Ersetze deine aktuellen Statistiken durch **Fake-Daten**.\n\n**Achtung:** Dies überschreibt deine aktuellen Daten. Du kannst deine Stats wiederherstellen, indem du deinen Cache im erweiterten Menü leerst. **Außerdem** werden deine heutigen Daten und einige Highlights für heute ungültig (deine Serie bleibt jedoch erhalten).",
+                    "ok_btn": "Zurück zum erweiterten Menü",
+                    "ok_title": "✅ Statistiken generiert",
+                    "ok_description": "Deine neuen Statistiken sollten in allen Befehlen sichtbar sein.\n\n> **Erinnerung:** Du kannst deine (echten) Statistiken wiederherstellen, indem du deinen Cache im erweiterten Menü leerst."
                 }
             }
+        }
+    },
+    "help": {
+        "slash": {
+            "name": "help.slash.name",
+            "description": "help.slash.description"
         }
     }
 }

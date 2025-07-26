@@ -1,0 +1,527 @@
+{
+    "general": {
+        "common": {
+            "units_short": {
+                "minute": "dk"
+            },
+            "units": {
+                "day": {
+                    "one": "gün",
+                    "other": "gün"
+                },
+                "members": "üye"
+            },
+            "months_short": {
+                "1": "oca",
+                "2": "şub",
+                "3": "mar",
+                "4": "nis",
+                "5": "may",
+                "6": "haz",
+                "7": "tem",
+                "8": "ağu",
+                "9": "eyl",
+                "10": "eki",
+                "11": "kas",
+                "12": "ara"
+            },
+            "months": {
+                "1": "ocak",
+                "2": "şubat",
+                "3": "mart",
+                "4": "nisan",
+                "5": "mayıs",
+                "6": "haziran",
+                "7": "temmuz",
+                "8": "ağustos",
+                "9": "eylül",
+                "10": "ekim",
+                "11": "kasım",
+                "12": "aralık"
+            },
+            "countdown": {
+                "days_left": "G-{{days}}"
+            },
+            "days_short": {
+                "0": "paz",
+                "1": "pzt",
+                "2": "sal",
+                "3": "çar",
+                "4": "per",
+                "5": "cum",
+                "6": "cmt"
+            },
+            "modification_warning_text": "Bu istatistikler kullanıcı talebi üzerine oluşturulmuş veya değiştirilmiştir ve gerçek değildir.",
+            "links": {
+                "join_support": "Destek Sunucusu",
+                "join": "Katıl",
+                "github": "GitHub",
+                "add_bot": "Bot ekle"
+            }
+        },
+        "errors": {
+            "an_error_occured": "Ah.. bir hata oluştu",
+            "an_error_occured_end": "**Bu hata devam ederse,** lütfen [destek]({{support_link}}) ile iletişime geçin!",
+            "an_internal_error_occured": "Ah... dahili bir hata oluştu",
+            "an_internal_error_occured_end": "**Hatayı geliştiricilere bildirdik,** verdiğimiz rahatsızlık için özür dileriz.**",
+            "an_internal_error_occured_body": "Görünüşe göre bir şeyler çok kötü gitti.\n**Hatayı geliştiricilere bildirdik** ve sorunu hızlıca çözmek için elimizden geleni yapacağız.",
+            "common": {
+                "interaction_followup_timeout": "Komut artık yanıt vermiyor.",
+                "guild_not_found": "Sunucu yerel önbellekte bulunamadı.",
+                "database_querry_failed": "Veritabanı sorgusu başarısız oldu.",
+                "invalid_subcommand": "Kullanılan alt komut mevcut değil.",
+                "unknown_option": "Kullanılan seçenek mevcut değil.",
+                "member_not_found": "Üye yerel veya uzak önbellekte bulunamadı."
+            },
+            "interaction_expired_title": "🕓 Komutun süresi doldu",
+            "interaction_expired_description": "Bu komut **çok uzun zaman önce** çalıştırıldı.\n*Tekrar çalıştırabilirsiniz!*",
+            "maintenance": {
+                "title": "Bakım devam ediyor..",
+                "no_reason": "**{{botname}}** geçici olarak kullanılamıyor.\n*Verdiğimiz rahatsızlık için özür dileriz.*",
+                "with_reason": "**{{botname}}** geçici olarak kullanılamıyor, *verdiğimiz rahatsızlık için özür dileriz.*\n\n> {{reason}}"
+            },
+            "interaction_not_yours_title": "🙌 Bu sizin komutunuz değil",
+            "interaction_not_yours_description": "Bu komut **başka bir kullanıcı** tarafından çalıştırıldı.\nBu yüzden doğrudan etkileşime geçemezsiniz."
+        },
+        "commands": {
+            "loading": {
+                "interaction_loading_button": "Yükleniyor...",
+                "loading_prefix_message": "**Yükleniyor..**",
+                "generic": {
+                    "default": "Komutunuz işleniyor.",
+                    "stats_are_loading": "İstatistikleriniz yükleniyor.",
+                    "crunching_numbers": "İstatistikleriniz hesaplanıyor.",
+                    "fetching_your_data": "Verileriniz getiriliyor."
+                },
+                "bot": {
+                    "add_bot": "**Botu ekleyin** sunucularınıza aşağıdaki butona tıklayarak!",
+                    "join_support": "**Bir sorunuz mu var?** Destek sunucusunda bize sorun!",
+                    "news_and_updates": "Yenilikler ve güncellemelerden haberdar olmak için **destek sunucusuna** katılın.",
+                    "creation_date": "**Server Analytics** <t:1558271715:D> tarihinden beri istatistiklerinizi topluyor!",
+                    "creation_date_relative": "**Server Analytics** <t:1558271715:R> oluşturuldu!",
+                    "thanks_for_using_bot": "**{{botname}}** kullandığınız için çok teşekkürler!",
+                    "bot_is_entirely_free": "**{{botname}}** tamamen ücretsizdir ve öyle kalacak!",
+                    "have_a_suggestion": "**Bir fikriniz** veya öneriniz mi var? Gelin bize anlatın, ilgileniyoruz!"
+                }
+            }
+        }
+    },
+    "admin": {
+        "slash": {
+            "maintenance": {
+                "enable": {
+                    "raison": {
+                        "name": "sebep",
+                        "description": "Bakım sebebi"
+                    },
+                    "name": "etkinleştir",
+                    "description": "Bakım modunu etkinleştir"
+                },
+                "disable": {
+                    "name": "devre-dışı-bırak",
+                    "description": "Bakım modunu devre dışı bırak"
+                },
+                "name": "bakım",
+                "description": "Bakım modunu yönet"
+            },
+            "cache": {
+                "counts": {
+                    "name": "sayaçlar",
+                    "description": "Önbellek sayaçlarını göster"
+                },
+                "guilds": {
+                    "guild-id": {
+                        "name": "sunucu-id",
+                        "description": "Görüntülenecek sunucu ID'si"
+                    },
+                    "name": "sunucular",
+                    "description": "Sunucu önbelleğini yönet"
+                },
+                "users": {
+                    "user-id": {
+                        "name": "kullanıcı-id",
+                        "description": "Görüntülenecek kullanıcı ID'si"
+                    },
+                    "name": "kullanıcılar",
+                    "description": "Kullanıcı önbelleğini yönet"
+                },
+                "guild-members": {
+                    "guild-id": {
+                        "name": "sunucu-id",
+                        "description": "Görüntülenecek sunucu ID'si"
+                    },
+                    "member-id": {
+                        "name": "üye-id",
+                        "description": "Görüntülenecek üye ID'si"
+                    },
+                    "name": "üyeler",
+                    "description": "Üye önbelleğini yönet"
+                },
+                "guild-bots": {
+                    "guild-id": {
+                        "name": "sunucu-id",
+                        "description": "Görüntülenecek sunucu ID'si"
+                    },
+                    "bot-id": {
+                        "name": "bot-id",
+                        "description": "Görüntülenecek bot ID'si"
+                    },
+                    "name": "botlar",
+                    "description": "Bot önbelleğini yönet"
+                },
+                "name": "önbellek",
+                "description": "Sistem önbelleğini yönet"
+            },
+            "name": "admin",
+            "description": "Yönetici komutları"
+        },
+        "maintenance": {
+            "disabled_ok": "✅ **Tamam!** Bakım devre dışı bırakıldı.",
+            "enabled_ok": "🚧 **Tamam!** Bakım modu etkinleştirildi."
+        }
+    },
+    "stats": {
+        "slash": {
+            "messages": {
+                "name": "mesajlar",
+                "description": "📊 • Bu sunucuda gönderilen mesajlar hakkında istatistikler"
+            },
+            "members": {
+                "name": "üyeler",
+                "description": "📊 • Sunucu üyeleri hakkında istatistikler"
+            },
+            "name": "stats",
+            "description": "📊 • Sunucu istatistiklerini göster"
+        },
+        "view": {
+            "periods_comparison": {
+                "today": "Bugün",
+                "yesterday": "Dün",
+                "this_month": "Bu ay",
+                "last_month": "Geçen ay",
+                "this_year": "Bu yıl",
+                "last_year": "Geçen yıl"
+            },
+            "common": {
+                "error_generic_box": "Ah! Bu kart görüntülenemiyor."
+            }
+        }
+    },
+    "me": {
+        "view": {
+            "body": {
+                "titles": {
+                    "stats_vs_last_period": {
+                        "message_count": "Gönderilen mesajlar",
+                        "voice_time": "Sesli kanalda geçirilen süre"
+                    },
+                    "histogram": {
+                        "message_count": "{{days}} gündeki mesajlar",
+                        "voice_time": "{{days}} gündeki sesli süre"
+                    },
+                    "highlights": "Öne Çıkanlar",
+                    "stat_of_the_day": "Günün İstatistiği"
+                },
+                "highlights": {
+                    "no_highlights": "Şu an için öne çıkan bir şey yok.",
+                    "come_back_later": "Daha sonra tekrar gel!"
+                },
+                "placeholder_box_text": "Şu an burada gösterilecek bir şey yok."
+            },
+            "header": {
+                "stat_boxes": {
+                    "messages_sent": "Gönderilen mesajlar",
+                    "in_vc": "Sesli kanalda",
+                    "leaderboard": "Sıralama",
+                    "activity_streak": "Ardışık aktivite"
+                }
+            }
+        },
+        "slash": {
+            "name": "me",
+            "description": "📊 • Kişisel istatistiklerinizi göster",
+            "user": {
+                "name": "kullanıcı",
+                "description": "Başka bir üyenin istatistiklerini göster"
+            }
+        },
+        "loading": {
+            "old_tile_feature": "Çok uzun zaman önce, `/me` sadece metin formatında vardı!",
+            "user_option": "`kullanıcı` seçeneği başka bir üyenin istatistiklerini göstermeyi sağlar."
+        }
+    },
+    "top": {
+        "slash": {
+            "messages": {
+                "name": "mesajlar",
+                "description": "🏆 • En aktif üyelerin sıralaması"
+            },
+            "voice": {
+                "name": "sesli",
+                "description": "🏆 • Sesli kanalda geçirilen süreye göre üye sıralaması"
+            },
+            "name": "top",
+            "description": "🏆 • Üyelerin aktivite sıralamaları"
+        },
+        "texts": {
+            "positions": {
+                "0": ".",
+                "1": ".",
+                "2": ".",
+                "3": ".",
+                "other": "."
+            },
+            "leaderboards": {
+                "end_reached": "Sıralamanın sonuna ulaştınız",
+                "no_data": "Bu dönem için gösterilecek veri yok"
+            }
+        },
+        "leaderboards": {
+            "message_count": {
+                "title": "Yazılı aktivite sıralaması",
+                "stat_name": "Gönderilen mesajlar"
+            },
+            "temp_titles": {
+                "today": "{{date}} sıralaması",
+                "last_{{{value}}}_hours": "Son {{{value}}} saatin sıralaması",
+                "full_year_date": "{{date}} yılı sıralaması",
+                "last_{{{value}}}_days": "Son {{{value}}} günün sıralaması",
+                "full_day_date": "{{date}} sıralaması"
+            },
+            "voice_time": {
+                "footer_note": "dk = dakika",
+                "title": "Sesli kanalda geçirilen süre sıralaması"
+            }
+        },
+        "timerange": {
+            "select": {
+                "RANGE": {
+                    "emoji": "🕓",
+                    "placeholder": "Bir zaman aralığı seçin",
+                    "last_{{{value}}}_hours": {
+                        "label": "Son {{{value}}} saat",
+                        "description": "Son {{{value}}} saatteki {{statname}}"
+                    },
+                    "last_{{{value}}}_days": {
+                        "label": "Son {{{value}}} gün",
+                        "description": "Son {{{value}}} gündeki {{statname}}"
+                    }
+                },
+                "DAY": {
+                    "emoji": "📌",
+                    "placeholder": "Bir tarih seçin",
+                    "today": {
+                        "label": "Bugün",
+                        "description": "Bugünkü {{statname}}"
+                    },
+                    "yesterday": {
+                        "label": "Dün",
+                        "description": "Dünkü {{statname}}"
+                    },
+                    "full_day_date": {
+                        "label": "{{date}}",
+                        "description": "{{date}} tarihindeki {{statname}}"
+                    }
+                },
+                "YEAR": {
+                    "emoji": "⏳",
+                    "placeholder": "Bir yıl seçin",
+                    "full_year_date": {
+                        "label": "{{date}}",
+                        "description": "{{date}} yılındaki {{statname}}"
+                    }
+                },
+                "MONTH": {
+                    "emoji": "📅",
+                    "placeholder": "Bir ay seçin",
+                    "full_month_date": {
+                        "label": "{{date}}",
+                        "description": "{{date}} ayındaki {{statname}}"
+                    }
+                }
+            }
+        }
+    },
+    "counters": {
+        "meta": {
+            "name": "sayaçlar",
+            "description": "⚡ • İstatistiklerinizi kanallarda gösterin"
+        },
+        "views": {
+            "no_counters": {
+                "example_channels": {
+                    "stats_category": "istatistikler",
+                    "stats_members": "Üyeler: {{members}} 👥",
+                    "stats_messages": "Mesajlar: {{messages}} 📝",
+                    "stats_boosts": "Boostlar: {{boosts}} ⭐"
+                },
+                "create_counter_title": "İstatistik kanalları **oluşturun**",
+                "create_counter_description": "Bu sunucunun istatistiklerini kanallarda göstermeye hazır mısınız?",
+                "create_counter_button": "Sayaç oluştur"
+            },
+            "select_stats_category": {
+                "header": {
+                    "choose_a_stats_category": "Bir istatistik **kategorisi** seçin",
+                    "to_display_on_your_counter": "sayaç kanalında gösterilecek"
+                },
+                "categories": {
+                    "messages": "Mesajlar",
+                    "members": "Üyeler",
+                    "server": "Sunucu"
+                },
+                "stats_examples": {
+                    "server": {
+                        "boosts_count": "Boost sayısı",
+                        "commands_count": "Komut sayısı",
+                        "channels_count": "Kanal sayısı",
+                        "server_age": "Sunucu yaşı",
+                        "boost_level": "Boost seviyesi"
+                    },
+                    "messages": {
+                        "total_count": "Mesaj sayısı",
+                        "messages_last_n_days": "Son n gündeki mesajlar",
+                        "top_member": "En aktif üye",
+                        "top_monthly_member": "Bu ayki en aktif üye",
+                        "average_count": "Günlük ortalama mesaj"
+                    },
+                    "members": {
+                        "total_count": "Üye sayısı",
+                        "new_members_last_n_days": "Yeni üyeler",
+                        "left_members_last_n_days": "Ayrılan üyeler",
+                        "net_difference": "Net üye farkı",
+                        "server_top_percent": "Sunucunun küresel konumu"
+                    }
+                }
+            },
+            "select_stats_tag": {
+                "choose_a_stat_title": "Gösterilecek bir **istatistik** seçin"
+            },
+            "select_stats_lookback": {
+                "header": {
+                    "choose_lookback_value": "Sayacın **dönemini** seçin",
+                    "lookback_value_for_stat": "son **x** gündeki {{statName}} göstermek için"
+                }
+            },
+            "select_counter_style": {
+                "header": {
+                    "choose_the_style": "Stili seçin",
+                    "that_fits_your_counter": "sayacınıza en uygun olan"
+                },
+                "body": {
+                    "recommended_styles": "Önerilen stiller",
+                    "recommended_styles_text": "Sunucunuz için oluşturulan stillerden birini aşağıdaki seçici ile seçin.",
+                    "personalize": "Kişiselleştirin"
+                }
+            },
+            "counter_created": {
+                "youre_all_set": "Her şey tamam!",
+                "counter_created": "Sayacınız oluşturuldu."
+            }
+        },
+        "tags": {
+            "members": {
+                "name": "Üye sayısı",
+                "description": "Sunucudaki toplam üye sayısı",
+                "short-description": "Sunucudaki üye sayısı",
+                "channel-name": "Üyeler: {{value}}"
+            },
+            "t-arrivals": {
+                "name": "Katılım sayısı",
+                "description": "n günde yeni üye sayısı",
+                "short-description": "n günde yeni üyeler",
+                "channel-name": "{{days}} günde {{value}} katılım"
+            },
+            "t-departures": {
+                "name": "Ayrılık sayısı",
+                "description": "n günde sunucuyu terk eden üye sayısı",
+                "short-description": "n günde ayrılan üyeler",
+                "channel-name": "{{days}} günde {{value}} ayrılık"
+            },
+            "t-members": {
+                "name": "Net üye bakiyesi",
+                "description": "n günde katılım ve ayrılık farkı",
+                "short-description": "n günde katılım & ayrılık farkı",
+                "channel-name": "{{days}} günde {{value}} üye"
+            }
+        },
+        "slash": {
+            "name": "sayaçlar",
+            "description": "⚡ • İstatistiklerinizi kanallarda gösterin"
+        },
+        "refresh-flags": {
+            "AUTO_REFRESH": "Sayaç saatte birkaç kez **otomatik olarak** güncellenir.",
+            "ON_BOOST_UPDATE": "Birisi sunucuyu **boost** ettiğinde güncellenir.",
+            "ON_DAILY_STATS_COMPUTE": "Her gün **otomatik olarak** güncellenir.",
+            "ON_MEMBER_JOIN": "Bir **üye sunucuya katıldığında** güncellenir.",
+            "ON_MEMBER_LEAVE": "Bir **üye sunucudan ayrıldığında** güncellenir.",
+            "ON_MODERATOR_ACTION": "Bir **moderasyon eylemi** gerçekleştirildiğinde güncellenir.",
+            "ON_SERVER_UPDATE": "**Sunucu ayarları** güncellendiğinde güncellenir.",
+            "ON_VOICE_STATE_UPDATE": "Bir üye sesli kanala **katıldığında** veya **ayrıldığında** güncellenir."
+        }
+    },
+    "highlights": {
+        "highlights": {
+            "0": "Sunucuyu **{{value}} kez boost** etti!",
+            "2": "**{{value}} dakika** boyunca **sesli kanalda** kaldı!",
+            "3": "Bu gün **{{value}} kez @etiketlendi**!",
+            "5": "**{{value}}** mesajı **sabitlendi**!",
+            "8": "Bugün sunucuda **{{value}} yılını** kutluyor!",
+            "9": "Mesaj sıralamasında **#{{value}}** konumuna yükseldi!",
+            "10": "Mesaj sıralamasında **#{{value}}** konumuna düştü..",
+            "13": "**{{value}} gün** boyunca burada aktif oldu!",
+            "14": "**{{value}} mesaj** gönderme sayısına ulaştı!",
+            "15": "**{{value}} dakika** sesli kanal süresine ulaştı!",
+            "16": "Bir günde **{{value}} mesaj** gönderme rekorunu kırdı!",
+            "17": "Bir günde **{{value}} dakika** sesli kanal rekorunu kırdı!",
+            "18": "**{{value}} günlük** aktivite serisi kaybedildi.."
+        }
+    },
+    "config": {
+        "slash": {
+            "value": {
+                "choices": {
+                    "include_bots_in_stats": "🤖 · Botları sunucu istatistiklerine dahil et",
+                    "enable_WCAG": "🎯 · Erişilebilirlik ayarları",
+                    "advanced_menu": "⚡ · Gelişmiş / deneysel ayarlar"
+                },
+                "name": "yapılandır",
+                "description": "Bir yapılandırma seçeneği seçin"
+            },
+            "name": "config",
+            "description": "🔧 • Sizin ve sunucu için bot ayarlarını düzenleyin"
+        }
+    },
+    "commands": {
+        "config": {
+            "advanced": {
+                "confirmation_button_ok": "Devam et",
+                "confirmation_title": "⚠️ Gelişmiş yapılandırma alanı",
+                "confirmation_description": "Gelişmiş ayarlar botun **hata ayıklaması** ve **katkıda bulunanlar** ile **geliştiriciler** için davranışını değiştirmek için kullanılır.\n\nBu ayarları değiştirmek botun beklenmedik davranışlara sebep olabilir. **Devam etmek istediğinizden emin misiniz?**",
+                "select_menu_title": "Bir seçenek seçin",
+                "select_menu_fill_stats": "Sahte veri oluştur",
+                "select_menu_clear_cache": "Önbelleğinizi temizleyin",
+                "select_menu_set_raw_lang": "Ham dili etkinleştir/devre dışı bırak",
+                "title": "🛠️ - Gelişmiş / deneysel menü",
+                "description": "Bu menü ağırlıklı olarak botun **katkıda bulunanlarına** adanmıştır *(henüz değilseniz.. [neden bize katılmıyorsunuz?]({{{support_link}}}))*.\n\nAşağıdan **yapmak istediğiniz eylemi** seçin:",
+                "fill_stats": {
+                    "go_back_btn": "Geri",
+                    "low_values_btn": "Düşük",
+                    "high_values_btn": "Yüksek",
+                    "absurd_values_btn": "Saçma",
+                    "gapped_values_btn": "Dağınık",
+                    "title": "Sahte veri oluştur",
+                    "description": "Mevcut istatistiklerinizi **sahte veri** seti ile değiştirin.\n\n**Dikkat:** Bu mevcut verilerinizi silecek. Gelişmiş menüden önbelleğinizi temizleyerek gerçek istatistiklerinizi geri alabilirsiniz. **Ayrıca,** günlük verileriniz ve bazı öne çıkanlar bugün için geçersiz olacak (seri süreniz yine de korunacak).",
+                    "ok_btn": "Gelişmiş menüye dön",
+                    "ok_title": "✅ İstatistikler oluşturuldu",
+                    "ok_description": "Yeni istatistikleriniz tüm komutlarda görünür olmalı.\n\n> **Hatırlatma:** Gelişmiş menüden önbelleğinizi temizleyerek (gerçek) istatistiklerinizi geri alabilirsiniz."
+                }
+            }
+        }
+    },
+    "help": {
+        "slash": {
+            "name": "yardım",
+            "description": "🆘 • Yardım ve komut listesi"
+        }
+    }
+}

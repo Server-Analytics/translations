@@ -9,7 +9,7 @@
                     "one": "jour",
                     "other": "jours"
                 },
-                "members": "general.common.units.members"
+                "members": "membres"
             },
             "months_short": {
                 "1": "jan",
@@ -516,6 +516,12 @@
                     "ok_description": "Vos nouvelles statistiques devraient être visibles sur toutes les commandes.\n\n> **Rappel :** Vous pouvez retrouver vos (vraies) statistiques en vidant votre cache dans le menu avancé."
                 }
             }
+        }
+    },
+    "help": {
+        "slash": {
+            "name": "help.slash.name",
+            "description": "help.slash.description"
         }
     }
 }
