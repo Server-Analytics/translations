@@ -173,7 +173,41 @@
                 "description": "Sistem önbelleğini yönet"
             },
             "name": "admin",
-            "description": "Yönetici komutları"
+            "description": "Yönetici komutları",
+            "debug": {
+                "create": {
+                    "name": "admin.slash.debug.create.name",
+                    "description": "admin.slash.debug.create.description",
+                    "guild-id": {
+                        "name": "admin.slash.debug.create.guild-id.name",
+                        "description": "admin.slash.debug.create.guild-id.description"
+                    },
+                    "type": {
+                        "choices": {
+                            "DISPATCH_EVENT_CATCHER": "admin.slash.debug.create.type.choices.DISPATCH_EVENT_CATCHER",
+                            "GUILD_REPORTS": "admin.slash.debug.create.type.choices.GUILD_REPORTS",
+                            "GUILD_MEMBER_REPORTS": "admin.slash.debug.create.type.choices.GUILD_MEMBER_REPORTS",
+                            "GUILD_DUMP": "admin.slash.debug.create.type.choices.GUILD_DUMP",
+                            "GUILD_MEMBERS_DUMP": "admin.slash.debug.create.type.choices.GUILD_MEMBERS_DUMP",
+                            "GUILD_BOTS_DUMP": "admin.slash.debug.create.type.choices.GUILD_BOTS_DUMP",
+                            "GUILD_STAFFS_DUMP": "admin.slash.debug.create.type.choices.GUILD_STAFFS_DUMP",
+                            "CURRENT_USER_DUMP": "admin.slash.debug.create.type.choices.CURRENT_USER_DUMP"
+                        },
+                        "name": "admin.slash.debug.create.type.name",
+                        "description": "admin.slash.debug.create.type.description"
+                    },
+                    "member-id": {
+                        "name": "admin.slash.debug.create.member-id.name",
+                        "description": "admin.slash.debug.create.member-id.description"
+                    }
+                },
+                "list": {
+                    "name": "admin.slash.debug.list.name",
+                    "description": "admin.slash.debug.list.description"
+                },
+                "name": "admin.slash.debug.name",
+                "description": "admin.slash.debug.description"
+            }
         },
         "maintenance": {
             "disabled_ok": "✅ **Tamam!** Bakım devre dışı bırakıldı.",
@@ -184,11 +218,13 @@
         "slash": {
             "messages": {
                 "name": "mesajlar",
-                "description": "📊 • Bu sunucuda gönderilen mesajlar hakkında istatistikler"
+                "description": "📊 • Bu sunucuda gönderilen mesajlar hakkında istatistikler",
+                "help-description": "stats.slash.messages.help-description"
             },
             "members": {
                 "name": "üyeler",
-                "description": "📊 • Sunucu üyeleri hakkında istatistikler"
+                "description": "📊 • Sunucu üyeleri hakkında istatistikler",
+                "help-description": "stats.slash.members.help-description"
             },
             "name": "stats",
             "description": "📊 • Sunucu istatistiklerini göster"
@@ -243,7 +279,8 @@
             "user": {
                 "name": "kullanıcı",
                 "description": "Başka bir üyenin istatistiklerini göster"
-            }
+            },
+            "help-description": "me.slash.help-description"
         },
         "loading": {
             "old_tile_feature": "Çok uzun zaman önce, `/me` sadece metin formatında vardı!",
@@ -254,11 +291,13 @@
         "slash": {
             "messages": {
                 "name": "mesajlar",
-                "description": "🏆 • En aktif üyelerin sıralaması"
+                "description": "🏆 • En aktif üyelerin sıralaması",
+                "help-description": "top.slash.messages.help-description"
             },
             "voice": {
                 "name": "sesli",
-                "description": "🏆 • Sesli kanalda geçirilen süreye göre üye sıralaması"
+                "description": "🏆 • Sesli kanalda geçirilen süreye göre üye sıralaması",
+                "help-description": "top.slash.voice.help-description"
             },
             "name": "top",
             "description": "🏆 • Üyelerin aktivite sıralamaları"
@@ -522,6 +561,12 @@
         "slash": {
             "name": "yardım",
             "description": "🆘 • Yardım ve komut listesi"
+        }
+    },
+    "test": {
+        "slash": {
+            "name": "test.slash.name",
+            "description": "test.slash.description"
         }
     }
 }

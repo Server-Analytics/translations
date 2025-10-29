@@ -1,0 +1,69 @@
+{
+    "help": {
+        "name": "help",
+        "description": "🛟 • List all available commands"
+    },
+    "stats": {
+        "name": "stats",
+        "description": "📊 • Show server statistics",
+        "children": {
+            "messages": {
+                "name": "messages",
+                "description": "📊 • Statistics on messages sent in this server",
+                "helpDescription": "Server stats on messages sent"
+            },
+            "members": {
+                "name": "members",
+                "description": "📊 • Statistics on members in this server",
+                "helpDescription": "Server stats on members"
+            }
+        }
+    },
+    "me": {
+        "name": "me",
+        "description": "👤 • Show your personal statistics",
+        "helpDescription": "Show your personal statistics"
+    },
+    "top": {
+        "name": "top",
+        "description": "🏆 • Show the top members in various categories",
+        "children": {
+            "messages": {
+                "name": "messages",
+                "description": "🏆 • Top members by messages sent",
+                "helpDescription": "Top members by messages sent"
+            },
+            "voice": {
+                "name": "voice",
+                "description": "🏆 • Top members by voice activity",
+                "helpDescription": "Top members by voice activity"
+            }
+        }
+    },
+    "counters": {
+        "name": "counters",
+        "description": "⚡ • Display server stats in channels",
+        "helpDescription": "Display server stats in channels"
+    },
+    "config": {
+        "name": "config",
+        "description": "⚙️ • Adjust bot settings for you and the server",
+        "helpDescription": "Configure bot settings"
+    },
+    "admin": {
+        "name": "admin",
+        "description": "🔧 • Commands for managing Server Analytics",
+        "children": {
+            "maintenance": {
+                "name": "maintenance",
+                "description": "🔧 • Put Server Analytics into maintenance mode",
+                "helpDescription": "Toggle maintenance mode"
+            },
+            "cache": {
+                "name": "cache",
+                "description": "🗑️ • Manage Server Analytics cache",
+                "helpDescription": "Manage the bot's cache"
+            }
+        }
+    }
+}

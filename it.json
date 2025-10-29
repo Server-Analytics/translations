@@ -173,7 +173,41 @@
                 "description": "Gestisci la cache del sistema"
             },
             "name": "admin",
-            "description": "Comandi amministrativi"
+            "description": "Comandi amministrativi",
+            "debug": {
+                "create": {
+                    "name": "admin.slash.debug.create.name",
+                    "description": "admin.slash.debug.create.description",
+                    "guild-id": {
+                        "name": "admin.slash.debug.create.guild-id.name",
+                        "description": "admin.slash.debug.create.guild-id.description"
+                    },
+                    "type": {
+                        "choices": {
+                            "DISPATCH_EVENT_CATCHER": "admin.slash.debug.create.type.choices.DISPATCH_EVENT_CATCHER",
+                            "GUILD_REPORTS": "admin.slash.debug.create.type.choices.GUILD_REPORTS",
+                            "GUILD_MEMBER_REPORTS": "admin.slash.debug.create.type.choices.GUILD_MEMBER_REPORTS",
+                            "GUILD_DUMP": "admin.slash.debug.create.type.choices.GUILD_DUMP",
+                            "GUILD_MEMBERS_DUMP": "admin.slash.debug.create.type.choices.GUILD_MEMBERS_DUMP",
+                            "GUILD_BOTS_DUMP": "admin.slash.debug.create.type.choices.GUILD_BOTS_DUMP",
+                            "GUILD_STAFFS_DUMP": "admin.slash.debug.create.type.choices.GUILD_STAFFS_DUMP",
+                            "CURRENT_USER_DUMP": "admin.slash.debug.create.type.choices.CURRENT_USER_DUMP"
+                        },
+                        "name": "admin.slash.debug.create.type.name",
+                        "description": "admin.slash.debug.create.type.description"
+                    },
+                    "member-id": {
+                        "name": "admin.slash.debug.create.member-id.name",
+                        "description": "admin.slash.debug.create.member-id.description"
+                    }
+                },
+                "list": {
+                    "name": "admin.slash.debug.list.name",
+                    "description": "admin.slash.debug.list.description"
+                },
+                "name": "admin.slash.debug.name",
+                "description": "admin.slash.debug.description"
+            }
         },
         "maintenance": {
             "disabled_ok": "✅ **Ok!** La manutenzione è stata disattivata.",
@@ -184,11 +218,13 @@
         "slash": {
             "messages": {
                 "name": "messaggi",
-                "description": "📊 • Statistiche sui messaggi inviati in questo server"
+                "description": "📊 • Statistiche sui messaggi inviati in questo server",
+                "help-description": "stats.slash.messages.help-description"
             },
             "members": {
                 "name": "membri",
-                "description": "📊 • Statistiche sui membri del server"
+                "description": "📊 • Statistiche sui membri del server",
+                "help-description": "stats.slash.members.help-description"
             },
             "name": "stats",
             "description": "📊 • Mostra le statistiche del server"
@@ -243,7 +279,8 @@
             "user": {
                 "name": "utente",
                 "description": "Mostra le statistiche di un altro membro"
-            }
+            },
+            "help-description": "me.slash.help-description"
         },
         "loading": {
             "old_tile_feature": "Molto tempo fa, il `/me` esisteva solo in formato testo!",
@@ -254,11 +291,13 @@
         "slash": {
             "messages": {
                 "name": "messaggi",
-                "description": "🏆 • Classifica dei membri più attivi"
+                "description": "🏆 • Classifica dei membri più attivi",
+                "help-description": "top.slash.messages.help-description"
             },
             "voice": {
                 "name": "voice",
-                "description": "🏆 • Classifica dei membri per tempo trascorso in vocale"
+                "description": "🏆 • Classifica dei membri per tempo trascorso in vocale",
+                "help-description": "top.slash.voice.help-description"
             },
             "name": "top",
             "description": "🏆 • Classifiche dei membri sull'attività"
@@ -522,6 +561,12 @@
         "slash": {
             "name": "help.slash.name",
             "description": "help.slash.description"
+        }
+    },
+    "test": {
+        "slash": {
+            "name": "test.slash.name",
+            "description": "test.slash.description"
         }
     }
 }
